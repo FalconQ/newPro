@@ -2,7 +2,7 @@
  * Created by qiusheng on 2016/10/8.
  */
 require.config({
-    path: {
+    paths: {
         'jquery': './libs/jquery',
         'angular': './libs/angular.min',
         'ui-router': './libs/angular-ui-router'
@@ -21,5 +21,5 @@ require.config({
 
 
 require(['jquery','angular'],function ($,angular) {
-    angular.bootstrap(document, ['webapp']);
+    angular.bootstrap(document, ['webApp']);
 });

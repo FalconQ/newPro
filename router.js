@@ -2,7 +2,7 @@
  * Created by qiusheng on 2016/10/8.
  */
 define(['angular','ui-router'],function (angular) {
-    angular.module('webapp',['ui-router'])
+    angular.module('webApp',['ui-router'])
         .config(['$stateProvider','$urlRouterProvider', function ($stateProvider,$urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
