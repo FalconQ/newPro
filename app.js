@@ -7,6 +7,7 @@ require.config({
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         HomeController: './components/home/HomeController',
+        MineController:'./components/mine/MineController',
         index: './js/controllers/index',
         router: './router'
     },
