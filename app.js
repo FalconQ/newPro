@@ -9,6 +9,7 @@ require.config({
         $css: './libs/css',
         HomeController: './components/home/HomeController',
         MineController:'./components/mine/MineController',
+        SerController:'./components/serOrder/SerController',
         index: './js/controllers/index',
         router: './router'
     },
@@ -25,7 +26,7 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController','MineController'],function (jquery,angular,index) {
+require(['jquery','angular','index','ui-router','HomeController','MineController','SerController'],function (jquery,angular,index) {
     index.index();
     //手动加载模块
     angular.bootstrap(document, ['webapp']);

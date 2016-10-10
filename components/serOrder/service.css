@@ -1,0 +1,53 @@
+.container_serOder {
+  width: 100%;
+}
+.container_serOder header {
+  height: 0.89rem;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 0.89rem;
+  font-size: 0.34rem;
+  font-weight: normal;
+  position: relative;
+}
+.container_serOder header .tel {
+  width: 0.89rem;
+  height: 0.89rem;
+  background: url("../../images/serOrder/icon_navi_im_new.png") no-repeat center;
+  background-size: 0.6rem;
+  position: absolute;
+  right: 0.1rem;
+  bottom: 0;
+}
+.container_serOder header .refresh {
+  width: 0.89rem;
+  height: 0.89rem;
+  background: url("../../images/serOrder/nearby_icon_refresh.png") no-repeat center;
+  background-size: 0.6rem;
+  position: absolute;
+  right: 0.89rem;
+  bottom: 0;
+}
+.container_serOder .order_list {
+  padding: 0 0.12rem;
+  box-sizing: border-box;
+}
+.container_serOder .order_list li {
+  margin-top: 0.12rem;
+  width: 7.26rem;
+  height: 6.61rem;
+  border-radius: 0.1rem;
+  padding: 0.36rem 0.3rem 0.2rem 0.9rem;
+  box-sizing: border-box;
+  background: #ffffff url("../../images/serOrder/icon_abroad_order.png") no-repeat 0.36rem 0.36rem;
+  background-size: 0.38rem;
+}
+.container_serOder .order_list li .order_content {
+  height: 0.75rem;
+  display: inline-block;
+}
+.container_serOder .order_list li .order_content .order_title {
+  width: 4.56rem;
+  font-size: 0.28rem;
+  font-weight: 700;
+}
