@@ -24,7 +24,7 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController'],function (jquery,angular,index) {
+require(['jquery','angular','index','ui-router','HomeController','MineController'],function (jquery,angular,index) {
     index.index();
     //手动加载模块
     angular.bootstrap(document, ['webapp']);
