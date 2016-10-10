@@ -9,6 +9,8 @@ require.config({
         $css: './libs/css',
         HomeController: './components/home/HomeController',
         TripController:'./components/trip/TripController',
+        DestController:'./components/trip_destination/DestController',
+        ClassicController:'./components/trip_classic/ClassicController',
         index: './js/controllers/index',
         router: './router'
 
@@ -26,7 +28,7 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController','TripController'],function (jquery,angular,index) {
+require(['jquery','angular','index','ui-router','HomeController','TripController','DestController','ClassicController'],function (jquery,angular,index) {
     index.index();
     //手动加载模块
     angular.bootstrap(document, ['webapp']);

@@ -16,6 +16,16 @@ define(['angular'],function (angular) {
                         templateUrl: './components/trip/trip.html',
                         controller: 'TripController'
                     })
+                    .state('trip_destination', {
+                        url: '/trip_destination',
+                        templateUrl: './components/trip_destination/trip_destination.html',
+                        controller: 'DestController'
+                    })
+                    .state('trip_classic', {
+                        url: '/trip_classic',
+                        templateUrl: './components/trip_classic/trip_classic.html',
+                        controller: 'ClassicController'
+                    })
 
             }]);
 

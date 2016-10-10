@@ -875,7 +875,7 @@ function copy(source, destination, stackSource, stackDest) {
     }
   } else {
     if (source === destination) throw ngMinErr('cpi',
-      "Can't copy! Source and destination are identical.");
+      "Can't copy! Source and trip_destination are identical.");
 
     stackSource = stackSource || [];
     stackDest = stackDest || [];
@@ -6842,7 +6842,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * on the template need to be merged with the existing attributes in the DOM.
      * The desired effect is to have both of the attributes present.
      *
-     * @param {object} dst destination attributes (original DOM)
+     * @param {object} dst trip_destination attributes (original DOM)
      * @param {object} src source attributes (from the directive template)
      */
     function mergeTemplateAttributes(dst, src) {
