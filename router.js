@@ -11,6 +11,11 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
+                    .state('target', {
+                        url: '/target',
+                        templateUrl: './components/target/target.html',
+                        controller: 'targetController'
+                    })
 
             }]);
 

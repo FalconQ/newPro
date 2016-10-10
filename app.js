@@ -7,6 +7,7 @@ require.config({
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         HomeController: './components/home/HomeController',
+        targetController: './components/target/targetController',
         index: './js/controllers/index',
         router: './router'
     },
@@ -23,7 +24,7 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController'],function (jquery,angular,index) {
+require(['jquery','angular','index','ui-router','HomeController',"targetController"],function (jquery,angular,index) {
     index.index();
     //手动加载模块
     angular.bootstrap(document, ['webapp']);
