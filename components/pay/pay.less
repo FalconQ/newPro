@@ -101,6 +101,7 @@
             margin-top: 25/100rem;
             margin-bottom: 10/100rem;
             line-height: 100%;
+            position: relative;
             span{
               display: inline-block;
               padding: 4/100rem 6/100rem;
@@ -110,6 +111,8 @@
               color: #ff594c;
               margin-left: 10/100rem;
               line-height: 100%;
+              position: absolute;
+
             }
           }
           &:last-of-type{
@@ -119,7 +122,7 @@
         }
       }
       .pay_select{
-        width: 130/100rem;
+        width: 80/100rem;
         label{
           display: block;
           width: 100%;
@@ -130,12 +133,44 @@
         }
       }
       .checked{
-        background: url("../../images/serOrder/IMG_2821_06.png") no-repeat center;
+        background: url("../../images/serOrder/IMG_2821_06.png") no-repeat left center;
         background-size: 40/100rem;
       }
       .uncheck{
-        background: url("../../images/serOrder/IMG_2821_12.png") no-repeat center;
+        background: url("../../images/serOrder/IMG_2821_12.png") no-repeat left center;
         background-size: 40/100rem;
+      }
+    }
+  }
+  .toPay{
+    height: 100/100rem;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    button{
+      width: 280/100rem;
+      height: 100%;
+      text-align: center;
+      line-height: 100/100rem;
+      background-color: #ff5346;
+      text-decoration: none;
+      color: #fff;
+      border: 0;
+    }
+    .amount{
+      flex-grow: 1;
+      line-height: 100/100rem;
+      padding-left: 22/100rem;
+      box-sizing: border-box;
+      font-size: 32/100rem;
+      color: #333333;
+      span{
+        color: #ff5346;
       }
     }
   }

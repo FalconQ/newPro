@@ -90,6 +90,7 @@
   margin-top: 0.25rem;
   margin-bottom: 0.1rem;
   line-height: 100%;
+  position: relative;
 }
 .container_pay .pay_list li .pay_name p:first-of-type span {
   display: inline-block;
@@ -100,13 +101,14 @@
   color: #ff594c;
   margin-left: 0.1rem;
   line-height: 100%;
+  position: absolute;
 }
 .container_pay .pay_list li .pay_name p:last-of-type {
   color: #999999;
   font-size: 0.24rem;
 }
 .container_pay .pay_list li .pay_select {
-  width: 1.3rem;
+  width: 0.8rem;
 }
 .container_pay .pay_list li .pay_select label {
   display: block;
@@ -117,10 +119,42 @@
   margin-left: -9999px;
 }
 .container_pay .pay_list li .checked {
-  background: url("../../images/serOrder/IMG_2821_06.png") no-repeat center;
+  background: url("../../images/serOrder/IMG_2821_06.png") no-repeat left center;
   background-size: 0.4rem;
 }
 .container_pay .pay_list li .uncheck {
-  background: url("../../images/serOrder/IMG_2821_12.png") no-repeat center;
+  background: url("../../images/serOrder/IMG_2821_12.png") no-repeat left center;
   background-size: 0.4rem;
+}
+.container_pay .toPay {
+  height: 1rem;
+  width: 100%;
+  border-top: 1px solid #e4e4e4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.container_pay .toPay button {
+  width: 2.8rem;
+  height: 100%;
+  text-align: center;
+  line-height: 1rem;
+  background-color: #ff5346;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+}
+.container_pay .toPay .amount {
+  flex-grow: 1;
+  line-height: 1rem;
+  padding-left: 0.22rem;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+  color: #333333;
+}
+.container_pay .toPay .amount span {
+  color: #ff5346;
 }
