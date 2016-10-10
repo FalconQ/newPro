@@ -6,6 +6,7 @@ require.config({
         jquery: './libs/jquery',
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
+        $css: './libs/css',
         HomeController: './components/home/HomeController',
         targetController: './components/target/targetController',
         index: './js/controllers/index',
