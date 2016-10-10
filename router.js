@@ -11,6 +11,11 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
+                    .state('mine', {
+                        url: '/mine',
+                        templateUrl: './components/mine/mine.html',
+                        controller: 'MineController'
+                    })
 
             }]);
 
