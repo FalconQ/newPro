@@ -43,6 +43,7 @@ body {
 }
 #tabBar ul li a div h5 {
   font-size: 0.14rem;
+  font-weight: 400;
 }
 #tabBar ul li:first-of-type .icon {
   background: url("../../images/index/icon_home_shouye_new_03.png") no-repeat center;
