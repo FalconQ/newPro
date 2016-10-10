@@ -16,6 +16,12 @@ define(['angular'],function (angular) {
                         templateUrl: './components/target/target.html',
                         controller: 'targetController'
                     })
+                    .state('targat_position', {
+                        url: '/targat_position',
+                        templateUrl: './components/targat_position/targat_position.html',
+                        controller: 'targat_positionController'
+                    })
+
 
             }]);
 

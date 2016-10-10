@@ -9,6 +9,7 @@ require.config({
         $css: './libs/css',
         HomeController: './components/home/HomeController',
         targetController: './components/target/targetController',
+        targat_positionController: './components/targat_position/targat_positionController',
         index: './js/controllers/index',
         router: './router'
     },
@@ -25,8 +26,9 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController',"targetController"],function (jquery,angular,index) {
+require(['jquery','angular','index','ui-router','HomeController',"targetController","targat_positionController"],function (jquery,angular,index) {
     index.index();
     //手动加载模块
     angular.bootstrap(document, ['webapp']);
+
 });
