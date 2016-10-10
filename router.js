@@ -21,6 +21,16 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/serOrder/service.html',
                         controller: 'SerController'
                     })
+                    .state('orderBack', {
+                        url: '/orderBack',
+                        templateUrl: 'components/orderBack/orderBack.html',
+                        controller: 'BackController'
+                    })
+                    .state('pay', {
+                        url: '/pay',
+                        templateUrl: 'components/pay/pay.html',
+                        controller: 'PayController'
+                    })
 
             }]);
 
