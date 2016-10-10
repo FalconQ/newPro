@@ -11,6 +11,26 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
+                    .state('mine', {
+                        url: '/mine',
+                        templateUrl: './components/mine/mine.html',
+                        controller: 'MineController'
+                    })
+                    .state('serviceOrder', {
+                        url: '/serOrder',
+                        templateUrl: 'components/serOrder/service.html',
+                        controller: 'SerController'
+                    })
+                    .state('orderBack', {
+                        url: '/orderBack',
+                        templateUrl: 'components/orderBack/orderBack.html',
+                        controller: 'BackController'
+                    })
+                    .state('pay', {
+                        url: '/pay',
+                        templateUrl: 'components/pay/pay.html',
+                        controller: 'PayController'
+                    })
 
             }]);
 

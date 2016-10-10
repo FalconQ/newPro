@@ -487,7 +487,7 @@ define(function () {
     AngularAMD.prototype.filter = executeProvider('filter');
     // .factory
     AngularAMD.prototype.factory = executeProvider('factory');
-    // .service
+    // .serOrder
     AngularAMD.prototype.service = executeProvider('service');
     // .constant
     AngularAMD.prototype.constant = executeProvider('constant');

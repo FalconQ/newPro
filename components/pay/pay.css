@@ -1,0 +1,126 @@
+.container_pay {
+  width: 100%;
+  position: relative;
+  z-index: 10000;
+  height: 100%;
+  background-color: #edf0f5;
+}
+.container_pay header {
+  height: 0.89rem;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 0.89rem;
+  font-size: 0.34rem;
+  font-weight: normal;
+  position: relative;
+}
+.container_pay header .return {
+  width: 0.89rem;
+  height: 0.89rem;
+  background: url("../../images/serOrder/icon_navi_back_rest.png") no-repeat center;
+  background-size: 0.6rem;
+  position: absolute;
+  left: 0.1rem;
+  bottom: 0;
+}
+.container_pay .order_info {
+  width: 100%;
+  height: 2.44rem;
+  background-color: #fff;
+  padding: 0.2rem 0.3rem 0;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+}
+.container_pay .order_info table {
+  font-size: 0.28rem;
+  color: #333333;
+}
+.container_pay .order_info table tr {
+  height: 0.6rem;
+}
+.container_pay .order_info table tr:first-of-type th {
+  vertical-align: top;
+}
+.container_pay .order_info table tr th {
+  width: 1.8rem;
+  color: #9f9f9f;
+}
+.container_pay .order_info table tr td {
+  width: 4.4rem;
+  color: #333333;
+}
+.container_pay .pay_list li {
+  height: 1.3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+}
+.container_pay .pay_list li:first-of-type .pay_icon {
+  width: 1.4rem;
+  background: url("../../images/serOrder/IMG_2821_03.png") no-repeat center;
+  background-size: 1.1rem;
+}
+.container_pay .pay_list li:nth-of-type(2) .pay_icon {
+  width: 1.4rem;
+  background: url("../../images/serOrder/IMG_2821_10.png") no-repeat center;
+  background-size: 1.1rem;
+}
+.container_pay .pay_list li:nth-of-type(3) .pay_icon {
+  width: 1.4rem;
+  background: url("../../images/serOrder/IMG_2821_15.png") no-repeat center;
+  background-size: 1.1rem;
+}
+.container_pay .pay_list li:nth-of-type(4) .pay_icon {
+  width: 1.4rem;
+  background: url("../../images/serOrder/IMG_2821_17.png") no-repeat center;
+  background-size: 1.1rem;
+}
+.container_pay .pay_list li:nth-of-type(5) .pay_icon {
+  width: 1.4rem;
+  background: url("../../images/serOrder/IMG_2821_19.png") no-repeat center;
+  background-size: 1.1rem;
+}
+.container_pay .pay_list li .pay_name {
+  flex-grow: 1;
+}
+.container_pay .pay_list li .pay_name p:first-of-type {
+  font-size: 0.32rem;
+  color: #333333;
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+  line-height: 100%;
+}
+.container_pay .pay_list li .pay_name p:first-of-type span {
+  display: inline-block;
+  padding: 0.04rem 0.06rem;
+  border: 1px solid #ffa9a2;
+  box-sizing: border-box;
+  font-size: 0.18rem;
+  color: #ff594c;
+  margin-left: 0.1rem;
+  line-height: 100%;
+}
+.container_pay .pay_list li .pay_name p:last-of-type {
+  color: #999999;
+  font-size: 0.24rem;
+}
+.container_pay .pay_list li .pay_select {
+  width: 1.3rem;
+}
+.container_pay .pay_list li .pay_select label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container_pay .pay_list li .pay_select label input {
+  margin-left: -9999px;
+}
+.container_pay .pay_list li .checked {
+  background: url("../../images/serOrder/IMG_2821_06.png") no-repeat center;
+  background-size: 0.4rem;
+}
+.container_pay .pay_list li .uncheck {
+  background: url("../../images/serOrder/IMG_2821_12.png") no-repeat center;
+  background-size: 0.4rem;
+}

@@ -3,6 +3,13 @@ html,body{
   height: 100%;
   width: 7.5rem;
 }
+#container{
+  width: 100%;
+  height: 100%;
+  background-color: #edf0f5;
+  box-sizing: border-box;
+  padding-bottom: 106/100rem;
+}
 #tabBar{
   width: 7.5rem;
   height: 106/100rem;
@@ -10,11 +17,13 @@ html,body{
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
+  background-color: #f2f2f2;
+  z-index: 9999;
   ul{
     display: flex;
     li{
       width: 20%;
-      height: 100%;
+      height: 106/100rem;
       text-align: center;
       a{
         display: block;
@@ -24,56 +33,61 @@ html,body{
         text-decoration: none;
         div{
           width: 100%;
-          height: 54/100rem;
-          margin: 12/100rem auto 10/100rem;
-        }
-        h5{
-          font-weight: normal;
-          font-size: 20/100rem;
+          height: 100%;
         }
       }
 
       &:first-of-type .icon{
         background: url("../../images/icon_home_shouye_new.png") no-repeat center;
-        background-size: 100%;
+        background-size: 106/100rem;
       }
       &:nth-of-type(2) .icon{
         background: url("../../images/icon_home_place_new.png") no-repeat center;
-        background-size: 54/100rem;
+        background-size: 106/100rem;
       }
       &:nth-of-type(3) .icon{
         background: url("../../images/icon_home_xingc_new.png") no-repeat center;
-        background-size: 54/100rem;
+        background-size: 106/100rem;
       }
       &:nth-of-type(4) .icon{
         background: url("../../images/icon_home_service.png") no-repeat center;
-        background-size: 54/100rem;
+        background-size: 106/100rem;
       }
       &:last-of-type .icon{
         background: url("../../images/icon_home_my_new.png") no-repeat center;
-        background-size: 54/100rem;
+        background-size: 106/100rem;
       }
       &:first-of-type .icon1{
-        background: url("") no-repeat center;
-        background-size: 54/100rem;
+        background: url("../../images/icon_home_shouye_selected_new.png") no-repeat center;
+        background-size: 106/100rem;
       }
       &:nth-of-type(2) .icon1{
-        background: url("") no-repeat center;
-        background-size: 54/100rem;
+        background: url("../../images/icon_home_place_selected_new.png") no-repeat center;
+        background-size: 106/100rem;
       }
       &:nth-of-type(3) .icon1{
-        background: url("") no-repeat center;
-        background-size: 54/100rem;
+        background: url("../../images/icon_home_xingc_selected_new.png") no-repeat center;
+        background-size: 106/100rem;
       }
       &:nth-of-type(4) .icon1{
-        background: url("") no-repeat center;
-        background-size: 54/100rem;
+        background: url("../../images/icon_home_service_selected.png") no-repeat center;
+        background-size: 106/100rem;
       }
       &:last-of-type .icon1{
-        background: url("") no-repeat center;
-        background-size: 54/100rem;
+        background: url("../../images/icon_home_my_selected_new.png") no-repeat center;
+        background-size: 106/100rem;
       }
     }
   }
-
+}
+#boot{
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 9999;
+}
+#boot img{
+  width: 100%;
+  height:100%;
 }
