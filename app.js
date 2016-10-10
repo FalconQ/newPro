@@ -7,10 +7,13 @@ require.config({
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         $css: './libs/css',
+        index: './js/controllers/index',
+        router: './router',
         HomeController: './components/home/HomeController',
         MineController:'./components/mine/MineController',
-        index: './js/controllers/index',
-        router: './router'
+        SerController:'./components/serOrder/SerController',
+        BackController:'./components/orderBack/BackController',
+        PayController:'./components/pay/PayController'
     },
     shim:{
         angular: {
@@ -25,8 +28,18 @@ require.config({
 });
 
 
-require(['jquery','angular','index','ui-router','HomeController','MineController'],function (jquery,angular,index) {
-    index.index();
-    //手动加载模块
-    angular.bootstrap(document, ['webapp']);
+require(['jquery',
+        'angular',
+        'index',
+        'ui-router',
+        'HomeController',
+        'MineController',
+        'SerController',
+        'BackController',
+        'PayController'
+    ],
+    function (jquery,angular,index) {
+        index.index();
+        //手动加载模块
+        angular.bootstrap(document, ['webapp']);
 });

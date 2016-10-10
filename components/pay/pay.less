@@ -1,0 +1,177 @@
+.container_pay {
+  width: 100%;
+  position: relative;
+  z-index: 10000;
+  height: 100%;
+  background-color: #edf0f5;
+  header {
+    height: 89/100rem;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 89/100rem;
+    font-size: 34/100rem;
+    font-weight: normal;
+    position: relative;
+    .return {
+      width: 89/100rem;
+      height: 89/100rem;
+      background: url("../../images/serOrder/icon_navi_back_rest.png") no-repeat center;
+      background-size: 60/100rem;
+      position: absolute;
+      left: 10/100rem;
+      bottom: 0;
+    }
+  }
+  .order_info{
+    width: 100%;
+    height: 244/100rem;
+    background-color: #fff;
+    padding: 20/100rem 30/100rem 0;
+    box-sizing: border-box;
+    margin-bottom: 20/100rem;
+    table{
+      font-size: 28/100rem;
+      color: #333333;
+      tr{
+        height: 60/100rem;
+        &:first-of-type{
+          th{
+            vertical-align: top;
+          }
+        }
+        th{
+          width: 180/100rem;
+          color: #9f9f9f;
+        }
+        td{
+          width: 440/100rem;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .pay_list{
+    li{
+      height: 130/100rem;
+      background-color: #fff;
+      border-bottom: 1px solid #e4e4e4;
+      display: flex;
+      flex-direction: row;
+      &:first-of-type{
+        .pay_icon{
+          width: 140/100rem;
+          background: url("../../images/serOrder/IMG_2821_03.png") no-repeat center;
+          background-size: 110/100rem;
+        }
+      }
+      &:nth-of-type(2){
+        .pay_icon{
+          width: 140/100rem;
+          background: url("../../images/serOrder/IMG_2821_10.png") no-repeat center;
+          background-size: 110/100rem;
+        }
+      }
+      &:nth-of-type(3){
+        .pay_icon{
+          width: 140/100rem;
+          background: url("../../images/serOrder/IMG_2821_15.png") no-repeat center;
+          background-size: 110/100rem;
+        }
+      }
+      &:nth-of-type(4){
+        .pay_icon{
+          width: 140/100rem;
+          background: url("../../images/serOrder/IMG_2821_17.png") no-repeat center;
+          background-size: 110/100rem;
+        }
+      }
+      &:nth-of-type(5){
+        .pay_icon{
+          width: 140/100rem;
+          background: url("../../images/serOrder/IMG_2821_19.png") no-repeat center;
+          background-size: 110/100rem;
+        }
+      }
+      .pay_name{
+        flex-grow: 1;
+        p{
+          &:first-of-type{
+            font-size: 32/100rem;
+            color: #333333;
+            margin-top: 25/100rem;
+            margin-bottom: 10/100rem;
+            line-height: 100%;
+            position: relative;
+            span{
+              display: inline-block;
+              padding: 4/100rem 6/100rem;
+              border: 1px solid #ffa9a2;
+              box-sizing: border-box;
+              font-size: 18/100rem;
+              color: #ff594c;
+              margin-left: 10/100rem;
+              line-height: 100%;
+              position: absolute;
+
+            }
+          }
+          &:last-of-type{
+            color: #999999;
+            font-size: 24/100rem;
+          }
+        }
+      }
+      .pay_select{
+        width: 80/100rem;
+        label{
+          display: block;
+          width: 100%;
+          height: 100%;
+          input{
+            margin-left: -9999px;
+          }
+        }
+      }
+      .checked{
+        background: url("../../images/serOrder/IMG_2821_06.png") no-repeat left center;
+        background-size: 40/100rem;
+      }
+      .uncheck{
+        background: url("../../images/serOrder/IMG_2821_12.png") no-repeat left center;
+        background-size: 40/100rem;
+      }
+    }
+  }
+  .toPay{
+    height: 100/100rem;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    button{
+      width: 280/100rem;
+      height: 100%;
+      text-align: center;
+      line-height: 100/100rem;
+      background-color: #ff5346;
+      text-decoration: none;
+      color: #fff;
+      border: 0;
+    }
+    .amount{
+      flex-grow: 1;
+      line-height: 100/100rem;
+      padding-left: 22/100rem;
+      box-sizing: border-box;
+      font-size: 32/100rem;
+      color: #333333;
+      span{
+        color: #ff5346;
+      }
+    }
+  }
+}
