@@ -1,20 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="webapp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./css/reset.css"/>
-    <title>Title</title>
+    <link rel="stylesheet" href="./css/index.css/">
+    <title>同程旅游</title>
 </head>
 <body>
-    <div id="container"ui-view></div>
+    <div id="container" ui-view>
+
+    </div>
+    <!--底部导航菜单-->
     <div id="tabBar">
         <ul>
-            <li><a ui-sref="#/">/</a></li>
-            <li><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
+            <li>
+                <a ui-sref="home">
+                    <div class="icon1"></div>
+                    <h5>首页</h5>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="icon"></div>
+                    <h5>目的地</h5>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="icon"></div>
+                    <h5>行程</h5>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="icon"></div>
+                    <h5>服务</h5>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="icon"></div>
+                    <h5>我的</h5>
+                </a>
+            </li>
         </ul>
     </div>
 </body>
-<script src="./libs/require.js" data-main="app.js"></script>
+<script src="./libs/bower_components/requirejs/require.js" data-main="app.js"></script>
 </html>

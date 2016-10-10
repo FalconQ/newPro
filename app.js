@@ -2,13 +2,16 @@
  * Created by qiusheng on 2016/10/8.
  */
 require.config({
-    path: {
-        'jquery': './libs/jquery',
-        'angular': './libs/angular.min',
-        'ui-router': './libs/angular-ui-router'
+    paths: {
+        jquery: './libs/jquery',
+        angular: './libs/bower_components/angular/angular.min',
+        'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
+        HomeController: './components/home/HomeController',
+        index: './js/controllers/index',
+        router: './router'
     },
     shim:{
-        'angular': {
+        angular: {
             deps: ['jquery'],
             exports: 'angular'
         },
@@ -20,6 +23,8 @@ require.config({
 });
 
 
-require(['jquery','angular'],function ($,angular) {
+require(['jquery','angular','index','ui-router','HomeController'],function (jquery,angular,index) {
+    index.index();
+    //手动加载模块
     angular.bootstrap(document, ['webapp']);
 });
