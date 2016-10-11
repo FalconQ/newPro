@@ -11,6 +11,7 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
+<<<<<<< HEAD
                     .state('target', {
                         url: '/target',
                         templateUrl: './components/target/target.html',
@@ -22,6 +23,28 @@ define(['angular'],function (angular) {
                         controller: 'targat_positionController'
                     })
 
+=======
+                    .state('mine', {
+                        url: '/mine',
+                        templateUrl: './components/mine/mine.html',
+                        controller: 'MineController'
+                    })
+                    .state('serviceOrder', {
+                        url: '/serOrder',
+                        templateUrl: 'components/serOrder/service.html',
+                        controller: 'SerController'
+                    })
+                    .state('orderBack', {
+                        url: '/orderBack',
+                        templateUrl: 'components/orderBack/orderBack.html',
+                        controller: 'BackController'
+                    })
+                    .state('pay', {
+                        url: '/pay',
+                        templateUrl: 'components/pay/pay.html',
+                        controller: 'PayController'
+                    })
+>>>>>>> 2557bbde87ef29efe9d612a984086fec2194ab8b
 
             }]);
 

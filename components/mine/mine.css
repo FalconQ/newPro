@@ -1,0 +1,560 @@
+.mine{
+    height:100%;
+    background: #edf0f5;
+}
+.mine-header{
+    width:7.5rem;
+    height:3.7rem;
+    background: url("../../images/mine/bg_common_login_disable.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*头部顶部开始*/
+.mine-header .mine-header-top{
+    height:1.48rem;
+    width:100%;
+    display: flex;
+}
+.mine-header .mine-header-top .left, .mine-header .mine-header-top .right{
+    height:100%;
+    width:50%;
+    position: relative;
+}
+.mine-header .mine-header-top .scan{
+    height:0.4rem;
+    width:0.5rem;
+    background: url("../../images/mine/icon_navi_qrcode.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0.28rem;
+    top: 0.5rem;
+}
+.mine-header .mine-header-top .set {
+    width:0.5rem;
+    height:0.45rem;
+    background: url("../../images/mine/icon_btn_set_assistant_detail_rest.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+.mine-header .mine-header-top .message{
+    width:0.5rem;
+    height:0.45rem;
+    background: url("../../images/mine/icon_message_comment.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.5rem;
+}
+/*头部顶部结束*/
+
+/*头部中间开始*/
+.mine-header  .mine-header-center{
+    width:100%;
+    height:1.2rem;
+    display: flex;
+}
+.mine-header  .mine-header-center .left{
+    width:20%;
+    height:100%;
+}
+.mine-header  .mine-header-center .headPortrait{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url("../../images/mine/jNDStn_90x90_00.png") no-repeat;
+    background-size: 100%;
+    margin-left: 0.3rem;
+}
+
+.mine-header  .mine-header-center .center{
+    width:60%;
+    height:100%;
+    line-height: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mine-header  .mine-header-center h5{
+    height:50%;
+    line-height: 0.6rem;
+    font-size: 0.33rem;
+    color: white;
+    font-weight: normal;
+    padding-left: 0.3rem;
+}
+.mine-header  .mine-header-center span{
+    height:50%;
+    display: block;
+    width:1.47rem;
+    height:0.47rem;
+    background: url("../../images/mine/icon5.jpg") no-repeat;
+    background-size: 100%;
+    margin-left: 0.2rem;
+}
+.mine-header  .mine-header-center .right {
+    width: 20%;
+    height:100%;
+    position: relative;
+}
+.mine-header  .mine-header-center .arrow{
+    width:0.6rem;
+    height:0.6rem;
+    background: url("../../images/mine/arrow_list_common_white_right.png") no-repeat;
+    background-size: 50%;
+    position: absolute;
+    right: 5px;
+    top:20%;
+}
+/*头部中间结束*/
+
+/*头部底部开始*/
+.mine-header .mine-header-bottom{
+    width: 100%;
+    height:1.02rem;
+    display: flex;
+}
+.mine-header .mine-header-bottom .left{
+    width:50%;
+    height:100%;
+    line-height: 1.02rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mine-header .mine-header-bottom .bgIco{
+    display: inline-block;
+    width:0.48rem;
+    height:0.47rem;
+    background: url("../../images/mine/icon3.jpg") no-repeat;
+    background-size: 100%;
+    margin-top: 0.3rem;
+}
+.mine-header .mine-header-bottom p{
+    font-size: 0.32rem;
+    margin-left: 0.2rem;
+    color: white;
+    position: relative;
+}
+.mine-header .mine-header-bottom .spot:after{
+    display: inline-block;
+    content: "";
+    width:0.2rem;
+    height:0.2rem;
+    background: url("../../images/mine/icon_panic_buying_hotel_home_page_first.png")no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -0.3rem;
+    top:0.3rem;
+}
+.mine-header .mine-header-bottom .right{
+    width:50%;
+    height:100%;
+    line-height: 1.02rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.mine-header .mine-header-bottom .member{
+    display: inline-block;
+    width:0.42rem;
+    height:0.40rem;
+    background: url("../../images/mine/icon4.jpg") no-repeat;
+    background-size: 100%;
+    margin-top: 0.3rem;
+}
+/*头部底部结束*/
+
+/*banner开始*/
+.mine-banner{
+    height:1.3rem;
+    width:7.5rem;
+    margin-bottom: 0.25rem;
+    background: white;
+}
+.mine-banner ul{
+    display: flex;
+}
+.mine-banner ul li{
+    width:20%;
+    height:1.3rem;
+}
+.mine-banner ul li a{
+    display: block;
+    width:100%;
+    height:100%;
+    line-height: 1.3rem;
+}
+
+.mine-banner ul li a p{
+    font-size: 0.24rem;
+    height:0.7rem;
+    width:100%;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.mine-banner ul li a div{
+    width:100%;
+    height:0.6rem;
+}
+
+.mine-banner ul .order{
+    background: url("../../images/mine/item_03.png") no-repeat center;
+    background-size: 0.8rem 100%;
+}
+.mine-banner ul .pay{
+    background: url("../../images/mine/item11_11.png") no-repeat center;
+    background-size: 0.8rem 100%;
+}
+.mine-banner ul .travel{
+    background: url("../../images/mine/item_08.png") no-repeat center;
+    background-size: 0.8rem 100%;
+}
+.mine-banner ul .comment{
+    background: url("../../images/mine/item_12.png") no-repeat center;
+    background-size: 0.8rem 100%;
+}
+.mine-banner ul .refund{
+    background: url("../../images/mine/item_15.png") no-repeat center;
+    background-size: 0.8rem 100%;
+}
+/*banner结束*/
+
+/*nav开始*/
+.mine-nav{
+    background: white;
+    width:7.5rem;
+    height:1.9rem;
+    margin-bottom: 0.24rem;
+}
+.mine-nav .mine-nav-top{
+    height:0.76rem;
+    width:7.5rem;
+    display: flex;
+}
+.mine-nav .mine-nav-top .left{
+    width:80%;
+    height:100%;
+}
+.mine-nav .mine-nav-top h2{
+    font-size: 0.3rem;
+    line-height: 0.76rem;
+    padding-left: 0.2rem;
+}
+.mine-nav .mine-nav-top .right{
+    width:20%;
+    height:100%;
+    position: relative;
+}
+.mine-nav .mine-nav-top .bgimg{
+    display: block;
+    height:50%;
+    width:30%;
+    background: url("../../images/mine/arrow_calendar_right_assistant.png") no-repeat;
+    background-size: 50%;
+    position: absolute;
+    right: 0rem;
+    top:30%;
+}
+
+.mine-nav  .mine-nav-bottom{
+    width:7.5rem;
+    height:1.14rem;
+}
+.mine-nav  .mine-nav-bottom ul {
+    width:7.5rem;
+    height:1.14rem;
+    display: flex;
+}
+.mine-nav  .mine-nav-bottom ul li{
+    width:25%;
+    height:1.14rem;
+}
+.mine-nav  .mine-nav-bottom a{
+    display: block;
+    width:100%;
+    height:1.14rem;
+    text-align: center;
+    line-height:0.5rem ;
+    position: relative;
+}
+.mine-nav  .mine-nav-bottom a:after{
+    display: block;
+    content: "";
+    width:0.02rem;
+    height:0.6rem;
+    background: url("../../images/mine/item22.jpg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left:1.88rem;
+    top:0.24rem;
+}
+/*nav结束*/
+
+/*content开始*/
+.mine-content{
+    width:7.5rem;
+    height:4.4rem;
+    background: white;
+    margin-bottom: 0.24rem;
+}
+.mine-content ul{
+    width:7.5rem;
+    height:4.4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mine-content ul li{
+    width:7.5rem;
+    height:20%;
+}
+.mine-content ul li a{
+    width:7.5rem;
+    height:100%;
+    display: flex;
+}
+.mine-content ul .icon{
+    width:0.9rem;
+    height:100%;
+    text-align: center;
+    line-height:1.1rem ;
+}
+.mine-content .icon .imgOne{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/info_03.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-content .icon .imgTwo{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/info_06.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-content .icon .imgThree{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/info_08.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-content .icon .imgFour{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/info_10.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-content .icon .imgFive{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/info_12.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-content ul .info{
+    width:5.7rem;
+    height:100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+.mine-content ul li p{
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.mine-content ul .btn{
+    width:0.9rem;
+    height:100%;
+    text-align: center;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.mine-content  .btn span{
+    display: inline-block;
+    width:0.18rem;
+    height:0.32rem;
+    background: url("../../images/mine/arrow_calendar_right_assistant_disbale.png") no-repeat;
+    background-size: 100%;
+}
+/*content结束*/
+
+/*contentTwo开始*/
+.mine-contentTwo{
+    width:7.5rem;
+    height:3.5rem;
+    background: white;
+    margin-bottom: 0.24rem;
+}
+.mine-contentTwo ul{
+    width:7.5rem;
+    height:3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mine-contentTwo ul li{
+    width:7.5rem;
+    height:25%;
+}
+.mine-contentTwo ul li a{
+    width:7.5rem;
+    height:100%;
+    display: flex;
+}
+.mine-contentTwo ul .icon{
+    width:0.9rem;
+    height:100%;
+    text-align: center;
+    line-height:1.1rem ;
+}
+.mine-contentTwo .icon .imgOne{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/min_03.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-contentTwo .icon .imgTwo{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/min_06.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-contentTwo .icon .imgThree{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/min_08.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-contentTwo .icon .imgFour{
+    display: inline-block;
+    height:0.37rem;
+    width:0.37rem;
+    background: url("../../images/mine/min_10.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.mine-contentTwo ul .info{
+    width:5.7rem;
+    height:100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+.mine-contentTwo ul li p{
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.mine-contentTwo ul .btn{
+    width:0.9rem;
+    height:100%;
+    text-align: center;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.mine-contentTwo  .btn span{
+    display: inline-block;
+    width:0.18rem;
+    height:0.32rem;
+    background: url("../../images/mine/arrow_calendar_right_assistant_disbale.png") no-repeat;
+    background-size: 100%;
+}
+/*contentTwo结束*/
+
+/*footer开始*/
+.mine-footer{
+    width:7.5rem;
+    /*height:4.9rem;*/
+    height:6rem;
+    background: white;
+}
+.mine-footer .mine-footer-header{
+    width:7.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+}
+.mine-footer .mine-footer-header h2{
+    font-size: 0.3rem;
+    color: black;
+    padding-left: 0.3rem;
+}
+.mine-footer .mine-footer-bottom{
+    width:30rem;
+    height:4.3rem;
+}
+.mine-footer .mine-footer-bottom .mine-footer-swiper{
+    width:7.5rem;
+    height:3.65rem;
+    margin-top: 0.16rem;
+    float: left;
+}
+.mine-footer .mine-footer-swiper .contain{
+    margin-left: 0.4rem;
+    width:6.6rem;
+    height:3.6rem;
+    display: flex;
+}
+.mine-footer-swiper .contain div:nth-of-type(2){
+    padding-left: 0.3rem;
+}
+.mine-footer .mine-footer-swiper .infos{
+    width:3.2rem;
+    height:3.65rem;
+    border: 1px solid #f9f9f9;
+}
+.mine-footer-swiper .infos .img1{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper_03.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img2{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper_05.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .introduct{
+    margin-left: -0.4rem;
+    height:1.35rem;
+    width:3.2rem;
+}
+.mine-footer-swiper .infos .scenery{
+    width:3.2rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+}
+.infos .scenery p{
+    font-size: 0.2rem;
+    padding-left: 0.3rem;
+}
+.mine-footer-swiper .infos .price{
+    width:3.2rem;
+    height:0.55rem;
+    font-size: 0.2rem;
+    display: flex;
+    line-height: 0.55rem;
+    margin-left: -0.2rem;
+}
+.infos .price p{
+    padding-left: 0.4rem;
+}
+.mine-footer .mine-footer-bottom .dot{
+    clear: both;
+    width:6.6rem;
+    height:0.5rem;
+    margin-left: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mine-footer-bottom .dot ul{
+    width:1.3rem;
+    height:0.5rem;
+    display: flex;
+}
+.mine-footer-bottom .dot ul li{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: red;
+}
