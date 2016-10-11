@@ -42,11 +42,6 @@ define(['angular'],function (angular) {
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
                     })
-                    .state('mine', {
-                        url: '/mine',
-                        templateUrl: './components/mine/mine.html',
-                        controller: 'MineController'
-                    })
                     .state('serviceOrder', {
                         url: '/serOrder',
                         templateUrl: 'components/serOrder/service.html',
