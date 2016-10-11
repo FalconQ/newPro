@@ -1,0 +1,78 @@
+.targat_position{
+    width: 7.5rem;
+
+}
+.targat_position .modl_PositionTop {
+    height: 0.9rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-family: "微软雅黑";
+    color: black;
+    line-height: 0.9rem;
+
+}
+.targat_position .modl_PositionTop img{
+    width: 0.49rem;
+    height: 0.53rem;
+    float: left;
+    margin-top:0.2rem;
+    margin-left: 0.2rem;
+}
+.targat_position .modl_PositionTop img:last-child{
+    float: right;
+    margin-right: 0.2rem;
+
+}
+.targat_position .modl_PositionNav{
+    position: relative;
+    height:0.86rem;
+    line-height: 0.86rem;
+    font-size: 0.3rem;
+    color: black;
+}
+.targat_position .modl_PositionNav .PositionUl{
+
+    width: 6.63rem;
+    overflow: hidden;
+}
+.targat_position .modl_PositionNav ul {
+    width:12.3rem;
+    overflow:hidden;
+
+    /*清除浮动*/
+
+
+}
+.targat_position .modl_PositionNav ul li {
+    float: left;
+}
+.targat_position .modl_PositionNav ul li {
+    padding: 0 0.21rem;
+
+}
+.targat_position .modl_PositionNav ul li:nth-of-type(1){
+    border-bottom: 0.05rem solid #23beae;
+}
+.targat_position .modl_PositionNav span{
+    border-left: 0.04rem solid #e4e4e4;
+    position: absolute;
+    right: 0px;
+    width: 0.8rem;
+    height: 0.4rem;
+    top:10px;
+    text-align: center;
+    line-height: 0.4rem;
+
+}
+.targat_position .modl_PositionNav img{
+    width:0.35rem ;
+    height:0.35rem ;
+    vertical-align: middle;
+}
+.targat_position .modl_PositionMain {
+     width: 100%;
+
+}
+.targat_position .modl_PositionMain dl{
+
+}

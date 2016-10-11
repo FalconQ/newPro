@@ -1,0 +1,291 @@
+
+.modlTargat_top{
+    z-index: 3;
+   position: fixed;
+    top: 0px;
+    width: 7.5rem;
+    height: 0.98rem;
+    background: white;
+    font-size: .3rem;
+}
+.modlTargat_top input{
+    width: 5.8rem;
+    height: .65rem;
+    border-radius: .5rem;
+    margin-left: .55rem;
+    border: none;
+    margin-top: 0.03rem;
+    text-align: center;
+    color: black;
+    background: #d8dce2 url("img/sou_sou.png") no-repeat;
+    background-size: contain;
+}
+.modlTargat_top img {
+width: .54rem;
+height: .54rem;
+margin-left: .4rem;
+margin-top: .1rem;
+}
+.modlTargat_mian{
+   width: 7.5rem;
+   position: absolute;
+
+}
+.modlTargat_left {
+    height:11.4rem;
+    float: left;
+    position: fixed;
+    left: 0px;
+    top: 0.98rem;
+}
+
+.modlTargat_left ul{
+    width: 1.38rem;
+    height:11.3rem;
+    background: #edf0f5;
+    /*border: 1px solid red ;*/
+    overflow: scroll;
+
+}
+.modlTargat_left ul li {
+    width: 100%;
+    height:1.04rem;
+    font-size: 0.28rem;
+    color: black;
+    text-align: center;
+    line-height: 1rem;
+
+}
+.modlTargat_rigth{
+    width: 5.72rem;
+    margin-left: 1.62rem;
+    margin-top:0.98rem ;
+
+}
+#targetBanner{
+   width: 100%;
+   height:1.8rem ;
+}
+#targetBanner img {
+    width: 100%;
+    height: 100%;
+ }
+.modlTargat_rigth .page_1 h4{
+    width: 100%;
+    height: 0.9rem;
+    font-size: 0.26rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: #ff4614;
+    text-align: center;
+    line-height: 1.1rem;
+
+}
+.modlTargat_rigth .page_1  h4  img{
+     width: 0.26rem;
+    height: 0.26rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.modlTargat_rigth .page_1 ul  li  div{
+     width: 5.71rem;
+     height: 2.28rem;
+    background: url("img/you_1.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height:2.28rem;
+    color: white;
+    font-size: 0.35rem;
+    border: 1px solid white;
+}
+.modlTargat_rigth  .page_1 ul  li  div img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+
+}
+.modlTargat_rigth .page_1  ul  li p{
+    height: 0.78rem;
+    line-height: 0.78rem;
+
+}
+.modlTargat_rigth  .page_1 ul  li p span img{
+     width:0.28rem ;
+    vertical-align: top;
+    margin: 0.22rem 0.05rem;
+}
+
+.modlTargat_rigth  .page_2 h2{
+    width: 100%;
+    height:0.78rem;
+    font-size: 0.24rem;
+    color: #666666;
+    line-height: 0.78rem;
+}
+.modlTargat_rigth .page_2 h2:before{
+
+    content:"";
+    display: inline-block;
+    height:0.24rem ;
+    width: 0.07rem;
+    background:#ff5346;
+    margin-right: 0.1rem;
+}
+.modlTargat_rigth .page_2 .hot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+}
+.modlTargat_rigth .page_2 .main_hot{
+
+    width: 2.8rem;
+    margin-bottom: 0.1rem;
+
+}
+.modlTargat_rigth .page_2 .main_hot .topImg{
+    width: 2.7rem;
+    height:2.36rem;
+    text-align: center;
+    position: relative;
+
+}
+.modlTargat_rigth .page_2 .main_hot .topImg span{
+    line-height: 0.31rem;
+    font-size:0.14rem ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 1rem;
+    height: 0.31rem;
+    background: url("img/poi_map_jiaobiao.png") no-repeat;
+    background-size:cover;
+    color: white;
+}
+.modlTargat_rigth .page_2 .main_hot .topImg{
+    padding-top: 0.3rem;
+    width: 2.81rem;
+    height: 1.96rem;
+    background: url("img/page_img.png") no-repeat;
+    background-size:  2.8rem 1.96rem;
+    color: white;
+;
+}
+.modlTargat_rigth .page_2 .main_hot .topImg h3{
+  font-family: "微软雅黑";
+  font-size: 0.3rem;
+
+}
+.modlTargat_rigth .page_2 .main_hot .topImg p{
+    font-size: 0.2rem;
+
+}
+.modlTargat_rigth .page_2 .main_hot .bottmWeather{
+
+    height: 0.4rem;
+    width: 100%;
+
+}
+.modlTargat_rigth .page_2 .main_hot .bottmWeather span{
+    border: 0.01rem  solid #f8b2b2;
+    color:#f8b2b2;
+    float: right;
+    font-size: 0.1rem;
+    margin-left: 0.1rem;
+
+
+
+}
+
+.modlTargat_rigth .page_2 .main_hot .bottmWeather a{
+    color: black;
+
+}
+.modlTargat_rigth .page_2 .main_hot .bottmWeather img {
+    width: 0.3rem;
+    height: 0.3rem;
+
+}
+.modlTargat_rigth .main_nearby{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.modlTargat_rigth .main_nearby div{
+    width: 1.8rem;
+    height: 0.8rem;
+    border: 0.01px solid #cecece;
+    border-radius: 0.08rem ;
+    text-align: center;
+    line-height: 0.8rem;
+    margin-bottom: 0.33rem;
+    position: relative;
+
+
+
+}
+.modlTargat_rigth .main_nearby div span{
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.4rem;
+    position: absolute;
+    background:  white url("img/rennqi.png") no-repeat;
+    background-size: contain;
+    top: -0.2rem;
+    right:0rem;
+
+}
+.main_hotbuy{
+
+}
+.main_hotbuy ul {
+    width: 100%
+}
+.main_hotbuy ul  li {
+    border-radius: 0.08rem;
+    margin-bottom: 0.78rem;
+    position: relative;
+    height: 2.34rem;
+    width: 100%;
+    background: url("img/hot_1.png") no-repeat;
+    background-size: contain;
+    color: white;
+
+}
+.main_hotbuy ul  li span:first-child{
+    text-align: center;
+    line-height: 0.35rem;
+     display:inline-block;
+    width: 0.6rem;
+    height: 0.35rem;
+    background: rgba(60,60,60,0.8);
+    font-size: 0.02rem;
+    border-radius: 0.02rem;
+    margin: 0.23rem 0.2rem;
+}
+.main_hotbuy ul  li p{
+    text-indent: 0.1rem;
+    width:4.5rem;
+    height:0.4rem;
+    font-size: 0.25rem;
+    margin-top: 0.86rem;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main_hotbuy ul  li span:last-child{
+    background: #ff5346;
+    height: 0.5rem;
+    width: 1rem;
+    text-align: center;
+    line-height: 0.5rem;
+    position:absolute;
+    bottom: 10px;
+    right: 0px;
+
+}

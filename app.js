@@ -8,6 +8,10 @@ require.config({
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         $css: './libs/css',
         HomeController: './components/home/HomeController',
+        targetController: './components/target/targetController',
+        targat_positionController: './components/targat_position/targat_positionController',
+
+
         TripController:'./components/trip/TripController',
         DestController:'./components/trip_destination/DestController',
         ClassicController:'./components/trip_classic/ClassicController',
@@ -41,6 +45,8 @@ require(['jquery',
         'SerController',
         'BackController',
         'PayController',
+        "targetController",
+        "targat_positionController",
         'TripController',
         'ClassicController',
         'DestController'

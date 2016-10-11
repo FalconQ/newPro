@@ -12,7 +12,24 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
-                        .state('trip', {
+
+
+                    .state('target', {
+                        url: '/target',
+                        templateUrl: './components/target/target.html',
+                        controller: 'targetController'
+                    })
+                    .state('targat_position', {
+                        url: '/targat_position',
+                        templateUrl: './components/targat_position/targat_position.html',
+                        controller: 'targat_positionController'
+                    })
+                    .state('mine', {
+                        url: '/mine',
+                        templateUrl: './components/mine/mine.html',
+                        controller: 'MineController'
+                    })
+                    .state('trip', {
                         url: '/trip',
                         templateUrl: './components/trip/trip.html',
                         controller: 'TripController'
@@ -27,11 +44,7 @@ define(['angular'],function (angular) {
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
                     })
-                            .state('mine', {
-                                url: '/mine',
-                                templateUrl: './components/mine/mine.html',
-                                controller: 'MineController'
-                            })
+
                             .state('serviceOrder', {
                                 url: '/serOrder',
                                 templateUrl: 'components/serOrder/service.html',
@@ -50,4 +63,6 @@ define(['angular'],function (angular) {
 
                     }]);
 
-});
+
+
+})
