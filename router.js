@@ -12,8 +12,6 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
-
-
                     .state('target', {
                         url: '/target',
                         templateUrl: './components/target/target.html',
@@ -44,25 +42,24 @@ define(['angular'],function (angular) {
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
                     })
+                    .state('serviceOrder', {
+                        url: '/serOrder',
+                        templateUrl: 'components/serOrder/service.html',
+                        controller: 'SerController'
+                    })
+                    .state('orderBack', {
+                        url: '/orderBack',
+                        templateUrl: 'components/orderBack/orderBack.html',
+                        controller: 'BackController'
+                    })
+                    .state('pay', {
+                        url: '/pay',
+                        templateUrl: 'components/pay/pay.html',
+                        controller: 'PayController'
+                    })
 
-                            .state('serviceOrder', {
-                                url: '/serOrder',
-                                templateUrl: 'components/serOrder/service.html',
-                                controller: 'SerController'
-                            })
-                            .state('orderBack', {
-                                url: '/orderBack',
-                                templateUrl: 'components/orderBack/orderBack.html',
-                                controller: 'BackController'
-                            })
-                            .state('pay', {
-                                url: '/pay',
-                                templateUrl: 'components/pay/pay.html',
-                                controller: 'PayController'
-                            })
-
-                    }]);
-
+                }]);
 
 
-})
+
+});

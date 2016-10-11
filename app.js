@@ -10,8 +10,6 @@ require.config({
         HomeController: './components/home/HomeController',
         targetController: './components/target/targetController',
         targat_positionController: './components/targat_position/targat_positionController',
-
-
         TripController:'./components/trip/TripController',
         DestController:'./components/trip_destination/DestController',
         ClassicController:'./components/trip_classic/ClassicController',
