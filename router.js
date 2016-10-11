@@ -27,6 +27,31 @@ define(['angular'],function (angular) {
                         templateUrl: './components/mine/mine.html',
                         controller: 'MineController'
                     })
+                    .state('mineOrder', {
+                        url: '/mineOrder',
+                        templateUrl: './components/mineOrder/mineOrder.html',
+                        controller: 'MineOrderController'
+                    })
+                    .state('information', {
+                        url: '/information',
+                        templateUrl: './components/information/information.html',
+                        controller: 'InformationController'
+                    })
+                    .state('information_tourists', {
+                        url: '/information_tourists',
+                        templateUrl: './components/information_tourists/information_tourists.html',
+                        controller: 'TouristsController'
+                    })
+                    .state('addPeople', {
+                        url: '/addPeople',
+                        templateUrl: './components/addPeople/addPeople.html',
+                        constroller: 'PeopleController'
+                    })
+                    .state('changePeople', {
+                        url: '/changePeople',
+                        templateUrl: './components/changePeople/changePeople.html',
+                        constroller: 'ChangeController'
+                    })
                     .state('trip', {
                         url: '/trip',
                         templateUrl: './components/trip/trip.html',
@@ -57,11 +82,22 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
+
                     .state('C_order', {
                         url: '/C_order',
                         templateUrl: 'components/C_order/C_order.html',
                         controller: 'C_orderController'
                     })
 
-                    }])
-})
+                    .state('proDetail', {
+                        url: '/proDetail',
+                        templateUrl: 'components/proDetail/proDetail.html',
+                        controller: 'ProDetailController'
+                    })
+
+                }]);
+
+
+
+
+});
