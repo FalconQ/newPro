@@ -42,8 +42,8 @@ require(['jquery',
         'BackController',
         'PayController',
         'TripController',
-        'trip_classic',
-        'trip_destination'
+        'ClassicController',
+        'DestController'
     ],
     function (jquery,angular,index) {
         index.index();
