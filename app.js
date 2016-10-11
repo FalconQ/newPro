@@ -17,6 +17,7 @@ require.config({
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
         PayController:'./components/pay/PayController',
+        ProDetailController: './components/proDetail/ProDetailController',
         index: './js/controllers/index',
         router: './router'
 
@@ -47,7 +48,8 @@ require(['jquery',
         "targat_positionController",
         'TripController',
         'ClassicController',
-        'DestController'
+        'DestController',
+        'ProDetailController'
     ],
     function (jquery,angular,index) {
         index.index();
