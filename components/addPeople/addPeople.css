@@ -1,3 +1,16 @@
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
 .addPeople{
     background: #edf0f5;
     height:100%;
@@ -45,11 +58,6 @@
     line-height: 1.15rem;
     text-align: center;
 }
-/*.addPeople-header .right span{*/
-    /*font-size: 0.3rem;*/
-    /*color: #23beae;*/
-/*}*/
-
 .addPeople .addPeople-info{
     width:7.5rem;
     height:1.8rem;
