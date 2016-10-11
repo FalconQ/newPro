@@ -82,6 +82,14 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
+                    .state('proDetail', {
+                        url: '/proDetail',
+                        templateUrl: 'components/proDetail/proDetail.html',
+                        controller: 'ProDetailController'
+                    })
 
-                    }])
-})
+                }]);
+
+
+
+});
