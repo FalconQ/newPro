@@ -47,6 +47,6 @@ define(['angular'],function (angular) {
                                 controller: 'PayController'
                             })
 
-                    }]);
+                    })}]);
 
 });
