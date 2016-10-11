@@ -13,7 +13,8 @@ require.config({
         MineController:'./components/mine/MineController',
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
-        PayController:'./components/pay/PayController'
+        PayController:'./components/pay/PayController',
+        SeckillController:'./components/seckill/SeckillController'
     },
     shim:{
         angular: {
@@ -36,7 +37,8 @@ require(['jquery',
         'MineController',
         'SerController',
         'BackController',
-        'PayController'
+        'PayController',
+        'SeckillController'
     ],
     function (jquery,angular,index) {
         index.index();

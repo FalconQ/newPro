@@ -31,6 +31,12 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
+                    .state('seckill', {
+                        url: '/seckill',
+                        templateUrl: 'components/seckill/seckill.html',
+                        controller: 'SeckillController'
+                    })
+
 
             }]);
 
