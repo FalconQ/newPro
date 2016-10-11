@@ -49,8 +49,8 @@ require(['jquery',
         "targetController",
         "targat_positionController",
         'TripController',
-        'trip_classic',
-        'trip_destination'
+        'DestController',
+        'ClassicController'
     ],
     function (jquery,angular,index) {
         index.index();
