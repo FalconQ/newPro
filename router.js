@@ -82,13 +82,6 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
-
-                    .state('C_order', {
-                        url: '/C_order',
-                        templateUrl: 'components/C_order/C_order.html',
-                        controller: 'C_orderController'
-                    })
-
                     .state('proDetail', {
                         url: '/proDetail',
                         templateUrl: 'components/proDetail/proDetail.html',
@@ -105,11 +98,7 @@ define(['angular'],function (angular) {
                                 templateUrl: 'components/orderBack/orderBack.html',
                                 controller: 'BackController'
                             })
-                            .state('pay', {
-                                url: '/pay',
-                                templateUrl: 'components/pay/pay.html',
-                                controller: 'PayController'
-                            })
+
                             .state('dataSelect', {
                                 url: '/dataSelect',
                                 templateUrl: 'components/dataSelect/dataSelect.html',
@@ -124,6 +113,11 @@ define(['angular'],function (angular) {
                         url: '/orderInfo',
                         templateUrl: 'components/orderInfo/orderInfo.html',
                         controller: 'orderInfoController'
+                    })
+                    .state('seckill', {
+                        url: '/seckill',
+                        templateUrl: 'components/seckill/seckill.html',
+                        controller: 'SeckillController'
                     })
                 }]);
 

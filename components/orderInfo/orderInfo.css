@@ -172,7 +172,7 @@
     bottom: 0;
     background: #fff;
     border-top:0.01rem solid #e5e5e5;
-    display: block;
+    display: none;
 }
 .shengqing .result{
     width: 2.6rem;
@@ -195,5 +195,5 @@
     color: #fff;
 }
 #tabBar{
-    display: none;
+    display: block;
 }

@@ -6,66 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65a972f-d571-4d4a-aae0-eeb8895ab941" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/benefit1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/sanjiao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/wen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/img/xuanzhe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/targat_position/img/position_mian1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/IMG_2824_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/IMG_2824_05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/arrow_calendar_right_assistant_disbale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/arrow_filter_down_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/btn_editnote_where.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/downarrow_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/icon_abroad_order.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/icon_addpassenger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/icon_edit_travelerinformation_common.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/icon_navi_contacts_rest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/item_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/item_06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mineOrder/item_08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/aliwx_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/gcLRtM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_indicator_scenery_detail_dt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_navi_back_rest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_navi_detail_message_active_rest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_order_cruise_hui_rest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prodetail/icon_you.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/tongcheng.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/C_order.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/C_order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/C_order/C_orderController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/addPeople/PeopleController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/addPeople/addPeople.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/addPeople/addPeople.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/changePeople/ChangeController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/changePeople/changePeople.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/changePeople/changePeople.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information/InformationController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information/information.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information/information.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information_tourists/TouristsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information_tourists/information_tourists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/information_tourists/information_tourists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/mineOrder/MineOrderController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/mineOrder/mineOrder.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/mineOrder/mineOrder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/proDetail/ProDetailController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/proDetail/proDetail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/proDetail/proDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/proDetail/proDetail.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/mine/mine.css" afterPath="$PROJECT_DIR$/components/mine/mine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/mine/mine.html" afterPath="$PROJECT_DIR$/components/mine/mine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/targat_position/targat_position.css" afterPath="$PROJECT_DIR$/components/targat_position/targat_position.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/targat_position/targat_position.html" afterPath="$PROJECT_DIR$/components/targat_position/targat_position.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/target/target.css" afterPath="$PROJECT_DIR$/components/target/target.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/home/home.css" afterPath="$PROJECT_DIR$/components/home/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/home/home.html" afterPath="$PROJECT_DIR$/components/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/orderInfo/orderInfo.css" afterPath="$PROJECT_DIR$/components/orderInfo/orderInfo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/seckill/seckill.html" afterPath="$PROJECT_DIR$/components/seckill/seckill.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
     </list>
@@ -91,8 +38,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44558823">
-              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.23235294">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/orderInfo/orderInfo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.8611112">
+              <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -102,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+              <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -111,8 +68,28 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="21.6">
+              <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submitController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/submitSuccess/submitController.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submitSuccess.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/submitSuccess/submitSuccess.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,9 +126,10 @@
         <option value="$PROJECT_DIR$/components/target/target.css" />
         <option value="$PROJECT_DIR$/components/targat_position/targat_position.html" />
         <option value="$PROJECT_DIR$/components/targat_position/targat_position.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/components/orderInfo/orderInfo.css" />
       </list>
     </option>
   </component>
@@ -205,6 +183,66 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="tongchtongcheng3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="submitSuccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tongchtongcheng3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orderInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -293,7 +331,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27883396" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12103929" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -310,6 +348,24 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12103929" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5068493" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -609,26 +665,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/submitSuccess/submitController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/submitSuccess/submitSuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state vertical-scroll-proportion="21.6">
+          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/orderInfo/orderInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8611112">
+          <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44558823">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.23235294">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding />
         </state>
       </provider>

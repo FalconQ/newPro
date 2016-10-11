@@ -27,6 +27,7 @@ require.config({
         submitController:'./components/submitSuccess/submitController',
         orderInfoController:'./components/orderInfo/orderInfoController',
         ProDetailController: './components/proDetail/ProDetailController',
+        SeckillController:'./components/seckill/SeckillController',
         index: './js/controllers/index',
         router: './router'
 
@@ -50,6 +51,7 @@ require(['jquery',
         'ui-router',
         'HomeController',
         'MineController',
+        'SeckillController',
         'MineOrderController',
         'InformationController',
         'TouristsController',
@@ -68,7 +70,6 @@ require(['jquery',
         'orderInfoController',
         'C_orderController',
         'ClassicController',
-
         'ProDetailController'
     ],
     function (jquery,angular,index) {

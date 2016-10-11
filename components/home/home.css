@@ -89,6 +89,7 @@
     height:7.16rem;
     margin-left: 0.1rem;
     background-color: #fff;
+    color:#000;
 }
 #home_box .home_main .home_main_fir .home_main_fir_1{
     width: 7.29rem;
@@ -169,6 +170,9 @@
     height:2.91rem;
     background-color: #fff;
 }
+#home_box .home_limitshop .home_limitshop_fir .home_limitshop_fir_a{
+    color:#000;
+}
 #home_box .home_limitshop .home_limitshop_sec{
     width: 7.5rem;
     height: 1.46rem;
@@ -207,6 +211,7 @@
 #home_box .home_advertise{
     width: 7.5rem;
     height: 1.79rem;
+    margin-bottom: 1rem;
 }
 #home_box .home_advertise .home_advertise_img{
     width: 7.5rem;
