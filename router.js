@@ -3,7 +3,8 @@
  */
 define(['angular'],function (angular) {
     return angular.module('webapp',['ui.router'])
-            .config(['$stateProvider','$urlRouterProvider', function ($stateProvider,$urlRouterProvider) {
+            .config(['$stateProvider','$urlRouterProvider',
+                function ($stateProvider,$urlRouterProvider) {
                 $urlRouterProvider.otherwise('/');
                 $stateProvider
                     .state('home', {
@@ -25,8 +26,27 @@ define(['angular'],function (angular) {
                         url: '/trip_classic',
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
-                    })
+                            .state('mine', {
+                                url: '/mine',
+                                templateUrl: './components/mine/mine.html',
+                                controller: 'MineController'
+                            })
+                            .state('serviceOrder', {
+                                url: '/serOrder',
+                                templateUrl: 'components/serOrder/service.html',
+                                controller: 'SerController'
+                            })
+                            .state('orderBack', {
+                                url: '/orderBack',
+                                templateUrl: 'components/orderBack/orderBack.html',
+                                controller: 'BackController'
+                            })
+                            .state('pay', {
+                                url: '/pay',
+                                templateUrl: 'components/pay/pay.html',
+                                controller: 'PayController'
+                            })
 
-            }]);
+                    }]);
 
 });
