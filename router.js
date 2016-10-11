@@ -60,6 +60,21 @@ define(['angular'],function (angular) {
                                 templateUrl: 'components/pay/pay.html',
                                 controller: 'PayController'
                             })
+                            .state('dataSelect', {
+                                url: '/dataSelect',
+                                templateUrl: 'components/dataSelect/dataSelect.html',
+                                controller: 'DataSelectController'
+                            })
+                            .state('C_order', {
+                                url: '/submitSuccess',
+                                templateUrl: 'components/submitSuccess/submitSuccess.html',
+                                controller: 'submitController'
+                            })
+                    .state('orderInfo', {
+                        url: '/orderInfo',
+                        templateUrl: 'components/orderInfo/orderInfo.html',
+                        controller: 'orderInfoController'
+                    })
 
                     }]);
 

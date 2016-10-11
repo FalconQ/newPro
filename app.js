@@ -10,8 +10,6 @@ require.config({
         HomeController: './components/home/HomeController',
         targetController: './components/target/targetController',
         targat_positionController: './components/targat_position/targat_positionController',
-
-
         TripController:'./components/trip/TripController',
         DestController:'./components/trip_destination/DestController',
         ClassicController:'./components/trip_classic/ClassicController',
@@ -19,6 +17,9 @@ require.config({
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
         PayController:'./components/pay/PayController',
+        DataSelectController:'./components/dataSelect/DataSelectController',
+        submitController:'./components/submitSuccess/submitController',
+        orderInfoController:'./components/orderInfo/orderInfoController',
         index: './js/controllers/index',
         router: './router'
 
@@ -49,7 +50,10 @@ require(['jquery',
         "targat_positionController",
         'TripController',
         'ClassicController',
-        'DestController'
+        'DestController',
+        'DataSelectController',
+        'submitController',
+        'orderInfoController'
     ],
     function (jquery,angular,index) {
         index.index();
