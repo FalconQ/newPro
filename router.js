@@ -95,35 +95,20 @@ define(['angular'],function (angular) {
                         controller: 'ProDetailController'
                     })
 
-                            .state('serviceOrder', {
-                                url: '/serOrder',
-                                templateUrl: 'components/serOrder/service.html',
-                                controller: 'SerController'
-                            })
-                            .state('orderBack', {
-                                url: '/orderBack',
-                                templateUrl: 'components/orderBack/orderBack.html',
-                                controller: 'BackController'
-                            })
-                            .state('pay', {
-                                url: '/pay',
-                                templateUrl: 'components/pay/pay.html',
-                                controller: 'PayController'
-                            })
-                            .state('dataSelect', {
-                                url: '/dataSelect',
-                                templateUrl: 'components/dataSelect/dataSelect.html',
-                                controller: 'DataSelectController'
-                            })
-                            .state('C_order', {
-                                url: '/submitSuccess',
-                                templateUrl: 'components/submitSuccess/submitSuccess.html',
-                                controller: 'submitController'
-                            })
+                    .state('dataSelect', {
+                        url: '/dataSelect',
+                        templateUrl: 'components/dataSelect/dataSelect.html',
+                        controller: 'DataSelectController'
+                    })
                     .state('orderInfo', {
                         url: '/orderInfo',
                         templateUrl: 'components/orderInfo/orderInfo.html',
                         controller: 'orderInfoController'
+                    })
+                    .state('submitSuccess', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'SubmitSuccessController'
                     })
                 }]);
 
