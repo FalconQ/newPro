@@ -26,6 +26,7 @@ define(['angular'],function (angular) {
                         url: '/trip_classic',
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
+                    }
                             .state('mine', {
                                 url: '/mine',
                                 templateUrl: './components/mine/mine.html',
@@ -47,6 +48,6 @@ define(['angular'],function (angular) {
                                 controller: 'PayController'
                             })
 
-                    })}]);
+                    )}]);
 
 });
