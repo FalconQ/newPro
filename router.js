@@ -88,6 +88,7 @@ define(['angular'],function (angular) {
                         controller: 'ProDetailController'
                     })
 
+<<<<<<< HEAD
                             .state('serviceOrder', {
                                 url: '/serOrder',
                                 templateUrl: 'components/serOrder/service.html',
@@ -109,15 +110,29 @@ define(['angular'],function (angular) {
                                 templateUrl: 'components/submitSuccess/submitSuccess.html',
                                 controller: 'submitController'
                             })
+=======
+                    .state('dataSelect', {
+                        url: '/dataSelect',
+                        templateUrl: 'components/dataSelect/dataSelect.html',
+                        controller: 'DataSelectController'
+                    })
+>>>>>>> 455dd1dcc6543013fba43853e596e15ccfea6121
                     .state('orderInfo', {
                         url: '/orderInfo',
                         templateUrl: 'components/orderInfo/orderInfo.html',
                         controller: 'orderInfoController'
                     })
+<<<<<<< HEAD
                     .state('seckill', {
                         url: '/seckill',
                         templateUrl: 'components/seckill/seckill.html',
                         controller: 'SeckillController'
+=======
+                    .state('submitSuccess', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'SubmitSuccessController'
+>>>>>>> 455dd1dcc6543013fba43853e596e15ccfea6121
                     })
                 }]);
 
