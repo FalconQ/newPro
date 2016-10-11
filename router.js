@@ -3,7 +3,8 @@
  */
 define(['angular'],function (angular) {
     return angular.module('webapp',['ui.router'])
-            .config(['$stateProvider','$urlRouterProvider', function ($stateProvider,$urlRouterProvider) {
+            .config(['$stateProvider','$urlRouterProvider',
+                function ($stateProvider,$urlRouterProvider) {
                 $urlRouterProvider.otherwise('/');
                 $stateProvider
                     .state('home', {
@@ -11,6 +12,7 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
+<<<<<<< HEAD
 <<<<<<< HEAD
                     .state('target', {
                         url: '/target',
@@ -28,24 +30,47 @@ define(['angular'],function (angular) {
                         url: '/mine',
                         templateUrl: './components/mine/mine.html',
                         controller: 'MineController'
+=======
+                    .state('trip', {
+                        url: '/trip',
+                        templateUrl: './components/trip/trip.html',
+                        controller: 'TripController'
+>>>>>>> eca7578b448e1b9595c32d63a292e23635fcf1fe
                     })
-                    .state('serviceOrder', {
-                        url: '/serOrder',
-                        templateUrl: 'components/serOrder/service.html',
-                        controller: 'SerController'
+                    .state('trip_destination', {
+                        url: '/trip_destination',
+                        templateUrl: './components/trip_destination/trip_destination.html',
+                        controller: 'DestController'
                     })
-                    .state('orderBack', {
-                        url: '/orderBack',
-                        templateUrl: 'components/orderBack/orderBack.html',
-                        controller: 'BackController'
-                    })
-                    .state('pay', {
-                        url: '/pay',
-                        templateUrl: 'components/pay/pay.html',
-                        controller: 'PayController'
-                    })
+<<<<<<< HEAD
 >>>>>>> 2557bbde87ef29efe9d612a984086fec2194ab8b
+=======
+                    .state('trip_classic', {
+                        url: '/trip_classic',
+                        templateUrl: './components/trip_classic/trip_classic.html',
+                        controller: 'ClassicController'
+                            .state('mine', {
+                                url: '/mine',
+                                templateUrl: './components/mine/mine.html',
+                                controller: 'MineController'
+                            })
+                            .state('serviceOrder', {
+                                url: '/serOrder',
+                                templateUrl: 'components/serOrder/service.html',
+                                controller: 'SerController'
+                            })
+                            .state('orderBack', {
+                                url: '/orderBack',
+                                templateUrl: 'components/orderBack/orderBack.html',
+                                controller: 'BackController'
+                            })
+                            .state('pay', {
+                                url: '/pay',
+                                templateUrl: 'components/pay/pay.html',
+                                controller: 'PayController'
+                            })
+>>>>>>> eca7578b448e1b9595c32d63a292e23635fcf1fe
 
-            }]);
+                    })}]);
 
 });

@@ -13,10 +13,17 @@ require.config({
         index: './js/controllers/index',
         router: './router',
         HomeController: './components/home/HomeController',
+        TripController:'./components/trip/TripController',
+        DestController:'./components/trip_destination/DestController',
+        ClassicController:'./components/trip_classic/ClassicController',
         MineController:'./components/mine/MineController',
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
-        PayController:'./components/pay/PayController'
+        PayController:'./components/pay/PayController',
+        index: './js/controllers/index',
+        router: './router'
+
+
     },
     shim:{
         angular: {
@@ -30,7 +37,6 @@ require.config({
     }
 });
 
-
 require(['jquery',
         'angular',
         'index',
@@ -41,7 +47,10 @@ require(['jquery',
         'BackController',
         'PayController',
         "targetController",
-        "targat_positionController"
+        "targat_positionController",
+        'TripController',
+        'trip_classic',
+        'trip_destination'
     ],
     function (jquery,angular,index) {
         index.index();
