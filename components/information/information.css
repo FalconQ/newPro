@@ -1,0 +1,113 @@
+.information{
+    background: #edf0f5;
+    height:100%;
+    width:7.5rem;
+}
+.information-header{
+    width:7.5rem;
+    height:1.25rem;
+    background: white;
+    display: flex;
+}
+.information-header .information-header-left{
+    width:20%;
+    height:1.25rem;
+    position: relative;
+}
+.information-header .information-header-left a{
+    display: block;
+    width:0.56rem;
+    height:0.46rem;
+    position: absolute;
+    left:0.3rem;
+    top:0.4rem;
+}
+.information-header .information-header-left span{
+    display: block;
+    width:0.56rem;
+    height:0.46rem;
+    background: url("../../images/mineOrder/IMG_2824_03.png") no-repeat;
+    background-size: 100%;
+}
+
+.information-header .information-header-right{
+    width:80%;
+    height:1.25rem;
+    line-height: 1.25rem;
+}
+.information-header .information-header-right h2{
+    font-size: 0.32rem;
+    padding-left: 1.6rem;
+}
+
+.information-main{
+    width:7.5rem;
+    height:2.7rem;
+    background: white;
+}
+.information-main ul{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information-main ul a{
+    display: block;
+    width:7.5rem;
+    height:0.9rem;
+    color: #333;
+}
+.information-main ul li{
+    width:100%;
+    height:0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information-main li .img{
+    width: 0.9rem;
+    height:0.9rem;
+}
+.information-main li .img .bg1{
+    display: block;
+    width:0.36rem;
+    height:0.34rem;
+    background: url("../../images/mineOrder/item_03.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
+.information-main li .img .bg2{
+    display: block;
+    width:0.36rem;
+    height:0.34rem;
+    background: url("../../images/mineOrder/item_06.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
+.information-main li .img .bg3{
+    display: block;
+    width:0.36rem;
+    height:0.34rem;
+    background: url("../../images/mineOrder/item_08.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
+.information-main li .details{
+    width:5.7rem;
+    height:0.9rem;
+    font-size: 0.3rem;
+}
+.information-main li .details p{
+    line-height: 0.9rem;
+}
+.information-main li .arrow{
+    width:0.9rem;
+    height:0.9rem;
+}
+.information-main li .arrow span{
+    display: block;
+    width:0.18rem;
+    height:0.32rem;
+    background: url("../../images/mineOrder/arrow_calendar_right_assistant_disbale.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
