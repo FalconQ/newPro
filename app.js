@@ -69,10 +69,6 @@ require(['jquery',
         'submitController',
         'orderInfoController',
         'C_orderController',
-<<<<<<< HEAD
-        'ClassicController',
-=======
->>>>>>> 455dd1dcc6543013fba43853e596e15ccfea6121
         'ProDetailController'
     ],
     function (jquery,angular,index) {
