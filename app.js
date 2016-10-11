@@ -7,12 +7,9 @@ require.config({
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         $css: './libs/css',
-<<<<<<< HEAD
         HomeController: './components/home/HomeController',
         targetController: './components/target/targetController',
         targat_positionController: './components/targat_position/targat_positionController',
-=======
->>>>>>> 2557bbde87ef29efe9d612a984086fec2194ab8b
         index: './js/controllers/index',
         router: './router',
         HomeController: './components/home/HomeController',
@@ -34,13 +31,6 @@ require.config({
 });
 
 
-<<<<<<< HEAD
-require(['jquery','angular','index','ui-router','HomeController',"targetController","targat_positionController"],function (jquery,angular,index) {
-    index.index();
-    //手动加载模块
-    angular.bootstrap(document, ['webapp']);
-
-=======
 require(['jquery',
         'angular',
         'index',
@@ -49,11 +39,12 @@ require(['jquery',
         'MineController',
         'SerController',
         'BackController',
-        'PayController'
+        'PayController',
+        "targetController",
+        "targat_positionController"
     ],
     function (jquery,angular,index) {
         index.index();
         //手动加载模块
         angular.bootstrap(document, ['webapp']);
->>>>>>> 2557bbde87ef29efe9d612a984086fec2194ab8b
 });
