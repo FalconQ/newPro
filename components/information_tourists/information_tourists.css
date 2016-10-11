@@ -1,0 +1,150 @@
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+.information_tourists{
+    background: #edf0f5;
+    height:100%;
+    width:7.5rem;
+}
+.information_tourists-header{
+    width:7.5rem;
+    height:1.25rem;
+    background: white;
+    display: flex;
+    margin-bottom: 0.3rem;
+}
+.information_tourists-header .information_tourists-header-left{
+    width:20%;
+    height:1.25rem;
+    position: relative;
+}
+.information_tourists-header .information_tourists-header-left a{
+    display: block;
+    width:0.56rem;
+    height:0.46rem;
+    position: absolute;
+    left:0.3rem;
+    top:0.4rem;
+}
+.information_tourists-header .information_tourists-header-left span{
+    display: block;
+    width:0.56rem;
+    height:0.46rem;
+    background: url("../../images/mineOrder/IMG_2824_03.png") no-repeat;
+    background-size: 100%;
+}
+
+.information_tourists-header .information_tourists-header-right{
+    width:80%;
+    height:1.25rem;
+    line-height: 1.25rem;
+}
+.information_tourists-header .information_tourists-header-right h2{
+    font-size: 0.32rem;
+    padding-left: 1.6rem;
+}
+
+.information_tourists-nav{
+    width:7.5rem;
+    height:0.9rem;
+    background: white;
+    margin-bottom: 0.2rem;
+}
+
+.information_tourists-nav ul{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information_tourists-nav ul a{
+    display: block;
+    width:7.5rem;
+    height:0.9rem;
+    color: #333;
+}
+.information_tourists-nav ul li{
+    width:100%;
+    height:0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information_tourists-nav li .img{
+    width: 0.9rem;
+    height:0.9rem;
+}
+.information_tourists-nav li .img .bg1{
+    display: block;
+    width:0.25rem;
+    height:0.25rem;
+    background: url("../../images/mineOrder/btn_editnote_where.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
+
+.information_tourists-nav li .details{
+    width:5.7rem;
+    height:0.9rem;
+    font-size: 0.3rem;
+}
+.information_tourists-nav li .details p{
+    line-height: 0.9rem;
+}
+.information_tourists-nav li .arrow{
+    width:0.9rem;
+    height:0.9rem;
+}
+.information_tourists-nav li .arrow span{
+    display: block;
+    width:0.18rem;
+    height:0.32rem;
+    background: url("../../images/mineOrder/arrow_calendar_right_assistant_disbale.png") no-repeat;
+    background-size: 100%;
+    margin: 0.3rem auto;
+}
+.information_tourists-info{
+    height:2.8rem;
+    width:7.5rem;
+    background: white;
+}
+.information_tourists-info table{
+    width:7.5rem;
+    height:2.8rem;
+    position: relative;
+}
+.information_tourists-info table thead tr{
+    height:0.8rem;
+    width:7.5rem;
+}
+.information_tourists-info table thead h2{
+    font-size: 0.3rem;
+    text-indent: -1rem;
+}
+.information_tourists-info thead a{
+    display: block;
+    width:0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    right: 0.3rem;
+    top:0.2rem;
+}
+.information_tourists-info thead .img{
+    display: block;
+    width:0.32rem;
+    height: 0.32rem;
+    background: url("../../images/mineOrder/icon_edit_travelerinformation_common.png")no-repeat;
+    background-size: 100%;
+}
+.information_tourists-info tbody td{
+    text-indent: 0.3rem;
+}

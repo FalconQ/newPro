@@ -12,8 +12,6 @@ define(['angular'],function (angular) {
                         templateUrl: './components/home/home.html',
                         controller: 'HomeController'
                     })
-
-
                     .state('target', {
                         url: '/target',
                         templateUrl: './components/target/target.html',
@@ -29,6 +27,31 @@ define(['angular'],function (angular) {
                         templateUrl: './components/mine/mine.html',
                         controller: 'MineController'
                     })
+                    .state('mineOrder', {
+                        url: '/mineOrder',
+                        templateUrl: './components/mineOrder/mineOrder.html',
+                        controller: 'MineOrderController'
+                    })
+                    .state('information', {
+                        url: '/information',
+                        templateUrl: './components/information/information.html',
+                        controller: 'InformationController'
+                    })
+                    .state('information_tourists', {
+                        url: '/information_tourists',
+                        templateUrl: './components/information_tourists/information_tourists.html',
+                        controller: 'TouristsController'
+                    })
+                    .state('addPeople', {
+                        url: '/addPeople',
+                        templateUrl: './components/addPeople/addPeople.html',
+                        constroller: 'PeopleController'
+                    })
+                    .state('changePeople', {
+                        url: '/changePeople',
+                        templateUrl: './components/changePeople/changePeople.html',
+                        constroller: 'ChangeController'
+                    })
                     .state('trip', {
                         url: '/trip',
                         templateUrl: './components/trip/trip.html',
@@ -43,6 +66,33 @@ define(['angular'],function (angular) {
                         url: '/trip_classic',
                         templateUrl: './components/trip_classic/trip_classic.html',
                         controller: 'ClassicController'
+                    })
+                    .state('serviceOrder', {
+                        url: '/serOrder',
+                        templateUrl: 'components/serOrder/service.html',
+                        controller: 'SerController'
+                    })
+                    .state('orderBack', {
+                        url: '/orderBack',
+                        templateUrl: 'components/orderBack/orderBack.html',
+                        controller: 'BackController'
+                    })
+                    .state('pay', {
+                        url: '/pay',
+                        templateUrl: 'components/pay/pay.html',
+                        controller: 'PayController'
+                    })
+
+                    .state('C_order', {
+                        url: '/C_order',
+                        templateUrl: 'components/C_order/C_order.html',
+                        controller: 'C_orderController'
+                    })
+
+                    .state('proDetail', {
+                        url: '/proDetail',
+                        templateUrl: 'components/proDetail/proDetail.html',
+                        controller: 'ProDetailController'
                     })
 
                             .state('serviceOrder', {
@@ -75,9 +125,9 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/orderInfo/orderInfo.html',
                         controller: 'orderInfoController'
                     })
-
-                    }]);
-
+                }]);
 
 
-})
+
+
+});

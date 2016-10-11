@@ -1,3 +1,15 @@
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
 .mine{
     height:100%;
     background: #edf0f5;
@@ -184,6 +196,7 @@
     width:100%;
     height:100%;
     line-height: 1.3rem;
+    color: #333;
 }
 
 .mine-banner ul li a p{
@@ -312,6 +325,7 @@
     width:7.5rem;
     height:100%;
     display: flex;
+    color:#333 ;
 }
 .mine-content ul .icon{
     width:0.9rem;
@@ -478,6 +492,11 @@
     padding-left: 0.3rem;
 }
 .mine-footer .mine-footer-bottom{
+    width:7.5rem;
+    height:4.3rem;
+    overflow: hidden;
+}
+.mine-footer .mine-footer-bottom .swiper{
     width:30rem;
     height:4.3rem;
 }
