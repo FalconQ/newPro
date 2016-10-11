@@ -57,6 +57,11 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
+                    .state('C_order', {
+                        url: '/C_order',
+                        templateUrl: 'components/C_order/C_order.html',
+                        controller: 'C_orderController'
+                    })
 
                     }])
 })

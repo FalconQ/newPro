@@ -16,6 +16,7 @@ require.config({
         TripController:'./components/trip/TripController',
         DestController:'./components/trip_destination/DestController',
         ClassicController:'./components/trip_classic/ClassicController',
+        C_orderController:'./components/C_order/C_orderController',
         MineController:'./components/mine/MineController',
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
@@ -50,7 +51,9 @@ require(['jquery',
         "targat_positionController",
         'TripController',
         'DestController',
-        'ClassicController'
+        'C_orderController',
+        'ClassicController',
+
     ],
     function (jquery,angular,index) {
         index.index();
