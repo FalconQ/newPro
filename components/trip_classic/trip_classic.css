@@ -50,19 +50,22 @@
     margin-left: 0.2rem;
     background: url("img/01.jpg")no-repeat;
     background-size: 100% 3.55rem;
+    border-radius: 0.1rem;
+    margin-top: 0.1rem;
+    display: inline-block;
 }
 .classic_cont div .trip_day{
     width: 0.5rem;
     height: 0.3rem;
     background: #123856;
-    opacity: 0.5;
+    opacity: 0.9;
     color: #fff;
     text-align: center;
-    line-height: 0.5rem;
+    line-height: 0.3rem;
     margin-top: 0.2rem;
     margin-left: 0.2rem;
     font-size: 0.19rem;
-    margin-right: 3.5rem;
+    margin-right: 4.5rem;
     display: inline-block;
 }
 .classic_cont div .trip_add{
@@ -76,7 +79,6 @@
     border-radius: 0.28rem;
     display: inline-block;
     margin-top: 0.2rem;
-    margin-right: 0.2rem;
 }
 .classic_cont div h3{
     font-size: 0.4rem;
@@ -94,8 +96,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    text-indent: 0.2rem;
+    text-indent: 0.45rem;
     display: inline-block;
+    background: url("img/diary_edit_pic_location.png")no-repeat 0.2rem;
+    background-size: 0.2rem 100%;
 }
 .show_num{
     width: 0.95rem;
@@ -106,4 +110,5 @@
     display: inline-block;
     color: #fff;
     margin-bottom: 0.2rem;
+
 }

@@ -87,8 +87,33 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/proDetail/proDetail.html',
                         controller: 'ProDetailController'
                     })
-
+                    .state('dataSelect', {
+                        url: '/dataSelect',
+                        templateUrl: 'components/dataSelect/dataSelect.html',
+                        controller: 'DataSelectController'
+                    })
+                    .state('C_order', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'submitController'
+                    })
+                    .state('orderInfo', {
+                        url: '/orderInfo',
+                        templateUrl: 'components/orderInfo/orderInfo.html',
+                        controller: 'orderInfoController'
+                    })
+                    .state('seckill', {
+                        url: '/seckill',
+                        templateUrl: 'components/seckill/seckill.html',
+                        controller: 'SeckillController'
+                    })
+                    .state('submitSuccess', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'SubmitSuccessController'
+                    })
                 }]);
+
 
 
 

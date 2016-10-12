@@ -1,0 +1,326 @@
+.modl_C_order{
+    width: 7.5rem;
+    background: #e9ecf1;
+    padding-bottom:1.06rem;
+}
+.modl_C_order .modl_C_orderHead{
+    height: 1.4rem;
+    position: fixed;
+    top: 0px;
+    background: white;
+}
+.modl_C_order .modl_C_orderTop{
+    height: 0.9rem;
+    text-align: center;
+    font-size: 0.35rem;
+    font-family: "微软雅黑";
+    color: black;
+    line-height: 0.9rem;
+}
+.modl_C_order .modl_C_orderTop img{
+    width: 0.49rem;
+    height: 0.53rem;
+    float: left;
+    margin-top:0.2rem;
+    margin-left: 0.2rem;
+}
+.modl_C_order .modl_C_orderTop img:last-child{
+    float: right;
+    margin-right: 0.2rem;
+
+}
+.modl_C_order .modl_C_orderPrompt{
+    height: 0.5rem;
+    width: 7.5rem;
+    background: #ffeda5;
+    font-size:0.23rem ;
+    color: #666666;
+    font-family: "微软雅黑";
+    text-indent: 0.2rem;
+    line-height: 0.5rem;
+    border-top: 1px solid #666666;
+    box-sizing: border-box;
+}
+.modl_C_order .modl_C_orderMain{
+     padding-top: 1.4rem;
+}
+.modl_C_order .main_position{
+    height:0.9rem;
+    background: white;
+    font-size: 0px;
+}
+
+.modl_C_order .main_position span{
+    float: left;
+    display:inline-block;
+    width:50% ;
+    font-family: "微软雅黑";
+    line-height: 0.9rem;
+    /*border: 1px solid red ;*/
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.modl_C_order .main_position span:first-child{
+     font-size: 0.3rem;
+     color:#333333;
+     overflow: hidden;
+     white-space: pre;
+     text-overflow: ellipsis;
+
+}
+.modl_C_order .main_position span:last-child{
+    font-size: 0.28rem;
+    color:#666666;
+    white-space: pre;
+}
+.modl_C_order  .main_price {
+    background: white;
+    width:7.5rem;
+    margin-top: 0.25rem;
+}
+.modl_C_order  .main_price  ul{
+    padding-left:0.3rem ;
+}
+.modl_C_order  .main_price  ul li {
+    height: 1.35rem;
+    border-bottom: 0.01rem solid #e6e6e6;
+
+}
+.modl_C_order  .main_price  ul li:last-child {
+     border: none;
+}
+
+.modl_C_order  .main_price  ul li div {
+    width: 50%;
+    height: 1.35rem;
+    float: left;
+    /*border:  1px solid red;*/
+    box-sizing: border-box;
+}
+.modl_C_order  .main_price .prc h4{
+     font-size: 0.3rem;
+     line-height: 0.75rem;
+
+
+}
+.modl_C_order  .main_price .put p{
+    color: black;
+    font-size: 0px;
+    margin-top:0.32rem;
+    margin-left:1.18rem;
+    width: 2.15rem;
+    height: 0.66rem;
+    border: 0.02rem solid #dcdcdc ;
+    font-size:  0.25rem;
+    line-height:0.5rem;
+    border-radius: 0.08rem;
+
+}
+.modl_C_order  .main_price .put p span{
+     text-align: center;
+     line-height: 0.66rem;
+     float: left;
+     width: 0.7rem;
+     height: 0.65rem;
+     border-right: 0.02px solid  #dcdcdc;
+     box-sizing: border-box;
+}
+.modl_C_order  .main_price .put p span:last-child{
+    border: none;
+    background:  url("./img/del.png") no-repeat center;
+    background-size: 0.5rem 0.5rem;
+}
+.modl_C_order  .main_price .put p span:first-child{
+    background:  url("./img/add.png") no-repeat center;
+   background-size: 0.5rem 0.5rem;
+}
+.modl_C_order .main_set h3{
+    height: 0.64rem;
+    font-size: 0.2rem;
+    line-height:0.8rem;
+    background: #e9ecf1;
+    padding-left: 0.34rem;
+
+
+}
+.modl_C_order .main_set p{
+    background: white;
+    padding-left: 0.34rem;
+    line-height: 0.4rem;
+
+}
+.modl_C_order .main_set p:nth-of-type(1){
+   padding-top: 0.1rem;
+}
+
+.modl_C_order .main_set p:last-child{
+    text-align: center;
+    padding: 0.1rem;
+}
+.modl_C_order .main_set p img {
+    width: 0.71rem;
+    eight: 0.31rem;
+}
+.modl_C_order .main_message h3{
+    height: 0.64rem;
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    background: #e9ecf1;
+    padding-left: 0.34rem;
+}
+.modl_C_order .main_message dl{
+    background: white;
+    width: 7.5rem;
+
+
+}
+.modl_C_order .main_message dl dt{
+    float: left;
+    height: 0.88rem;
+    /*border: 1px solid red  ;*/
+    width: 1.37rem;
+    text-align: right;
+    line-height:  0.8rem;
+    border-bottom: 1px solid #e6e6e6  ;
+
+}
+.modl_C_order .main_message dl dd{
+    height: 0.88rem;
+    border-bottom: 1px solid #e6e6e6  ;
+    /*width: 1.37rem;*/
+
+}
+.modl_C_order .main_message dl dd input{
+    border: none;
+    line-height:  0.8rem;
+}
+.modl_C_order .main_safest{
+ background: white;
+    margin-top:0.25rem ;
+}
+.modl_C_order .main_safest ul li{
+    height: 0.88rem;
+    border-bottom: 0.02rem solid #e9ecf1;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    padding-left: 0.32rem;
+}
+.modl_C_order .main_safest ul li img{
+    width: 0.3rem;
+    height: 0.3rem;
+    vertical-align: top;
+    margin-top: 0.2rem;
+    margin-left: 0.05rem;
+}
+.modl_C_order .main_safest ul li span{
+   float: right;
+}
+.modl_C_order .main_safest ul li span:nth-of-type(1){
+    margin-top: 0.22rem;
+    margin-left: 0.22rem;
+    margin-right: 0.22rem;
+
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 0.05rem;
+    vertical-align: top;
+    background: #23beae  url("./img/xuanzhe.png") no-repeat center;
+    background-size: 0.3rem;
+    
+}
+.modl_C_order .main_benefit1{
+    height:0.98rem ;
+    margin:  0.2rem 0 ;
+    background: white;
+    font-size: 0.3rem;
+    line-height: 0.98rem;
+    color: black;
+    padding-left: 0.32rem;
+
+
+}
+.modl_C_order .main_benefit1 span:first-child {
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 0.05rem;
+    background:#ff5028 ;
+    color: white;
+    text-align: center;
+    line-height: 0.45rem;
+}
+.modl_C_order .main_benefit1 span:last-child{
+     float: right;
+}
+.modl_C_order .main_benefit1 img{
+    width: 0.3rem;
+    height: 0.5rem;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+}
+.modl_C_order .main_benefit2{
+    padding-left: 0.32rem;
+    height: 0.98rem;
+  border-bottom: 0.02rem solid #dcdcdc;
+  border-top: 0.02rem solid #dcdcdc;
+  background: white;
+  line-height: 0.98rem;
+  font-size: 0.25rem;
+    color:#717171 ;
+
+
+}
+.modl_C_order .main_benefit2 span:last-child {
+    float: right;
+    margin-right: 0.22rem;
+    margin-top: 0.22rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 0.05rem;
+    vertical-align: top;
+    background: #23beae  url("./img/xuanzhe.png") no-repeat center;
+    background-size: 0.3rem;
+
+}
+.modl_C_order .main_benefit3{
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size: 0.12rem;
+    border-bottom: 0.02rem solid #dcdcdc;
+    border-top: 0.02rem solid #dcdcdc;
+    padding-left: 0.32rem;
+
+}
+.modl_C_order .main_benefit3 span {
+    color: #0088cc;
+}
+.modl_C_order .modl_C_orderFooter{
+    height: 1rem;
+    background: white;
+    padding-left: 0.32rem;
+    font-size: 0.3rem;
+    color: black;
+    font-family: "微软雅黑";
+    line-height: 1rem;
+
+}
+.modl_C_order .modl_C_orderFooter span:nth-of-type(1) {
+    color: #ff5346;
+    font-size: 0.3rem;
+}
+.modl_C_order .modl_C_orderFooter span:nth-of-type(2) {
+    width: 2.4rem;
+    text-align: center;
+    line-height:1rem;
+    text-align: center;
+    color: white;
+    float: right;
+    background: #ffbab5;
+
+
+}
+.modl_C_order .modl_C_orderFooter  img {
+    width:0.75rem ;
+    height: 0.31rem;
+}
