@@ -112,8 +112,7 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/submitSuccess/submitSuccess.html',
                         controller: 'SubmitSuccessController'
                     })
-                }]);
-
+                }])
 
 
 });

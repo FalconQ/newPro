@@ -1,15 +1,15 @@
 <div class="container_proDetail">
     <header>
-        <span class="return"></span>
+        <span class="return" ng-click="return()"></span>
         <span class="title">国内游路线</span>
         <span class="share"></span>
         <span class="message"></span>
     </header>
     <div class="banner_wrap">
-        <img src="./images/prodetail/gcLRtM.jpg"/>
+        <img src='{{data.ImgUrl}}'/>
         <p class="pro_instructions">
-            <span><a>跟团游</a><a>北京出发</a></span>
-            <span>产品编号：60435</span>
+            <span>{{data.PILabel}}</span>
+            <span>产品编号：{{data.PIRelatedId}}</span>
         </p>
     </div>
     <div class="pro_title_wrap">
@@ -17,12 +17,12 @@
             限时抢购
             <div>
                 距离结束：
-                <span>00</span>：<span>44</span>：<span>21</span>
+                <span>{{time | date:'hh'}}</span>：<span>{{time | date:'mm'}}</span>：<span>{{time | date:'ss'}}</span>
             </div>
         </div>
         <div class="pro_title">
-            <div>南山竹海+灵山大佛+华东五市+迪士尼小镇+乌镇+南浔双飞6日双飞6日跟团游&lt;畅游南山竹海 夜宿南山竹海舒适型特色客栈<span></span></div>
-            <div><span>￥<b>1299</b></span>起/人</div>
+            <div>{{data.PITitle}}</div>
+            <div><span>￥<b>{{data.ActualPrice}}</b></span>起/人</div>
         </div>
     </div>
     <div class="preferential">
@@ -32,7 +32,7 @@
                     <td rowspan="2"></td>
                     <td>满人立减：</td>
                     <td>满1成人立减400元;满2成人立减800元</td>
-                    <td rowspan="2" class="next">2</td>
+                    <td rowspan="2" class="next"></td>
                 </tr>
                 <tr>
                     <td>红包立减：</td>
@@ -44,9 +44,11 @@
     <div class="origin_wrap">
         <div class="origin_name">北京出发</div>
         <div class="select_date">
-            <a>10-23</a>
-            <a>10-24</a>
-            <a>10-25</a>
+            <a>10-14</a>
+            <a>10-15</a>
+            <a>10-16</a>
+            <a>10-28</a>
+            <a>11-26</a>
         </div>
     </div>
     <div class="rules">
@@ -66,7 +68,7 @@
         <!--<div class="description"></div>-->
     <!--</div>-->
     <footer>
-        <a ui-sref="dataSelect">立即抢购</a>
+        <a>立即抢购</a>
     </footer>
 
 </div>
