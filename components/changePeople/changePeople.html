@@ -1,8 +1,8 @@
-<div class="addPeople">
+<div class="changePeople" ng-controller="ChangeController">
     <!--头部开始-->
-    <div class="addPeople-header">
+    <div class="changePeople-header">
             <div class="left">
-                <a><span></span></a>
+                <a ng-click="clk()"><span></span></a>
             </div>
             <div class="center">
                 <h2>编辑常用旅客</h2>
@@ -14,10 +14,10 @@
     <!--头部结束-->
 
     <!--信息开始-->
-    <div class="addPeople-info">
+    <div class="changePeople-info">
         <div class="ipt">
-            <p>中文姓名<span>李寻欢</span></p>
-            <p>手机号码<span>12580668868</span></p>
+            <p>中文姓名<input ng-model="userName" type="text" value="{{userName}}"></p>
+            <p>手机号码<input ng-model="telephone" type="text" value="{{telephone}}"></p>
         </div>
         <div class="addressList">
             <span></span>
@@ -27,7 +27,7 @@
 
     <!--身份证-->
     <div class="ID">
-        <p>身份证&nbsp; &gt; &nbsp;&nbsp; <span>1239875678230865</span></p>
+        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input ng-model="idCard" type="text" value="{{idCard}}"></p>
         <p class="add">
             <a>
                 <span></span>

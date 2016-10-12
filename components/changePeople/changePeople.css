@@ -17,65 +17,65 @@ a:active{
     width:7.5rem;
 }
 /*头部开始*/
-.addPeople-header{
+.changePeople-header{
     width:7.5rem;
     height:1.25rem;
     background: white;
     display: flex;
 }
 
-.addPeople-header .left{
+.changePeople-header .left{
     width:1.2rem;
     height:1.15rem;
 }
-.addPeople-header .left a{
+.changePeople-header .left a{
     display: block;
     width:0.56rem;
     height:0.46rem;
     margin-top: 0.4rem;
     margin-left: 0.4rem;
 }
-.addPeople-header .left span{
+.changePeople-header .left span{
     display: block;
     width:0.56rem;
     height:0.46rem;
     background: url("../../images/mineOrder/IMG_2824_03.png") no-repeat;
     background-size: 100%;
 }
-.addPeople-header  .center{
+.changePeople-header  .center{
     width:5.1rem;
     height:1.15rem;
     text-align: center;
     line-height: 1.15rem;
 }
-.addPeople-header .center h2{
+.changePeople-header .center h2{
     font-size: 0.32rem;
 }
 
-.addPeople-header .right{
+.changePeople-header .right{
     width:1.2rem;
     height:1.15rem;
     line-height: 1.15rem;
     text-align: center;
 }
-.addPeople-header .right span{
+.changePeople-header .right span{
     font-size: 0.3rem;
     color: #23beae;
 }
 
-.addPeople .addPeople-info{
+.changePeople .changePeople-info{
     width:7.5rem;
     height:1.8rem;
     background: white;
     display: flex;
     margin-bottom: 0.2rem;
 }
-.addPeople .addPeople-info .ipt{
+.changePeople .changePeople-info .ipt{
     width:6.4rem;
     height:1.8rem;
     line-height: 0.9rem;
 }
-.addPeople .addPeople-info .ipt p{
+.changePeople .changePeople-info .ipt p{
     font-size: 0.3rem;
     width:100%;
     height:0.9rem;
@@ -83,15 +83,19 @@ a:active{
     border-bottom: 1px solid #e4e4e4;
     border-right: 1px solid #e4e4e4;
 }
-.addPeople .addPeople-info .ipt span{
+.changePeople .changePeople-info .ipt input{
+    width:50%;
+    height:100%;
+    border: none;
+    display: inline-block;
+    text-indent: 0.4rem;
+    font-size: 0.3rem;
+}
+.changePeople .changePeople-info .ipt span{
     display: inline-block;
     text-indent: 0.4rem;
 }
-.addPeople .addPeople-info .addressList{
-    width:1.1rem;
-    height:1.8rem;
-}
-.addPeople .addPeople-info .addressList span{
+.changePeople .changePeople-info .addressList span{
     display: block;
     width:0.4rem;
     height:0.4rem;
@@ -99,7 +103,7 @@ a:active{
     background-size: 100% 100%;
     margin: 0.7rem auto;
 }
-.addPeople .ID{
+.changePeople .ID{
     width:7.5rem;
     height:1.75rem;
     background: white;
@@ -107,16 +111,22 @@ a:active{
     position: relative;
     margin-bottom: 0.3rem;
 }
-.addPeople .ID p{
+.changePeople .ID p{
     width: 100%;
     height:50%;
 }
-.addPeople .ID p:first-of-type{
+.changePeople .ID p input{
+    height:100%;
+    width:70%;
+    font-size: 0.3rem;
+    border: none;
+}
+.changePeople .ID p:first-of-type{
     text-indent: 0.4rem;
     font-size: 0.3rem;
     border-bottom: 1px solid #e4e4e4;
 }
-.addPeople .ID .add a{
+.changePeople .ID .add a{
     display: block;
     width:2.5rem;
     height:0.52rem;
@@ -124,26 +134,26 @@ a:active{
     left:35%;
     top: 60%;
 }
-.addPeople .ID .add  i{
+.changePeople .ID .add  i{
     font-size: 0.3rem;
     position: absolute;
     left: 45%;
 }
-.addPeople .ID .add p{
+.changePeople .ID .add p{
     display: inline-block;
 }
-.addPeople .ID .add span{
+.changePeople .ID .add span{
     display: inline-block;
     width:0.52rem;
     height:0.52rem;
     background: url("../../images/mineOrder/icon_addpassenger.png") no-repeat;
     background-size: 100%;
 }
-.addPeople .save{
+.changePeople .save{
     width:7.5rem;
     height:0.9rem;
 }
-.addPeople .save input{
+.changePeople .save input{
     width:6.9rem;
     height:0.9rem;
     border-radius: 0.2rem;
