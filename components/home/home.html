@@ -12,11 +12,15 @@
                </div>
           </div>
      </header>
-     <div class="home_banner">
-          <div class="home_banner_div">
-               <img src="images/home_image/home_banner.png" alt="" class="home_banner_img">
-          </div>
-     </div>
+    <!--banner-->
+      <div class="swiper-container slider">
+           <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
+                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
+                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
+           </div>
+           <div class="swiper-pagination"></div>
+      </div>
      <div class="home_main">
           <div class="home_main_fir">
                <div class="home_main_fir_1">
@@ -83,19 +87,19 @@
                     <img src="images/home_image/time.png" alt="" class="time_img">
                     <div class="time_num">
                          <p>还剩</p>
-                         <div class="time">17</div>
-                         <div class="time">10</div>
-                         <div class="time">01</div>
+                         <div class="time" id="time1">17</div>
+                         <div class="time" id="time2">10</div>
+                         <div class="time" id="time3">01</div>
                     </div>
                </div>
                <a ui-sref="seckill" class="home_limitshop_fir_a">
-                    <dl class="time_dl">
+                    <dl class="time_dl" >
                          <dt>
-                              <img src="images/home_image/time_pic.png" alt="">
+                              <img src={{data.ImgUrl}} alt="">
                          </dt>
-                         <dd class="time_dd1">【歌诗达游轮-大西洋号】11月11日天津-济州-福冈-天津5晚6日游</dd>
-                         <dd class="time_dd2">￥<span class="time_span">2699起</span></dd>
-                         <dd>仅限<span class="time_span2">30</span>份 <span class="time_span3">更多抢购</span></dd>
+                         <dd class="time_dd1">{{data.PITitle}}</dd>
+                         <dd class="time_dd2">￥<span class="time_span">{{data.ActualPrice}}起</span></dd>
+                         <dd>仅限<span class="time_span2">{{data.Stock}}</span>份 <span class="time_span3">更多抢购</span></dd>
                     </dl>
                </a>
           </div>

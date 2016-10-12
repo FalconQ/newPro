@@ -5,4 +5,5 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
     return app.controller('SeckillController',['$scope',function ($scope) {
 
     }])
+
 })
