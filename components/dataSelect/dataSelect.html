@@ -3,8 +3,307 @@
         <span class="back_step"></span>
         日期选择
     </div>
+    <!--日历-->
     <div class="data_list">
-        <div class="data_show"></div>
+        <div class="data_show">
+            <div ng-show="flag1"   class="calendar-wrapper" data-year="2016" data-month="10" >
+                <h3>2016年10月 <span class="money">¥298 <span>起</span></span><span class="more" ng-click="cancler()">></span></h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th class="sunday">日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th class="saturday">六</th>
+                    </tr>
+                    <tr>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="saturday disabled festival disabled" data-day="1">
+                            <div>国庆</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled disabled" data-day="2">
+                            <div>2</div>
+                        </td>
+                        <td class="disabled disabled" data-day="3">
+                            <div>3</div>
+                        </td>
+                        <td class="disabled disabled" data-day="4">
+                            <div>4</div>
+                        </td>
+                        <td class="disabled disabled" data-day="5">
+                            <div>5</div>
+                        </td>
+                        <td class="disabled disabled" data-day="6">
+                            <div>6</div>
+                        </td>
+                        <td class="disabled disabled" data-day="7">
+                            <div>7</div>
+                        </td>
+                        <td class="saturday disabled disabled" data-day="8">
+                            <div>8</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled disabled" data-day="9">
+                            <div>9</div>
+                        </td>
+                        <td class="disabled disabled" data-day="10">
+                            <div>10</div>
+                        </td>
+                        <td class="disabled disabled" data-day="11">
+                            <div>11</div>
+                        </td>
+                        <td class="today" data-day="12">
+                            <div>今天</div>
+                        </td>
+                        <td class="disabled disabled" data-day="13">
+                            <div>13</div>
+                        </td>
+                        <td data-day="14">
+                            <div>
+                                <div><span>14</span>
+                                    <p>¥298</p>
+                                    <input type="hidden" value="298" data-date="Fri Oct 14 2016 00:00:00 GMT+0800 (中国标准时间)">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="saturday" data-day="15">
+                            <div>
+                                <div><span>15</span>
+                                    <p>¥298</p>
+                                    <input type="hidden" value="298" data-date="Sat Oct 15 2016 00:00:00 GMT+0800 (中国标准时间)">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday" data-day="16">
+                            <div>
+                                <div><span>16</span>
+                                    <p>¥298</p>
+                                    <input type="hidden" value="298" data-date="Sun Oct 16 2016 00:00:00 GMT+0800 (中国标准时间)">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="disabled" data-day="17">
+                            <div>17</div>
+                        </td>
+                        <td class="disabled" data-day="18">
+                            <div>18</div>
+                        </td>
+                        <td class="festival disabled" data-day="19">
+                            <div>重阳</div>
+                        </td>
+                        <td class="disabled" data-day="20">
+                            <div>20</div>
+                        </td>
+                        <td data-day="21">
+                            <div>
+                                <div>21
+                                </div>
+                            </div>
+                        </td>
+                        <td class="saturday" data-day="22">
+                            <div>
+                                <div>22
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday" data-day="23">
+                            <div>
+                                <div>23
+                                </div>
+                            </div>
+                        </td>
+                        <td class="disabled" data-day="24">
+                            <div>24</div>
+                        </td>
+                        <td class="disabled" data-day="25">
+                            <div>25</div>
+                        </td>
+                        <td class="disabled" data-day="26">
+                            <div>26</div>
+                        </td>
+                        <td class="disabled" data-day="27">
+                            <div>27</div>
+                        </td>
+                        <td data-day="28">
+                            <div>
+                                <div><span>28</span>
+                                    <p>¥298</p>
+                                    <input type="hidden" value="298" data-date="Fri Oct 28 2016 00:00:00 GMT+0800 (中国标准时间)">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="saturday" data-day="29">
+                            <div>
+                                <div><span>29</span>
+                                    <p>¥298</p>
+                                    <input type="hidden" value="298" data-date="Sat Oct 29 2016 00:00:00 GMT+0800 (中国标准时间)">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday" data-day="30">
+                            <div>
+                                <div>30
+                                </div>
+                            </div>
+                        </td>
+                        <td class="disabled" data-day="31">
+                            <div>31</div>
+                        </td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div ng-show="flag2" class="calendar-wrapper" data-year="2016" data-month="11">
+                <h3><span class="right" ng-click="cancler()"><</span>2016年11月<span class="money">¥5599 <span>起</span></span></h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th class="sunday">日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th class="saturday">六</th>
+                    </tr>
+                    <tr>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled" data-day="1">
+                            <div>1</div>
+                        </td>
+                        <td class="disabled" data-day="2">
+                            <div>2</div>
+                        </td>
+                        <td class="disabled" data-day="3">
+                            <div>3</div>
+                        </td>
+                        <td class="disabled" data-day="4">
+                            <div>4</div>
+                        </td>
+                        <td class="saturday disabled" data-day="5">
+                            <div>5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled" data-day="6">
+                            <div>6</div>
+                        </td>
+                        <td class="disabled" data-day="7">
+                            <div>7</div>
+                        </td>
+                        <td class="disabled" data-day="8">
+                            <div>8</div>
+                        </td>
+                        <td class="disabled" data-day="9">
+                            <div>9</div>
+                        </td>
+                        <td class="disabled" data-day="10">
+                            <div>10</div>
+                        </td>
+                        <td class="disabled" data-day="11">
+                            <div>光棍节</div>
+                        </td>
+                        <td class="saturday disabled" data-day="12">
+                            <div>12</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled" data-day="13">
+                            <div>13</div>
+                        </td>
+                        <td class="disabled" data-day="14">
+                            <div>14</div>
+                        </td>
+                        <td class="disabled" data-day="15">
+                            <div>15</div>
+                        </td>
+                        <td class="disabled" data-day="16">
+                            <div>16</div>
+                        </td>
+                        <td class="disabled" data-day="17">
+                            <div>17</div>
+                        </td>
+                        <td class="disabled" data-day="18">
+                            <div>18</div>
+                        </td>
+                        <td class="saturday disabled" data-day="19">
+                            <div>19</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled" data-day="20">
+                            <div>20</div>
+                        </td>
+                        <td class="disabled" data-day="21">
+                            <div>21</div>
+                        </td>
+                        <td class="disabled" data-day="22">
+                            <div>22</div>
+                        </td>
+                        <td class="disabled" data-day="23">
+                            <div>23</div>
+                        </td>
+                        <td class="disabled" data-day="24">
+                            <div>感恩节</div>
+                        </td>
+                        <td class="disabled" data-day="25">
+                            <div>25</div>
+                        </td>
+                        <td class="saturday disabled" data-day="26">
+                            <div>
+                            <div><span>26</span>
+                                <p>¥5599</p>
+                                <input type="hidden" value="5599" data-date="Sat Oct 15 2016 00:00:00 GMT+0800 (中国标准时间)">
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sunday disabled" data-day="27">
+                            <div>27</div>
+                        </td>
+                        <td class="disabled" data-day="28">
+                            <div>28</div>
+                        </td>
+                        <td class="disabled" data-day="29">
+                            <div>29
+                            </div>
+                        </td>
+                        <td class="disabled" data-day="30">
+                            <div>30</div>
+                        </td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                        <td class="disabled"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
         <div class="data_select_card">
             <span>红包</span><span>银行优惠</span><span>点平返利</span>
         </div>
@@ -12,9 +311,9 @@
     <div class="person_num">
         <div>选择出行人数</div>
         <div class="growup">成人
-            <span class="minu">-</span>
+            <span class="minu" >-</span>
             <span class="cont">2</span>
-            <span class="add">+</span>
+            <span class="add" ng-click="addNum()">+</span>
         </div>
         <div class="child">儿童
             <span class="minu">-</span>
@@ -23,7 +322,7 @@
         </div>
     </div>
     <div class="data_next_step">
-        <span class="select_result">团期: 请选择</span><span class="next">下一步</span>
+        <span class="select_result">团期: 请选择</span><a ui-sref="submitSuccess"><span class="next">下一步</span></a>
         <span class="next_shadow"></span>
     </div>
 

@@ -41,7 +41,8 @@ require.config({
         'ui-router': {
             deps: ['angular'],
             exports: 'ui-router'
-        }
+        },
+
     }
 });
 
@@ -49,7 +50,7 @@ require(['jquery',
         'angular',
         'index',
         'ui-router',
-        'HomeController',
+       'HomeController',
         'MineController',
         'SeckillController',
         'MineOrderController',
@@ -71,7 +72,7 @@ require(['jquery',
         'C_orderController',
         'ProDetailController'
     ],
-    function (jquery,angular,index) {
+    function (jquery,angular,index,calendar) {
         index.index();
         //手动加载模块
         angular.bootstrap(document, ['webapp']);

@@ -4,6 +4,38 @@
 define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
     return app.controller('DataSelectController',['$scope',function ($scope) {
-        $scope.info = '123';
-    }])
+        //切换日历
+            $scope.flag1 = true;
+            $scope.flag2 = false;
+            $scope.cancler = function(){
+                $scope.flag1 = !$scope.flag1;
+                $scope.flag2 = !$scope.flag2;
+            }
+        //改变选中日期颜色
+        var oldItem;
+        angular.element("td").find("span").parent().parent().on("click",function(){
+            $(oldItem).css("backgroundColor","#fff");
+            $(this).css("backgroundColor","#68d2c7");
+            oldItem = $(this);
+        });
+        $scope.addNum = function(e){
+            console.log($(event.target).prev().text());
+        }
+
+       /* angular.element(".add").on("click",function(){
+            console.log($(this));
+            $(this).prev().text(parseInt($(this).prev().text())+1);
+            if(parseInt($(this).prev().text())>0){
+                $(this).prev().css("disabled","disabled");
+                $(this).prev().prev().css({"borderColor":"#23bdad","color":"#23bdad"})
+            }
+        })
+        angular.element(".minu").on("click",function(){
+            $(this).next().text(parseInt($(this).next().text())-1);
+            if(parseInt($(this).next().text())==0){
+                $(this).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
+            }
+        })*/
+    }]);
+
 })

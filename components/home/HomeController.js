@@ -9,4 +9,5 @@ define(['router','$css!./components/home/home.css'],function (app) {
     //return app.controller("HomeController",["$scope",function($scope){
     //    $scope.infor = "测试";
     //}])
+
 })
