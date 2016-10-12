@@ -29,9 +29,8 @@ require.config({
         ProDetailController: './components/proDetail/ProDetailController',
         SeckillController:'./components/seckill/SeckillController',
         index: './js/controllers/index',
-        router: './router'
-
-
+        router: './router',
+        swiper:'./libs/swiper-3.3.1.jquery.min'
     },
     shim:{
         angular: {
@@ -41,6 +40,10 @@ require.config({
         'ui-router': {
             deps: ['angular'],
             exports: 'ui-router'
+        },
+        swiper:{
+            deps:['jquery'],
+            exports:'swiper'
         }
     }
 });
@@ -60,6 +63,7 @@ require(['jquery',
         'SerController',
         'BackController',
         'PayController',
+        'SeckillController',
         "targetController",
         "targat_positionController",
         'TripController',
