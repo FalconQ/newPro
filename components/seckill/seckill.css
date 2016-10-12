@@ -244,6 +244,15 @@
     margin-top: 0.08rem;
     margin-right: 0.2rem;
 }
+#seckill_box .process > div{
+    width:30%;
+    height: 0.2rem;
+    border: 0.01rem solid #ff6633;
+    border-radius: 0.1rem;
+    background: #ff6633;
+    box-sizing: border-box;
+
+}
 #seckill_box .banner_div .banner_money .banner_buy{
     width: 2.33rem;
     height: 1.3rem;
@@ -291,16 +300,16 @@
 #seckill_box .overflow{
     width: 7.5rem;
     height: 3.4rem;
-    /*overflow-x: scroll;*/
+    overflow: hidden;
     /*white-space: nowrap;*/
 }
 #seckill_box .seckill_main .seckill_main_div{
+    width:30.2rem;
     height: 3.4rem;
     margin-left: 0.24rem;
-    background-color: #bbbbbb;
 }
 #seckill_box .seckill_main .seckill_main_div_path1{
-    width:3.02rem;
+    width:3.5rem;
     height:3.39rem;
     margin-right: 0.26rem;
     float: left;
@@ -415,6 +424,11 @@
 }
 .list1 .list1_div>dl>dd:nth-of-type(1){
     font-size: 0.33rem;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
 }
 .list1 .list1_div>dl>dd:nth-of-type(2){
     color:#bdbdbd;
@@ -428,13 +442,17 @@
     /*color:#ff6633;*/
 /*}*/
 .list1 .list1_div>dl>dd:nth-of-type(3){
-   width: 1.31rem;
+
     height:0.34rem ;
-    border: 0.01rem solid #ff6633;
-    text-align: center;
+
     line-height:0.34rem  ;
     font-size: 0.21rem;
     color:#ff6633;
+}
+.list1 .list1_div>dl>dd:nth-of-type(3) span {
+    border: 0.01rem solid #ff6633;
+    text-align: center;
+
 }
 .list1 .list1_div>dl>dd:nth-of-type(4){
     margin-left: 2.4rem;
