@@ -42,7 +42,7 @@
     margin-left: 1.64rem;
 }
 fieldset{
-    width: 100%;
+    width: 99%;
     border-top: 0.03125px solid #dcdcdc;
     border-bottom: none;
     border-right: none;
@@ -62,7 +62,6 @@ fieldset legend{
 .trip_box .trip_select{
     width: 100%;
     height: 100%;
-    margin-bottom: 1.3rem;
 }
 
 .trip_box .trip_select div{

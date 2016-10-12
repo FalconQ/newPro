@@ -27,6 +27,31 @@ define(['angular'],function (angular) {
                         templateUrl: './components/mine/mine.html',
                         controller: 'MineController'
                     })
+                    .state('mineOrder', {
+                        url: '/mineOrder',
+                        templateUrl: './components/mineOrder/mineOrder.html',
+                        controller: 'MineOrderController'
+                    })
+                    .state('information', {
+                        url: '/information',
+                        templateUrl: './components/information/information.html',
+                        controller: 'InformationController'
+                    })
+                    .state('information_tourists', {
+                        url: '/information_tourists',
+                        templateUrl: './components/information_tourists/information_tourists.html',
+                        controller: 'TouristsController'
+                    })
+                    .state('addPeople', {
+                        url: '/addPeople',
+                        templateUrl: './components/addPeople/addPeople.html',
+                        constroller: 'PeopleController'
+                    })
+                    .state('changePeople', {
+                        url: '/changePeople',
+                        templateUrl: './components/changePeople/changePeople.html',
+                        constroller: 'ChangeController'
+                    })
                     .state('trip', {
                         url: '/trip',
                         templateUrl: './components/trip/trip.html',
@@ -57,12 +82,38 @@ define(['angular'],function (angular) {
                         templateUrl: 'components/pay/pay.html',
                         controller: 'PayController'
                     })
+                    .state('proDetail', {
+                        url: '/proDetail',
+                        templateUrl: 'components/proDetail/proDetail.html',
+                        controller: 'ProDetailController'
+                    })
+                    .state('dataSelect', {
+                        url: '/dataSelect',
+                        templateUrl: 'components/dataSelect/dataSelect.html',
+                        controller: 'DataSelectController'
+                    })
+                    .state('C_order', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'submitController'
+                    })
+                    .state('orderInfo', {
+                        url: '/orderInfo',
+                        templateUrl: 'components/orderInfo/orderInfo.html',
+                        controller: 'orderInfoController'
+                    })
                     .state('seckill', {
                         url: '/seckill',
                         templateUrl: 'components/seckill/seckill.html',
                         controller: 'SeckillController'
                     })
+                    .state('submitSuccess', {
+                        url: '/submitSuccess',
+                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        controller: 'SubmitSuccessController'
+                    })
+                }]);
 
 
-                    }])
-})
+
+});

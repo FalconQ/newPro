@@ -1,10 +1,12 @@
-
+.targat{
+    background: white;
+}
 .modlTargat_top{
     z-index: 3;
    position: fixed;
     top: 0px;
     width: 7.5rem;
-    height: 0.98rem;
+    height: 0.89rem;
     background: white;
     font-size: .3rem;
 }
@@ -29,6 +31,7 @@ margin-top: .1rem;
 .modlTargat_mian{
    width: 7.5rem;
    position: absolute;
+    background: white;
 
 }
 .modlTargat_left {
@@ -55,6 +58,10 @@ margin-top: .1rem;
     text-align: center;
     line-height: 1rem;
 
+}
+.modlTargat_left ul li:nth-of-type(1){
+    background: white;
+    color:#6ad3c8 ;
 }
 .modlTargat_rigth{
     width: 5.72rem;
@@ -88,6 +95,7 @@ margin-top: .1rem;
     margin-right: 0.1rem;
 }
 .modlTargat_rigth .page_1 ul  li  div{
+    position: relative;
      width: 5.71rem;
      height: 2.28rem;
     background: url("img/you_1.png") no-repeat;
@@ -96,12 +104,15 @@ margin-top: .1rem;
     line-height:2.28rem;
     color: white;
     font-size: 0.35rem;
-    border: 1px solid white;
+    border-radius: 0.08rem;
 }
 .modlTargat_rigth  .page_1 ul  li  div img{
     display: block;
     margin: 0 auto;
     margin-top: 0.5rem;
+    position: absolute;
+    left: 45%;
+    top: -10%;
 
 }
 .modlTargat_rigth .page_1  ul  li p{
