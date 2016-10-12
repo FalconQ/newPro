@@ -86,7 +86,7 @@ function indexOf(array, value) {
 
 /**
  * Merges a set of parameters with all parameters inherited between the common parents of the
- * current state and a given destination state.
+ * current state and a given trip_destination state.
  *
  * @param {Object} currentParams The value of the current state parameters ($stateParams).
  * @param {Object} newParams The set of parameters which will be composited with inherited params.

@@ -7,14 +7,23 @@ require.config({
         angular: './libs/bower_components/angular/angular.min',
         'ui-router': './libs/bower_components/angular-ui-router/release/angular-ui-router',
         $css: './libs/css',
+        HomeController: './components/home/HomeController',
+        targetController: './components/target/targetController',
+        targat_positionController: './components/targat_position/targat_positionController',
         index: './js/controllers/index',
         router: './router',
-        HomeController: './components/home/HomeController',
+        TripController:'./components/trip/TripController',
+        DestController:'./components/trip_destination/DestController',
+        ClassicController:'./components/trip_classic/ClassicController',
         MineController:'./components/mine/MineController',
         SerController:'./components/serOrder/SerController',
         BackController:'./components/orderBack/BackController',
         PayController:'./components/pay/PayController',
-        SeckillController:'./components/seckill/SeckillController'
+        SeckillController:'./components/seckill/SeckillController',
+        index: './js/controllers/index',
+        router: './router'
+
+
     },
     shim:{
         angular: {
@@ -28,7 +37,6 @@ require.config({
     }
 });
 
-
 require(['jquery',
         'angular',
         'index',
@@ -38,7 +46,12 @@ require(['jquery',
         'SerController',
         'BackController',
         'PayController',
-        'SeckillController'
+        'SeckillController',
+        "targetController",
+        "targat_positionController",
+        'TripController',
+        'DestController',
+        'ClassicController'
     ],
     function (jquery,angular,index) {
         index.index();

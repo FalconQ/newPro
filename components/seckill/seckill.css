@@ -2,5 +2,449 @@
 #seckill_box{
     width: 7.5rem;
     height: 100%;
-    background-color: #01a0ff;
 }
+#seckill_box header{
+    width: 7.5rem;
+    height: 0.95rem;
+    background-color: #fff;
+    border-bottom: 0.01rem solid #bbbbbb;
+}
+#seckill_box header .sec_img1_div{
+    width: 0.37rem;
+    height: 0.33rem;
+    float: left;
+    margin-left: 0.36rem;
+    margin-top: 0.2rem;
+}
+#seckill_box header .sec_img1_div .sec_img1{
+    width: 0.37rem;
+    height: 0.33rem;
+}
+#seckill_box header .sec_div{
+    float: left;
+    margin-left: 1.8rem;
+    margin-top: 0.2rem;
+
+}
+#seckill_box header .sec_div>p{
+    float: left;
+    font-size: 0.32rem;
+
+}
+#seckill_box header .sec_img2_div{
+    float: left;
+    width: 0.38rem;
+    height: 0.38rem;
+    margin-left: 1.8rem;
+    margin-top: 0.2rem;
+}
+#seckill_box header .sec_div .sec_img2{
+    width: 0.22rem;
+    height: 0.13rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+}
+#seckill_box header .sec_img2_div .sec_img3{
+    width: 0.38rem;
+    height: 0.38rem;
+    margin-top: 0.05rem;
+}
+/*nav*/
+#seckill_box .nav{
+    width: 7.5rem;
+    height: 0.95rem;
+    background-color: #fff;
+}
+#seckill_box .nav .nav_ul{
+    width: 7.5rem;
+    height: 0.95rem;
+    text-align: center;
+    line-height:  0.95rem;
+}
+#seckill_box .nav .nav_ul li{
+    width: 1.69rem;
+    height: 0.92rem;
+    float: left;
+    margin-left: 0.16rem;
+}
+#seckill_box .nav .nav_ul li:nth-of-type(1){
+    width: 1.69rem;
+    height: 0.92rem;
+    float: left;
+    margin-left: 0.16rem;
+    border-bottom: 0.05rem solid #2ebd59;
+    color:#2ebd59;
+}
+#seckill_box .nav .nav_ul li a{
+    color:#666666;
+}
+#seckill_box .nav .nav_ul li:nth-of-type(1) a{
+    color:#2ebd59;
+}
+/*点击后border-bottom变绿*/
+.li{
+    width: 1.69rem;
+    height: 0.92rem;
+    float: left;
+    border-bottom: 0.05rem solid #2ebd59;
+    margin-left: 0.16rem;
+    color:#2ebd59;
+}
+/*banner*/
+#seckill_box .banner_div{
+    width: 7.5rem;
+    height: 5.3rem;
+    background-color: darkgray;
+}
+#seckill_box .banner{
+    width: 7.5rem;
+    height: 3.99rem;
+    background-image: url("../../images/seckill/sec.png");
+    background-size:7.5rem 4.02rem;
+    position: relative;
+    border-top: 0.01rem solid #eaeaea;
+}
+#seckill_box .banner .banner_time{
+    width: 4.92rem;
+    height: 0.62rem;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 0.23rem;
+    border-radius: 0.5rem;
+}
+#seckill_box .banner .banner_time .ban_div_box{
+    float: right;
+    width: 2.8rem;
+    height: 0.62rem;
+}
+#seckill_box .banner .banner_time .banner_time_p{
+    height: 0.62rem;
+    line-height:0.62rem ;
+    text-align: center;
+    color:#fff;
+    float: left;
+    margin-right: 0.1rem;
+}
+#seckill_box .banner .banner_time .banner_timer{
+    width: 2.66rem;
+    height: 0.55rem;
+}
+#seckill_box .banner .banner_time .banner_time_box{
+    width: 0.61rem;
+    height: 0.34rem;
+    float: left;
+    position: relative;
+}
+#seckill_box .banner .banner_time .banner_time_box span{
+    width: 0.17rem;
+    height: 0.34rem;
+    color:#fff;
+    display: inline-block;
+    margin-top: 0.1rem;
+    position: absolute;
+    text-align: center;
+}
+#seckill_box .banner .banner_time .banner_time_div{
+    width: 0.44rem;
+    height: 0.34rem;
+    background-color: #fff;
+    color:#ff6633;
+    line-height:0.34rem ;
+    text-align: center;
+    float: left;
+    border-radius: 0.1rem;
+    margin-top:0.14rem ;
+}
+#seckill_box .banner .banner_img{
+    width: 7.5rem;
+    height: 4.02rem;
+}
+#seckill_box .banner .banner_time .banner_time_fixed{
+    width: 1.96rem;
+    height: 0.62rem;
+    background-color: #ff6633;
+    border-radius: 0.5rem;
+
+}
+#seckill_box .banner .banner_time .banner_time_fixed_img{
+    float: left;
+    width: 0.42rem;
+    height: 0.38rem;
+    margin-left: 0.14rem;
+    margin-top: 0.1rem;
+}
+#seckill_box .banner .banner_time .banner_time_p2{
+    width:1.18rem;
+    height: 0.38rem;
+    float: left;
+    margin-top: 0.1rem;
+    color: #fff;
+}
+#seckill_box .banner .banner_describe{
+    width:7.09rem;
+    height: 0.69rem;
+    color: #fff;
+    margin-top: 2.7rem;
+    font-size: 0.3rem;
+    margin-left: 0.23rem;
+}
+
+#seckill_box .seckill_kong{
+    width: 7.5rem;
+    height: 0.23rem;
+    border-top: 0.01rem solid #dcdcdc;
+    border-bottom: 0.01rem solid #dcdcdc;
+    background-color: #eee;
+}
+
+/*抢购*/
+#seckill_box .banner_div .banner_money{
+    width: 7.5rem;
+    height: 1.3rem;
+    background-color: #fff;
+}
+#seckill_box .banner_div .banner_money .banner_money_num{
+    width: 5.16rem;
+    height: 1.3rem;
+    float: left;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .banner_money_num1{
+    height: 0.78rem;
+    border-top:0.01rem solid #fff;
+    padding-left: 0.2rem;
+    box-sizing: border-box;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .banner_money_num1 .orage_money{
+    float: left;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .banner_money_num1 .orage_money .orage_price{
+    font-size: 0.4rem;
+    color:#ff6633;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .banner_money_num1 .orage_num{
+    margin-left: 1.7rem;
+    margin-top: 0.2rem;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .orage{
+    color:#ff6633;
+}
+#seckill_box .banner_div .banner_money .banner_money_num .banner_money_num2{
+    height: 0.51rem;
+    padding-left: 0.23rem;
+    box-sizing: border-box;
+
+}
+#seckill_box .process{
+    width: 1.73rem;
+    height: 0.24rem;
+    float: left;
+    border: 0.01rem solid #ff6633;
+    border-radius: 0.1rem;
+    margin-top: 0.08rem;
+    margin-right: 0.2rem;
+}
+#seckill_box .banner_div .banner_money .banner_buy{
+    width: 2.33rem;
+    height: 1.3rem;
+    float: left;
+}
+#seckill_box .banner_div .banner_money .banner_buy>div{
+    width: 2.1rem;
+    height: 0.83rem;
+    background-color: #ff6633;
+    border-radius: 0.1rem;
+    margin-top: 0.23rem;
+    text-align: center;
+    line-height:0.83rem;
+    color:#fff;
+    font-size: 0.3rem;
+}
+/*main*/
+#seckill_box .seckill_main{
+    width: 100%;
+    height: 4.53rem;
+    background-color: #fff;
+    border-top: 0.01rem solid #fff;
+}
+#seckill_box .seckill_main_p{
+    background-color: #fff;
+    height: 0.83rem;
+    font-size: 0.29rem;
+    color:#666;
+    border-top: 0.01rem solid #fff;
+    line-height:0.83rem ;
+    position: relative;
+    margin-left: 0.44rem;
+}
+#seckill_box .seckill_main_span{
+    width: 0.07rem;
+    height: 0.32rem;
+    background-color: #ff6633;
+    display: inline-block;
+    margin-left: 0.24rem;
+    margin-right:0.24rem ;
+    position: absolute;
+    top: 7.7rem;
+}
+/*没给宽度，有滑动效果*/
+#seckill_box .overflow{
+    width: 7.5rem;
+    height: 3.4rem;
+    /*overflow-x: scroll;*/
+    /*white-space: nowrap;*/
+}
+#seckill_box .seckill_main .seckill_main_div{
+    height: 3.4rem;
+    margin-left: 0.24rem;
+    background-color: #bbbbbb;
+}
+#seckill_box .seckill_main .seckill_main_div_path1{
+    width:3.02rem;
+    height:3.39rem;
+    margin-right: 0.26rem;
+    float: left;
+
+}
+#seckill_box .seckill_main .seckill_main_div_path1>dt{
+    width:3.02rem;
+    height:1.76rem;
+}
+#seckill_box .seckill_main .seckill_main_div_path1>dt>img{
+    width:3.02rem;
+    height:1.76rem;
+}
+#seckill_box .seckill_main .seckill_main_div_path1>dd:nth-of-type(1){
+    width:2.56rem;
+    height:0.75rem;
+    margin-left: 0.27rem;
+    margin-top: 0.16rem;
+
+}
+#seckill_box .seckill_main .seckill_main_div_path1>dd:nth-of-type(2){
+    width:2.56rem;
+    margin-left: 0.27rem;
+}
+#seckill_box .seckill_main .seckill_main_div_path1>dd:nth-of-type(2)>span{
+    font-size: 0.3rem;
+    color:#ff6633;
+}
+/*main2*/
+#seckill_box .seckill_main2{
+    width: 7.5rem;
+    height: 100%;
+    background-color: #fff;
+}
+#seckill_box .seckill_main2 .seckill_main_p1{
+    background-color: #fff;
+    height: 0.83rem;
+    font-size: 0.29rem;
+    color:#666;
+    border-top: 0.01rem solid #fff;
+    line-height:0.83rem ;
+    position: relative;
+    margin-left: 0.44rem;
+    border-bottom: 0.01rem solid #eee;
+}
+#seckill_box .seckill_main2 .seckill_main_p1>span{
+    margin-left: 4rem;
+}
+#seckill_box .seckill_main2 .seckill_main_p1 .sec_img3{
+    width: 0.29rem;
+    height: 0.33rem;
+    margin-left: 0.2rem;
+}
+#seckill_box .seckill_main2 .seckill_main_span1{
+    width: 0.07rem;
+    height: 0.32rem;
+    background-color: #ff6633;
+    display: inline-block;
+    margin-left: 0.24rem;
+    margin-right:0.24rem ;
+    position: absolute;
+    top: 12.45rem;
+}
+.seckill_main2_ul{
+    width:7.5rem;
+    height: 1.05rem;
+    text-align: center;
+}
+.seckill_main2_ul>li{
+    float: left;
+    width:1.6rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    background-color: #f7f8fc;
+    margin-left: 0.24rem;
+    margin-top: 0.23rem;
+    border-radius: 0.5rem;
+}
+.seckill_main2_list{
+    width:7.49rem;
+    height: 100%;
+    border-top:0.01rem solid #fff ;
+}
+.list1{
+    width:7.48rem;
+    height: 2.82rem;
+    border-top:0.01rem solid #ededed ;
+}
+.list1:nth-of-type(1){
+    width:7.48rem;
+    height: 2.82rem;
+    border-top:0.01rem solid #fff ;
+}
+.list1 .list1_div{
+    width:7.1rem;
+    height: 2.39rem;
+    margin-top: 0.24rem;
+    margin-left: 0.23rem;
+}
+.list1 .list1_div dt{
+    width: 2.10rem;
+    height: 2.36rem;
+    float: left;
+}
+.list1 .list1_div dt>img{
+    width: 2.10rem;
+    height: 2.36rem;
+}
+.list1 .list1_div>dl>dd{
+    margin-left: 2.5rem;
+}
+.list1 .list1_div>dl>dd:nth-of-type(1){
+    font-size: 0.33rem;
+}
+.list1 .list1_div>dl>dd:nth-of-type(2){
+    color:#bdbdbd;
+    margin-top: 0.35rem;
+}
+.list1 .list1_div>dl>dd:nth-of-type(2) span:nth-of-type(2){
+    color:#ff6633;
+    font-size: 0.45rem;
+}
+/*.list1 .list1_div>dl>dd:nth-of-type(2) span:nth-of-type(1){*/
+    /*color:#ff6633;*/
+/*}*/
+.list1 .list1_div>dl>dd:nth-of-type(3){
+   width: 1.31rem;
+    height:0.34rem ;
+    border: 0.01rem solid #ff6633;
+    text-align: center;
+    line-height:0.34rem  ;
+    font-size: 0.21rem;
+    color:#ff6633;
+}
+.list1 .list1_div>dl>dd:nth-of-type(4){
+    margin-left: 2.4rem;
+    margin-top: 0.1rem;
+}
+.span_color{
+    color:#ff6633;
+}
+.list1 .list1_div>dl>dd:nth-of-type(4)>span:nth-of-type(2){
+    margin-left: 0.3rem;
+}
+
+

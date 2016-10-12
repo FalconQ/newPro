@@ -1,0 +1,111 @@
+.trip_box{
+    height: 100%;
+}
+.trip_assistant{
+    height: 9.02rem;
+    background: url("img/bg_earth_list_assistant.png") no-repeat;
+    background-size: 100% 9.02rem;
+    position: relative;
+}
+.trip_assistant .trip_explain{
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url("img/icon_disport_problem_common.png")no-repeat;
+    background-size: 100% 0.4rem;
+    display: inline-block;
+    position: absolute;
+    top:0.3rem;
+    left:6.3rem;
+}
+.trip_assistant .trip_message{
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url("img/icon_message_comment.png")no-repeat;
+    background-size: 100% 0.4rem;
+    display: inline-block;
+    position: absolute;
+    top:0.3rem;
+    left:6.9rem;
+}
+
+.trip_assistant .trip_assi_btnLogin{
+    width: 4.24rem;
+    height: 0.8rem;
+    background: #ff5346;
+    font-size: 0.3rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.8rem;
+    border-radius: 0.38rem;
+    margin-top: 7.9rem;
+    display: inline-block;
+    margin-left: 1.64rem;
+}
+fieldset{
+    width: 100%;
+    border-top: 0.03125px solid #dcdcdc;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-left:3.572rem;
+    padding-ringht:3.552rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top:0;
+    padding-bottom: 0;
+}
+fieldset legend{
+    font-size: 0.4375rem;
+    color: #9a9895;
+    border-bottom: 0;
+}
+.trip_box .trip_select{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.trip_box .trip_select div{
+    width:7.11rem;
+    height: 3.55rem;
+    border-radius: 0.18rem;
+    margin-left: 0.18rem;
+    margin-bottom: 0.2rem;
+}
+.trip_box .trip_select div>h2{
+    text-align: center;
+    color: #fff;
+    font-size: 0.6rem;
+    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
+    font-family: 宋体;
+    padding-top:1rem;
+    box-sizing: border-box;
+}
+.trip_box .trip_select div>p{
+    text-align: center;
+    color:#fff;
+    font-size: 0.28rem;
+}
+.trip_box .trip_stroke_recom{
+    background: url("img/01.jpg")no-repeat;
+    background-size: 100% 3.55rem;
+}
+.trip_box .trip_camera{
+    background: url("img/02.jpg")no-repeat;
+    background-size: 100% 3.55rem;
+}
+.trip_box .trip_falsh_sale{
+    background: url("img/03.jpg")no-repeat;
+    background-size: 100% 3.55rem;
+}
+.trip_box .trip_add{
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url("img/btn_travelnotelist_addnew.png")no-repeat;
+    background-size: 100% 1.12rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.8rem;
+    right: 0.5rem;
+}

@@ -9,34 +9,44 @@
 </head>
 <body>
     <div id="container" ui-view>
-
     </div>
     <!--底部导航菜单-->
     <div id="tabBar">
         <ul>
             <li>
                 <a ui-sref="home">
-                    <div class="icon1"></div>
+                    <div class="icon1">
+                        <h5>首页</h5>
+                    </div>
                 </a>
             </li>
             <li>
-                <a>
-                    <div class="icon"></div>
+                <a ui-sref="target">
+                    <div class="icon">
+                        <h5>目的地</h5>
+                    </div>
+
                 </a>
             </li>
             <li>
-                <a>
-                    <div class="icon"></div>
+                <a ui-sref="trip">
+                    <div class="icon">
+                        <h5>行程</h5>
+                    </div>
                 </a>
             </li>
             <li>
                 <a ui-sref="serviceOrder">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <h5>服务</h5>
+                    </div>
                 </a>
             </li>
             <li>
                 <a ui-sref="mine">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <h5>我的</h5>
+                    </div>
                 </a>
             </li>
         </ul>
