@@ -25,8 +25,9 @@ define(['router','$css!./components/pay/pay.css'],function (app) {
                 templateUrl: './components/pay/pay_list.html',
                 replace:true,
                 controller: function ($scope,$element) {
-                    $element.find('li').on('click','label',function () {
-                        console.log(this)
+                    $element.find('li').on('click','input',function () {
+                        $(this).closest('label').attr('class','checked')
+                            .closest('li').siblings('li').find('label').attr('class','uncheck');
                     })
                 }
             }
@@ -39,8 +40,8 @@ define(['router','$css!./components/pay/pay.css'],function (app) {
                 controller: function ($scope,dataFactory) {
                     $scope.data = dataFactory.get();
                     $scope.click = function () {
-                        dataFactory.set({'oriDate':'123'})
-                        alert('支付成功')
+                        dataFactory.set({'oriDate':'123'});
+                        alert('支付成功');
                         console.log(dataFactory.get())
                     }
                 }

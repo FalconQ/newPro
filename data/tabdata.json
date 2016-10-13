@@ -1,0 +1,103 @@
+{
+      "categoryList": [
+        {
+          "displayType": "0",
+          "categoryIdSource": "0",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "18",
+          "categoryName": "周边"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "6",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "6",
+          "categoryName": "热门"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "0",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "39",
+          "categoryName": "错峰秋游"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "3",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "3",
+          "categoryName": "江浙沪"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "4",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "4",
+          "categoryName": "全国"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "12",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "12",
+          "categoryName": "日韩"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "9",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "9",
+          "categoryName": "东南亚"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "15",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "15",
+          "categoryName": "海岛"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "7",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "7",
+          "categoryName": "港澳台"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "0",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "32",
+          "categoryName": "欧美澳"
+        },
+        {
+          "displayType": "0",
+          "categoryIdSource": "8",
+          "isActivity": "0",
+          "categoryBgUrl": "",
+          "bgImgUrl": "//tcw-public.b0.upaiyun.com/20161009/clientContent/2016100916040991866236.jpg",
+          "categoryId": "8",
+          "categoryName": "中东非"
+        }
+      ]
+}
