@@ -29,10 +29,10 @@ require.config({
         ProDetailController: './components/proDetail/ProDetailController',
         SeckillController:'./components/seckill/SeckillController',
         index: './js/controllers/index',
-        router: './router'
-
-
+        router: './router',
+        swiper:'./libs/swiper-3.3.1.jquery.min'
     },
+    //强依赖
     shim:{
         angular: {
             deps: ['jquery'],
@@ -42,7 +42,10 @@ require.config({
             deps: ['angular'],
             exports: 'ui-router'
         },
-
+        swiper:{
+            deps:['jquery'],
+            exports:'swiper'
+        }
     }
 });
 
@@ -61,6 +64,7 @@ require(['jquery',
         'SerController',
         'BackController',
         'PayController',
+        'SeckillController',
         "targetController",
         "targat_positionController",
         'TripController',
@@ -70,7 +74,8 @@ require(['jquery',
         'submitController',
         'orderInfoController',
         'C_orderController',
-        'ProDetailController'
+        'ProDetailController',
+        'swiper'
     ],
     function (jquery,angular,index,calendar) {
         index.index();

@@ -9,6 +9,7 @@
     height: 0.89rem;
     padding-top: 0.19rem;
     box-sizing: border-box;
+    background-color: #fff;
 }
 #home_box header .home_head{
     width: 7.5rem;
@@ -63,20 +64,21 @@
     margin-left: 0.3rem;
 }
 /*banner*/
-#home_box .home_banner{
+#home_box .swiper-container{
     width: 7.5rem;
     height: 1.74rem;
     display: block;
 }
-#home_box .home_banner .home_banner_div{
+#home_box .swiper-container .swiper-wrapper{
     width: 7.5rem;
     height: 1.74rem;
 }
-#home_box .home_banner .home_banner_div .home_banner_img{
+#home_box .swiper-container .swiper-wrapper .swiper-slide img{
     width: 7.5rem;
     height: 1.74rem;
     display: block;
 }
+
 #home_box .home_main{
     width: 7.5rem;
     height:8.93rem;
@@ -278,6 +280,16 @@
 }
 #home_box .home_limitshop_fir .time_dl .time_dd1{
     font-size: 0.27rem;
+    /*white-space:nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient:vertical;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
 }
 #home_box .home_limitshop_fir .time_dl .time_dd2 .time_span{
    font-size: 0.3rem;
@@ -286,5 +298,5 @@
     color: #f87966;
 }
 #home_box .home_limitshop_fir .time_dl .time_span3{
-    margin-left: 2.2rem;
+   float: right;
 }
