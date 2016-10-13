@@ -93,9 +93,9 @@ define(['angular'],function (angular) {
                         controller: 'DataSelectController'
                     })
                     .state('C_order', {
-                        url: '/submitSuccess',
-                        templateUrl: 'components/submitSuccess/submitSuccess.html',
-                        controller: 'submitController'
+                        url: '/C_order',
+                        templateUrl: 'components/C_order/C_order.html',
+                        controller: 'C_orderController'
                     })
                     .state('orderInfo', {
                         url: '/orderInfo',
