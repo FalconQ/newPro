@@ -9,7 +9,6 @@ define(['router','$css!./components/home/home.css'],function (app) {
         data();
         function data(){
             $http.get("./data/xianShi.json").success(function(data){
-                console.log(data);
                 $scope.data = data
             })
         }

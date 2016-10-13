@@ -14,6 +14,7 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
         $http.get("data/qianggou.json")
             .success(function(data){
                 $scope.objs2=data.Product
+
             });
         $scope.goBack=function goHistory(temp){
                 //temp  正值就是向前走， 负数返回

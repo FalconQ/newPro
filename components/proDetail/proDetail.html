@@ -44,7 +44,7 @@
     <div class="origin_wrap">
         <div class="origin_name">北京出发</div>
         <div class="select_date">
-            <a ng-repeat="x in data.OrgPrice">{{x}}</a>
+            <a ng-repeat="x in data.OrgPrice" ng-click="click(x)">{{x}}</a>
         </div>
     </div>
     <div class="rules">
@@ -64,7 +64,7 @@
         <!--<div class="description"></div>-->
     <!--</div>-->
     <footer>
-        <a ui-sref="dataSelect">立即抢购</a>
+        <a ng-click="click()">立即抢购</a>
     </footer>
 
 </div>

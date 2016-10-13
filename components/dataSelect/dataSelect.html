@@ -1,4 +1,4 @@
-<div ng-controller="DataSelectController" class="dataSelect">
+<div  class="dataSelect">
     <div class="data_header">
         <span class="back_step"></span>
         日期选择
@@ -311,14 +311,14 @@
     <div class="person_num">
         <div>选择出行人数</div>
         <div class="growup">成人
-            <span class="minu" >-</span>
+            <span class="minu" ng-click="minuNum()">-</span>
             <span class="cont">2</span>
             <span class="add" ng-click="addNum()">+</span>
         </div>
         <div class="child">儿童
-            <span class="minu">-</span>
+            <span class="minu" ng-click="minuNum()">-</span>
             <span class="cont">3</span>
-            <span class="add">+</span>
+            <span class="add" ng-click="addNum()">+</span>
         </div>
     </div>
     <div class="data_next_step">
