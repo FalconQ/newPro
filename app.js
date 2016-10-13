@@ -53,7 +53,7 @@ require(['jquery',
         'angular',
         'index',
         'ui-router',
-        'HomeController',
+       'HomeController',
         'MineController',
         'SeckillController',
         'MineOrderController',
@@ -77,7 +77,7 @@ require(['jquery',
         'ProDetailController',
         'swiper'
     ],
-    function (jquery,angular,index) {
+    function (jquery,angular,index,calendar) {
         index.index();
         //手动加载模块
         angular.bootstrap(document, ['webapp']);
