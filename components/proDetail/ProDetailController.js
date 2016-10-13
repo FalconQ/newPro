@@ -9,10 +9,11 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
         $scope.return = function () {
             history.back();
         };
-        $scope.click = function (e) {
-            if(e){
+        $scope.click = function (date) {
+            if(date){
+                date = new Date().getFullYear() +'-'+ date ;
                 var orderInfo = {
-                    oriDate:e,
+                    oriDate:date,
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle
                 }
