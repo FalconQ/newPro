@@ -24,7 +24,7 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     title:$scope.data.PITitle
                 }
             }
-            dataFactory.set('orderInfo',orderInfo);
+            dataFactory.set(orderInfo);
             $state.go('dataSelect');
         };
         //头部隐藏显示规则
@@ -70,8 +70,8 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
             var myServices = {};
             var Object = {};
 
-            var _setter = function (key,value) {
-                Object[key] = value
+            var _setter = function (data) {
+                Object = data
             };
             var _getter = function () {
                 return Object;
