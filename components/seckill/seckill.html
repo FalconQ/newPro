@@ -1,10 +1,8 @@
 <div id="seckill_box">
     <header>
-        <div class="sec_img1_div" >
-            <img src="./images/seckill/seckill_03.png" alt="" class="sec_img1">
-        </div>
+        <div class="sec_img1_div" ng-click="goBack(-1)"><img src="./images/seckill/seckill_03.png" alt="" class="sec_img1"></div>
         <div class="sec_div"><p>限时抢购·北京</p><img src="./images/seckill/seckill_08.png" alt="" class="sec_img2"></div>
-        <div class="sec_img2_div"><img src="./images/seckill/seckill_05.png" alt="" class="sec_img3"></div>
+        <div class="sec_img2_div" ng-click="show()"><img src="./images/seckill/seckill_05.png" alt="" class="sec_img3"></div>
     </header>
     <div class="nav">
         <ul class="nav_ul">
@@ -15,7 +13,7 @@
         </ul>
     </div>
     <div class="banner_div">
-        <div class="banner">
+        <div class="banner" ng-style="a">
             <div class="banner_time">
                 <div class="ban_div_box">
                     <p class="banner_time_p">距结束</p>
@@ -28,36 +26,24 @@
                     <p class="banner_time_p2">10点上新</p>
                 </div>
             </div>
-            <p class="banner_describe">【立减400元/人】，北京出发，南山竹海+灵山大佛+华东五市+迪士尼小镇+乌镇+南浔双飞6日双飞...</p>
+            <p class="banner_describe">{{name}}</p>
         </div>
         <div class="banner_money">
             <div class="banner_money_num">
                 <div class="banner_money_num1">
                     <p class="orage_money">
                         <span class="orage">￥</span>
-                        <span class="orage_price">1299</span>起
+                        <span class="orage_price">{{objs[2].OrgPrice}}</span>起
                     </p>
-                    <p class="orage_num">仅限<span class="orage">60</span>份</p>
+                    <p class="orage_num">仅限<span class="orage">{{objs[2].Stock}}</span>份</p>
 
                 </div>
                 <div class="banner_money_num2">
                     <!--<div >进度条</div>-->
-                    <process class="process" value="30" max="100"></process>
-                    <span class="orage">已抢购58%</span>
-
+                    <div class="process"><div ng-style= {'width':'{{objs[2].PIProductNum}}'+'%'}></div></div>
+                    <span class="orage">已抢购<span>{{objs[2].PIProductNum}}</span>  %</span>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div class="banner_buy">
-
-                <div>
-                    <a ui-sref="proDetail">
-                    立即抢购
-                    </a>
-                </div>
-
-            </div>
-=======
             <a ui-sref="proDetail">
                 <div class="banner_buy">
                     <div>
@@ -65,7 +51,6 @@
                     </div>
                 </div>
             </a>
->>>>>>> 85de4ac5d3df71b4e2f3e6f17dc826b85d254791
         </div>
     </div>
     <div class="seckill_kong"></div>
@@ -75,27 +60,11 @@
 
         <div class="overflow">
             <div class="seckill_main_div">
-                <dl class="seckill_main_div_path1">
-                    <dt><img src="./images/seckill/sec_path1.png" alt=""></dt>
-                    <dd>双人入住凤凰岭，入住北京凤凰岭</dd>
-                    <dd><span>￥298</span>起</dd>
+                <dl class="seckill_main_div_path1" ng-repeat=" x in objs2">
+                    <dt><img src={{x.ImgUrl}}></dt>
+                    <dd>{{x.PITitle}}</dd>
+                    <dd><span>{{x.OrgPrice}}</span>起</dd>
                 </dl>
-
-                <dl class="seckill_main_div_path1">
-                    <dt><img src="./images/seckill/sec_path1.png" alt=""></dt>
-                    <dd>双人入住凤凰岭，入住北京凤凰岭</dd>
-                    <dd><span>￥298</span>起</dd>
-                </dl>
-                <!--<dl class="seckill_main_div_path1">-->
-                    <!--<dt><img src="./images/seckill/sec_path1.png" alt=""></dt>-->
-                    <!--<dd>双人入住凤凰岭，入住北京凤凰岭</dd>-->
-                    <!--<dd><span>￥298</span>起</dd>-->
-                <!--</dl>-->
-                <!--<dl class="seckill_main_div_path1">-->
-                    <!--<dt><img src="./images/seckill/sec_path1.png" alt=""></dt>-->
-                    <!--<dd>双人入住凤凰岭，入住北京凤凰岭</dd>-->
-                    <!--<dd><span>￥298</span>起</dd>-->
-                <!--</dl>-->
             </div>
         </div>
     </div>
@@ -110,69 +79,22 @@
             <li>出境游</li>
             <li>游轮</li>
         </ul>
-        <div class="seckill_main2_list">
-            <div class="list1">
-                <div class="list1_div">
+        <div class="seckill_main2_list" >
+            <div class="list1"  ng-repeat="x in objs">
+                <div class="list1_div" >
                     <dl>
-                        <dt><img src="./images/seckill/4_03.png" alt=""></dt>
-                        <dd>巴厘岛4晚6天半自助游</dd>
-                        <dd>抢购价<span class="span_color">￥</span><span>6890</span>起</dd>
-                        <dd>第二人半价</dd>
+                        <dt><img src={{x.ImgUrl}} alt=""></dt>
+                        <dd>{{x.PITitle}}</dd>
+                        <dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>
+                        <dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>
                         <dd>
-                            <process class="process" value="30" max="100"></process>
-                            <span class="span_color">已抢购80%</span>
-                            <span>仅限<span class="span_color">50</span>份</span>
-                        </dd>
-                    </dl>
-
-                </div>
-            </div>
-            <div class="list1">
-                <div class="list1_div">
-                    <dl>
-                        <dt><img src="./images/seckill/4_03.png" alt=""></dt>
-                        <dd>巴厘岛4晚6天半自助游</dd>
-                        <dd>抢购价<span class="span_color">￥</span><span>6890</span>起</dd>
-                        <dd>第二人半价</dd>
-                        <dd>
-                            <process class="process" value="30" max="100"></process>
-                            <span class="span_color">已抢购80%</span>
-                            <span>仅限<span class="span_color">50</span>份</span>
+                            <div class="process"><div ng-style= {'width':'{{x.PIProductNum}}'+'%'}></div></div>
+                            <span class="span_color">已抢购<span>{{x.PIProductNum}}</span>%</span>
+                            <span>仅限<span class="span_color">{{x.Stock}}</span>份</span>
                         </dd>
                     </dl>
                 </div>
             </div>
-            <div class="list1">
-                <div class="list1_div">
-                    <dl>
-                        <dt><img src="./images/seckill/4_03.png" alt=""></dt>
-                        <dd>巴厘岛4晚6天半自助游</dd>
-                        <dd>抢购价<span class="span_color">￥</span><span>6890</span>起</dd>
-                        <dd>第二人半价</dd>
-                        <dd>
-                            <process class="process" value="30" max="100"></process>
-                            <span class="span_color">已抢购80%</span>
-                            <span>仅限<span class="span_color">50</span>份</span>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="list1">
-                <div class="list1_div">
-                    <dl>
-                        <dt><img src="./images/seckill/4_03.png" alt=""></dt>
-                        <dd>巴厘岛4晚6天半自助游</dd>
-                        <dd>抢购价<span class="span_color">￥</span><span>6890</span>起</dd>
-                        <dd>第二人半价</dd>
-                        <dd>
-                            <process class="process" value="30" max="100"></process>
-                            <span class="span_color">已抢购80%</span>
-                            <span>仅限<span class="span_color">50</span>份</span>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-
         </div>
     </div>
 
