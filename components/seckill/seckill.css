@@ -1,4 +1,10 @@
 @charset "utf-8";
+.modlsec_header{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+
+}
 #seckill_box{
     width: 7.5rem;
     height: 100%;
@@ -95,7 +101,9 @@
     width: 7.5rem;
     height: 5.3rem;
     background-color: darkgray;
+    margin-top:1.86rem;
 }
+/*}*/
 #seckill_box .banner{
     width: 7.5rem;
     height: 3.99rem;
@@ -244,6 +252,15 @@
     margin-top: 0.08rem;
     margin-right: 0.2rem;
 }
+#seckill_box .process > div{
+    width:30%;
+    height: 0.2rem;
+    border: 0.01rem solid #ff6633;
+    border-radius: 0.1rem;
+    background: #ff6633;
+    box-sizing: border-box;
+
+}
 #seckill_box .banner_div .banner_money .banner_buy{
     width: 2.33rem;
     height: 1.3rem;
@@ -291,16 +308,16 @@
 #seckill_box .overflow{
     width: 7.5rem;
     height: 3.4rem;
-    /*overflow-x: scroll;*/
+    overflow: hidden;
     /*white-space: nowrap;*/
 }
 #seckill_box .seckill_main .seckill_main_div{
+    width:37.8rem;
     height: 3.4rem;
     margin-left: 0.24rem;
-    background-color: #bbbbbb;
 }
 #seckill_box .seckill_main .seckill_main_div_path1{
-    width:3.02rem;
+    width:3.5rem;
     height:3.39rem;
     margin-right: 0.26rem;
     float: left;
@@ -319,6 +336,9 @@
     height:0.75rem;
     margin-left: 0.27rem;
     margin-top: 0.16rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
 
 }
 #seckill_box .seckill_main .seckill_main_div_path1>dd:nth-of-type(2){
@@ -379,6 +399,32 @@
     margin-left: 0.24rem;
     margin-top: 0.23rem;
     border-radius: 0.5rem;
+
+}
+.ul{
+    position:relative;
+}
+.li{
+    top:0.24rem;
+    left: 0.12rem;
+    width:1.6rem;
+    height: 0.68rem;
+    border-radius: 0.5rem;
+     background:rgba(46, 189, 89,0.6);
+     position: absolute;
+    -webkit-transform:  translateX(0px);
+    -moz-transform:  translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px) ;
+    transform: translateX(0px);
+
+
+    -webkit-transition:transform 2s ease-out;
+    -moz-transition:transform 2s ease-out;
+    -ms-transition: transform 2s ease-out  ;
+    -o-transition: transform 2s ease-out ;
+    transition: transform 1.5s ease-out ;
+
 }
 .seckill_main2_list{
     width:7.49rem;
@@ -415,6 +461,11 @@
 }
 .list1 .list1_div>dl>dd:nth-of-type(1){
     font-size: 0.33rem;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
 }
 .list1 .list1_div>dl>dd:nth-of-type(2){
     color:#bdbdbd;
@@ -428,13 +479,17 @@
     /*color:#ff6633;*/
 /*}*/
 .list1 .list1_div>dl>dd:nth-of-type(3){
-   width: 1.31rem;
+
     height:0.34rem ;
-    border: 0.01rem solid #ff6633;
-    text-align: center;
+
     line-height:0.34rem  ;
     font-size: 0.21rem;
     color:#ff6633;
+}
+.list1 .list1_div>dl>dd:nth-of-type(3) span {
+    border: 0.01rem solid #ff6633;
+    text-align: center;
+
 }
 .list1 .list1_div>dl>dd:nth-of-type(4){
     margin-left: 2.4rem;

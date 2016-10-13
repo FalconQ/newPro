@@ -1,15 +1,14 @@
 <div class="container_orderBack">
     <header>
-        <span class="return"></span>
+        <span class="return" ng-click="return()"></span>
         <h3>申请退改</h3>
     </header>
     <div class="orderBack_content">
         <P class="title">请填写订单退改内容</P>
         <div class="notice">
-            <textarea onfocus="if(value=='可以申请修改订单的团期、出游人信息等或申请退款，至少写够3个字哦~'){value=''}"
-                      onblur="if (value ==''){value='可以申请修改订单的团期、出游人信息等或申请退款，至少写够3个字哦~'}">可以申请修改订单的团期、出游人信息等或申请退款，至少写够3个字哦~</textarea>
+            <textarea ng-focus="focus($event)" ng-blur="blur($event)">可以申请修改订单的团期、出游人信息等或申请退款，至少写够3个字哦~</textarea>
         </div>
-        <button>提交</button>
+        <button ng-click="submit()">提交</button>
     </div>
     <footer>
         <div>

@@ -3,7 +3,7 @@
     {
       "CurTime": null,
       "PIId": 20840,
-      "PITitle": "南山竹海+灵山大佛+华东五市+迪士尼小镇+乌镇+南浔双飞6日双飞6日跟团游&lt;畅游南山竹海 夜宿南山竹海舒适型特色客栈,夜宿南山竹海舒适型特色客栈",
+      "PITitle": "南山竹海+灵山大佛+华东五市+迪士尼小镇+乌镇+南浔双飞6日双飞6日跟团游 畅游南山竹海 夜宿南山竹海舒适型特色客栈,夜宿南山竹海舒适型特色客栈",
       "PIRelatedId": 60435,
       "PIRedirectUrl": "http://m.ly.com/guoneiyou/line/t1j1p60435c0.html?ak=61EEEE1BA762330AE14D1C8527807472",
       "PIDesc": "",
@@ -20,7 +20,7 @@
       "ImgUrl": "//pic3.40017.cn/gny/line/2015/11/05/15/zCWSQu_400x400_00.jpg",
       "Stock": "50",
       "ActualPrice": "1299",
-      "OrgPrice": "1429",
+      "OrgPrice": ["10-14","10-15","10-16","10-28","11-26"],
       "TimeNow": "2016-10-12 09:14:54",
       "PIProductDetail": "",
       "PITitleImgUrl": "",
