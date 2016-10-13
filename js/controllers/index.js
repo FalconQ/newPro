@@ -1,7 +1,7 @@
 /**
  * Created by My on 2016/10/9.
  */
-define(['jquery','router'],function ($,app) {
+define(['jquery','router'],function ($) {
     function index() {
         var winW = document.documentElement.clientWidth || document.body.clientWidth;
         document.documentElement.style.fontSize = winW / 7.5 + "px";
@@ -17,22 +17,6 @@ define(['jquery','router'],function ($,app) {
             $('#boot').fadeOut();
         },1000);
     }
-    app.factory('orderFactory',function () {
-        var orderObject = {};
-        orderObject.list = [];
-
-        var _setter = function (data) {
-            orderObject.list.push(data)
-        };
-        var _getter = function () {
-            return orderObject;
-        };
-
-        return {
-            setter: _setter,
-            getter: _getter
-        }
-    });
     return {
         index:index
     }
