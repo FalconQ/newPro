@@ -7,7 +7,7 @@
     height: 0.89rem;
     text-align: center;
     line-height: 0.89rem;
-    font-size: 0.32rem;
+    font-size: 0.40rem;
     background: #fff;
     position: relative;
     position: fixed;
@@ -29,21 +29,118 @@
     height: 9.28rem;
     background: #ffffff;
 }
-.data_list .data_show{
-    width: 100%;
-    height: 8.38rem;
+.calendar-wrapper tr:first-of-type{
+    border-bottom: 0.01rem solid #e4e4e4;
 }
-.data_list .data_select_card{
+.calendar-wrapper {
+    margin-top: 0.3rem;
+}
+.calendar-wrapper table{
     width: 100%;
-    height: 0.88rem;
-    line-height: 0.78rem;
+    border-collapse: collapse;
+}
+.calendar-wrapper tr:first-child {
+    height: 0.4rem;
+    background-image: linear-gradient(to bottom,transparent 50%,#dcdcdc 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.calendar .sunday{
+    color: #50b400;
+}
+.calendar-wrapper th {
+    width: 14.2857143%;
+    color: #999;
+    font-weight: 400;
+}
+.calendar-wrapper h3 {
+    text-align: center;
+    font-size: 0.35rem;
+    font-weight: 400;
+    line-height: 0.3rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+.calendar-wrapper h3 .more{
+    display: inline-block;
+    position: absolute;
+    right: 0.4rem;
+}
+.calendar-wrapper h3 .right{
+    display: inline-block;
+    position: absolute;
+    left:0.4rem;
+
+}
+.calendar-wrapper .sunday,.calendar-wrapper .saturday{
+    color: #24beae;
+}
+.calendar-wrapper h3 .money{
+    display: inline-block;
+    color:red;
+    font-size: 0.2rem;
+}
+.calendar-wrapper h3 .money>span{
+    color:#9f9f9f;
+    font-size: 0.24rem;
+}
+
+.calendar-wrapper tr {
+    height: 1rem;
+}
+
+.calendar-wrapper td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.14rem;
+    padding: 0 0.02rem;
+}
+
+.calendar-wrapper td>div {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #e4e4e4;
+    font-size: 0.3rem;
+    border-radius: 0.1rem;
+}
+.clickBackground{
+    background: #68d2c7;
+}
+.calendar-wrapper td span {
+    display: block;
+    padding-top: 0.13rem;
+    line-height: 0.14rem;
+    color: #333;
+}
+.calendar-wrapper td p {
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    color: #50b400;
+    margin-top:0.11rem;
+}
+.calendar-wrapper .today>div {
+    background: #f0f0f0;
+    border-radius: 0.05rem;
+}
+.data_show{
+    width: 100%;
+    height: 7.48rem;
+    overflow: hidden;
+    margin-top: 1.1rem;
+}
+ .data_select_card{
+    width: 100%;
+    height: 1rem;
+    line-height: 0.9rem;
     background: #f9fafc;
     border-top: 0.01rem solid #e4e4e4;
     border-bottom: 0.01rem solid #e4e4e4;
     background: url("img/icon_plane_corner_trip.png")no-repeat 6.8rem 0.2rem;
     background-size: 0.4rem 0.4rem;
+     margin-top:-1rem;
 }
-.data_list .data_select_card span{
+ .data_select_card span{
     height: 0.4rem;
     line-height: 0.3rem;
     border: 0.01rem solid red;
@@ -53,13 +150,13 @@
     margin-right: 0.2rem;
     display: inline-block;
 }
-.data_list .data_select_card span:first-of-type{
+.data_select_card span:first-of-type{
     margin-left: 0.3rem;
 }
 .person_num{
     width: 100%;
     background: #fff;
-    margin-top: 0.2rem;
+    margin-top: -2.8rem;
 }
 .person_num div{
     width: 100%;
@@ -72,6 +169,7 @@
 .growup{
     border-bottom: 0.01rem solid #e4e4e4;
 }
+
 .person_num div span{
     display: inline-block;
     width: 0.6rem;
@@ -100,12 +198,12 @@
 }
 .data_next_step{
     width: 100%;
-    height: 1rem;
+    height: 1.05rem;
     position: fixed;
     bottom: 0;
     background: #fff;
     border-top:0.01rem solid #e5e5e5;
-    display: none;
+    z-index: 10000;
 }
 .data_next_step .select_result{
     width: 5.1rem;
@@ -127,6 +225,9 @@
     font-size: 0.3rem;
     color: #fff;
 }
+
+
+
 .next_shadow{
     width: 2.40rem;
     height: 1rem;
@@ -135,7 +236,4 @@
     right: 0;
     bottom: 0;
     display: none;
-}
-#tabBar{
-    display: block;
 }

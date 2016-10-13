@@ -90,7 +90,7 @@
 }
 .order_id{
     height: 1.6rem;
-    width: 100%rem;
+    width: 100%;
     margin-top: 0.2rem;
     background: #fff;
     font-size: 0.35rem;
@@ -172,7 +172,7 @@
     bottom: 0;
     background: #fff;
     border-top:0.01rem solid #e5e5e5;
-    display: none;
+    z-index: 10000;
 }
 .shengqing .result{
     width: 2.6rem;
@@ -193,11 +193,4 @@
     z-index: 10;
     font-size: 0.3rem;
     color: #fff;
-}
-#tabBar{
-<<<<<<< HEAD
-    display: block;
-=======
-    /*display: none;*/
->>>>>>> 455dd1dcc6543013fba43853e596e15ccfea6121
 }

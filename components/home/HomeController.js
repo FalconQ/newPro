@@ -15,6 +15,11 @@ define(['router','$css!./components/home/home.css'],function (app) {
         }
 
     }])
+    //return app.controller("HomeController",["$scope",function($scope){
+    //    $scope.infor = "测试";
+    //}])
+
+
     //轮播图
     function lb(){
         var mySwiper = new Swiper('.slider', {
@@ -31,9 +36,9 @@ define(['router','$css!./components/home/home.css'],function (app) {
 
 //    倒计时
 
-
-
-
-
 })
+
+
+
+
 
