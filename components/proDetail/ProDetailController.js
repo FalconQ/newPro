@@ -71,7 +71,10 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
             var Object = {};
 
             var _setter = function (data) {
-                Object = data
+                for(var i in data){
+                    Object[i] = data[i]
+                }
+
             };
             var _getter = function () {
                 return Object;
