@@ -3,14 +3,13 @@
  */
 define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
-    return app.controller('ProDetailController',['$scope','orderFactory','Service','$interval','$state',
-        function ($scope,orderFactory,Service,$interval,$state) {
+    return app.controller('ProDetailController',['$scope','dataFactory','Service','$interval','$state',
+        function ($scope,dataFactory,Service,$interval,$state) {
         //返回上一页面
         $scope.return = function () {
             history.back();
         };
         $scope.click = function (e) {
-            $state.go('dataSelect');
             if(e){
                 var orderInfo = {
                     oriDate:e,
@@ -24,9 +23,8 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     title:$scope.data.PITitle
                 }
             }
-            orderFactory.set(orderInfo);
-            console.log(orderFactory.get())
-
+            dataFactory.set('orderInfo',orderInfo);
+            $state.go('dataSelect');
         };
         //头部隐藏显示规则
         angular.element('.container_proDetail').scroll(function () {
@@ -67,15 +65,15 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
             };
         }])
 
-        .factory('orderFactory',function () {
+        .factory('dataFactory',function () {
             var myServices = {};
-            var orderObject = {};
+            var Object = {};
 
-            var _setter = function (data) {
-                orderObject = data
+            var _setter = function (key,value) {
+                Object[key] = value
             };
             var _getter = function () {
-                return orderObject;
+                return Object;
             };
 
             myServices.set = _setter;
