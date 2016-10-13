@@ -9,6 +9,25 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
         $scope.return = function () {
             history.back();
         };
+        $scope.click = function (e) {
+            $state.go('dataSelect');
+            if(e){
+                var orderInfo = {
+                    oriDate:e,
+                    price:$scope.data.ActualPrice,
+                    title:$scope.data.PITitle
+                }
+            }else {
+                var orderInfo = {
+                    oriDate:'',
+                    price:$scope.data.ActualPrice,
+                    title:$scope.data.PITitle
+                }
+            }
+            orderFactory.set(orderInfo);
+            console.log(orderFactory.get())
+
+        };
         //头部隐藏显示规则
         angular.element('.container_proDetail').scroll(function () {
             if(this.scrollTop <= 0){
@@ -23,8 +42,8 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
         Service.get().success(function (res) {
             $scope.data = res.Product[0];
             //倒计时处理
-            $scope.ShelfTime = get_unix_time($scope.data.PIShelfTime.replace(/T/g," "));
-            $scope.ShelfTime = get_unix_time($scope.data.TimeNow);
+            $scope.ShelfTime = $scope.get_unix_time($scope.data.PIShelfTime.replace(/T/g," "));
+            $scope.ShelfTime = $scope.get_unix_time($scope.data.TimeNow);
             //计算两个时间差
             $scope.time= ($scope.ShelfTime-$scope.ShelfTime);
             $interval(function(){
@@ -33,16 +52,12 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
         });
 
         //日期字符串转时间戳
-        function get_unix_time(dateStr) {
+        $scope.get_unix_time = function (dateStr) {
             var newstr = dateStr.replace(/-/g,'/');
             var date =  new Date(newstr);
             var time_str = date.getTime().toString();
             return time_str.substr(0, 10);
-        }
-
-        angular.element('.select_date').find('a').on('click',function () {
-            $state.go('dataSelect');
-        })
+        };
 
 
         }])
@@ -51,20 +66,21 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                 return $http.get('./data/detail.json')
             };
         }])
+
         .factory('orderFactory',function () {
+            var myServices = {};
             var orderObject = {};
-            orderObject.list = [];
 
             var _setter = function (data) {
-                orderObject.list.push(data)
+                orderObject = data
             };
             var _getter = function () {
                 return orderObject;
             };
 
-            return {
-                setter: _setter,
-                getter: _getter
-            }
+            myServices.set = _setter;
+            myServices.get = _getter;
+
+            return myServices
         })
 });
