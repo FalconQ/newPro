@@ -38,7 +38,7 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
             }
         });
 
-        Service.get().success(function (res) {
+        Service.get('./data/detail.json').success(function (res) {
             $scope.data = res.Product[0];
             //倒计时处理
             $scope.ShelfTime = $scope.get_unix_time($scope.data.PIShelfTime.replace(/T/g," "));
@@ -61,8 +61,8 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
 
         }])
         .service('Service',['$http',function ($http) {
-            this.get = function () {
-                return $http.get('./data/detail.json')
+            this.get = function (url) {
+                return $http.get(url)
             };
         }])
 

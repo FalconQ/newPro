@@ -4,7 +4,7 @@
             <a ui-sref="target">
                 <img src="./components/targat_position/img/position_top1.png" alt="">
             </a>
-            <span>北京</span>
+            <span>{{CityName}}</span>
             <img src="./components/targat_position/img/position_top2.png" alt="">
 
         </div>
@@ -25,88 +25,17 @@
         </div>
     </div>
    <div class="modl_PositionMain">
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
+       <dl ng-repeat=" x in objs_1">
+           <dt>
+               <img src={{x.picture}} alt="">
+               <span>景点</span></dt>
            <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
+               <h4>{{x.productName}}</h4>
+               <p><span>￥</span><span>{{x.price |tr}}</span>起<del>￥180</del></p>
                <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
+               <p>{{x.commentCount}}评价 {{x.commentRate}}%满意  <span>AAAAAAAA</span>      </p>
            </dd>
        </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-       <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-       <dd>
-           <h4>北京欢乐谷</h4>
-           <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-           <p><span>红包可减五元</span></p>
-           <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-       </dd>
-   </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-       <dl>
-           <dt><img src="./components/targat_position/img/position_mian1.png" alt=""> <span>景点</span></dt>
-           <dd>
-               <h4>北京欢乐谷</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
-               <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
-           </dd>
-       </dl>
-
 
    </div>
 </div>
