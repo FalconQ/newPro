@@ -29,19 +29,16 @@ define(['router','$css!./components/home/home.css'],function (app) {
                 restrict:'E',
                 templateUrl: './components/home/slider.html',
                 replace: true,
-                controller: function (Service) {
+                controller: function (Service,$scope) {
                     Service.get('./data/slider.json').success(function (res){
                         $scope.data = res;
+                        var mySwiper = new Swiper('.slider', {
+                            autoplay: 2000,//可选选项，自动滑动
+                            loop:true,
+                            pagination : '.swiper-pagination',
+                        })
                     })
-                    var mySwiper = new Swiper('.slider', {
-                        autoplay: 2000,//可选选项，自动滑动
-                        loop:true,
-                        pagination : '.swiper-pagination',
-                        paginationClickable :true,
-                        onAutoplayStop: function(swiper){
-                            swiper.startAutoplay();
-                        }
-                    })
+
                 }
             }
         })
