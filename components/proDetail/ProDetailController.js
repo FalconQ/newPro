@@ -24,7 +24,7 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     title:$scope.data.PITitle
                 }
             }
-            dataFactory.set(orderInfo);
+            dataFactory.set(orderInfo,date);
             $state.go('dataSelect');
         };
         //头部隐藏显示规则
