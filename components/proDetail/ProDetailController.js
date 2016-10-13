@@ -3,8 +3,8 @@
  */
 define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
-    return app.controller('ProDetailController',['$scope','orderFactory','Service','$interval',
-        function ($scope,orderFactory,Service,$interval) {
+    return app.controller('ProDetailController',['$scope','orderFactory','Service','$interval','$state',
+        function ($scope,orderFactory,Service,$interval,$state) {
         //返回上一页面
         $scope.return = function () {
             history.back();
@@ -41,6 +41,7 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
         }
 
         angular.element('.select_date').find('a').on('click',function () {
+            $state.go('dataSelect');
         })
 
 
@@ -50,4 +51,20 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                 return $http.get('./data/detail.json')
             };
         }])
+        .factory('orderFactory',function () {
+            var orderObject = {};
+            orderObject.list = [];
+
+            var _setter = function (data) {
+                orderObject.list.push(data)
+            };
+            var _getter = function () {
+                return orderObject;
+            };
+
+            return {
+                setter: _setter,
+                getter: _getter
+            }
+        })
 });

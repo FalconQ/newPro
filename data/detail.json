@@ -20,7 +20,7 @@
       "ImgUrl": "//pic3.40017.cn/gny/line/2015/11/05/15/zCWSQu_400x400_00.jpg",
       "Stock": "50",
       "ActualPrice": "1299",
-      "OrgPrice": "1429",
+      "OrgPrice": ["10-14","10-15","10-16","10-28","11-26"],
       "TimeNow": "2016-10-12 09:14:54",
       "PIProductDetail": "",
       "PITitleImgUrl": "",

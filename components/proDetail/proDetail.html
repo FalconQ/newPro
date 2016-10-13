@@ -44,11 +44,7 @@
     <div class="origin_wrap">
         <div class="origin_name">北京出发</div>
         <div class="select_date">
-            <a>10-14</a>
-            <a>10-15</a>
-            <a>10-16</a>
-            <a>10-28</a>
-            <a>11-26</a>
+            <a ng-repeat="x in data.OrgPrice">{{x}}</a>
         </div>
     </div>
     <div class="rules">
@@ -68,11 +64,7 @@
         <!--<div class="description"></div>-->
     <!--</div>-->
     <footer>
-<<<<<<< HEAD
         <a ui-sref="dataSelect">立即抢购</a>
-=======
-        <a>立即抢购</a>
->>>>>>> 85de4ac5d3df71b4e2f3e6f17dc826b85d254791
     </footer>
 
 </div>
