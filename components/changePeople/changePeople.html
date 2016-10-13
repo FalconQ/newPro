@@ -14,10 +14,10 @@
     <!--头部结束-->
 
     <!--信息开始-->
-    <div class="changePeople-info">
+    <div class="changePeople-info" ng-repeat="x in list">
         <div class="ipt">
-            <p>中文姓名<input ng-model="userName" type="text" value="{{userName}}"></p>
-            <p>手机号码<input ng-model="telephone" type="text" value="{{telephone}}"></p>
+            <p>中文姓名<input ng-model="x.name" type="text" value="{{x.name}}"></p>
+            <p>手机号码<input ng-model="x.phone" type="text" value="{{x.phone}}"></p>
         </div>
         <div class="addressList">
             <span></span>
@@ -26,8 +26,8 @@
     <!--信息结束-->
 
     <!--身份证-->
-    <div class="ID">
-        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input ng-model="idCard" type="text" value="{{idCard}}"></p>
+    <div class="ID" ng-repeat="x in list">
+        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input ng-model="x.idCard" type="text" value="{{x.idCard}}"></p>
         <p class="add">
             <a>
                 <span></span>

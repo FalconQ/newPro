@@ -101,7 +101,7 @@ a:active{
     height:0.4rem;
     background: url("../../images/mineOrder/icon_navi_contacts_rest.png") no-repeat;
     background-size: 100% 100%;
-    margin: 0.7rem auto;
+    margin: 0.7rem 0.3rem;
 }
 .changePeople .ID{
     width:7.5rem;

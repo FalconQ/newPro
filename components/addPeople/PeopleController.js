@@ -9,13 +9,25 @@ define(['router','$css!./components/addPeople/addPeople.css'],function(app){
         }
         //创建存储的空对象
         $scope.messageData = {
-            name: '',
-            telephoneNum: '',
-            idCard:''
+
         }
-        //添加函数
-        $scope.add = function(){
-            window.localStorage.clear();
+
+        //数组存储方法
+        //$scope.messageData = [
+        //
+        //]
+
+        //获取用户信息
+        $scope.getData = function(){
+            //判断为空
+            var name = $('.name').val();
+            var number = $(".number").val();
+            var card = $(".card").val();
+            //数组存储方法
+            //$scope.messageData.push({name:$scope.name,phone:$scope.phone,idCard: $scope.idCard})
+            //$rootScope.a=JSON.stringify($scope.messageData);
+
+            //对象存储方式
             var data = {
                 messageData:{
                     name: $scope.name,
@@ -23,50 +35,31 @@ define(['router','$css!./components/addPeople/addPeople.css'],function(app){
                     idCard: $scope.idCard
                 }
             }
-            console.log($scope.name);
-            console.log(data);
-            if(localStorage){
-                if($scope.name == ""){
-                   return false;
-                }else{
-                    var length = window.localStorage.length;
-                    window.localStorage.setItem(length,JSON.stringify(data.messageData))
-                }
+
+
+            $rootScope.a=JSON.stringify(data);
+
+
+            //创建全局对象方法
+            //messageData={
+            //    name: $scope.name,
+            //    telephoneNum: $scope.phone,
+            //    idCard:$scope.idCard
+            //}
+            //$scope.messageData ={
+            //    name: $scope.name,
+            //    telephoneNum: $scope.phone,
+            //    idCard:$scope.idCard
+            //}
+            //判断值不能为空
+            if((name == "" && number == "" && card == "")){
+               alert("不能为空");
             }else{
-                alert("您的浏览器不支持");
+                history.back();
             }
 
-
-            //$rootScope.message.push({name:$scope.userName,telephoneNum:$scope.telephone,ID:$scope.idCard})
-            //$rootScope.userName = "";
-            //$rootScope.telephone = "";
-            //$rootScope.idCard = "";
-            //console.log($scope.message[i]);
-            //console.log($scope.message[i].name);
         }
-    }])
-     app.service('MyService', function(){
-        var name;
-        var phone;
-        var idCard;
-        this.setName = function(name){
-            name = name;
-        };
-        this.getName = function(){
-            return name;
-        };
-        this.setPhone = function(telephoneNum){
-            phone = phone;
-        };
-        this.getPhone = function(){
-            return phone;
-        };
-        this.setIdCard = function(idCard){
-            idCard = idCard;
-        };
-        this.getIdCard= function(){
-            return idCard;
-        };
-    });
 
+
+    }])
 })

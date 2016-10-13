@@ -7,16 +7,17 @@ define(['router','$css!./components/information_tourists/information_tourists.cs
         $scope.clk = function () {
             history.back();
         }
-       var localStorage = function () {
-            //var data = window.localStorage.getItem()
-            for(var key in window.localStorage){
-                console.log(window.localStorage.getItem(key));
-            }
+        if( $rootScope.a){
+            list = $rootScope.a;
+            $scope.list =  JSON.parse(list);
         }
-        localStorage();
-
-        window.localStorage.clear();
-
-
+        //点击进入修改页面事件
+        //$scope.change = function(){
+        //    if( $rootScope.a){
+        //        data = $rootScope.a;
+        //        console.log(data);
+        //        $scope.data =  JSON.parse(data);
+        //    }
+        //}
     }])
 })

@@ -1,4 +1,4 @@
-<div class="addPeople" ng-controller="PeopleController">
+<div  class="addPeople" ng-controller="PeopleController">
     <!--头部开始-->
     <div class="addPeople-header">
             <div class="left">
@@ -15,8 +15,8 @@
     <!--信息开始-->
     <div class="addPeople-info">
         <div class="ipt">
-            <p>中文姓名<input ng-model="name" placeholder="user name" type="text" ></p>
-            <p>手机号码<input ng-model="phone" placeholder="telephone number" type="text"></p>
+            <p>中文姓名<input class="name" ng-model="name" placeholder="user name" type="text" ></p>
+            <p>手机号码<input class="number" ng-model="phone" placeholder="telephone number" type="text"></p>
         </div>
         <div class="addressList">
             <span></span>
@@ -26,7 +26,7 @@
 
     <!--身份证-->
     <div class="ID">
-        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input ng-model="idCard" placeholder="ID number" type="text"></p>
+        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input class="card" ng-model="idCard" placeholder="ID number" type="text"></p>
         <p class="add">
             <a>
                 <span></span>
@@ -38,6 +38,6 @@
 
     <!--保存按钮-->
     <div class="save">
-        <input type="button" value="保存" ng-click="add()">
+        <input type="button" value="保存" ng-click="getData()">
     </div>
 </div>
