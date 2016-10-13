@@ -1,4 +1,10 @@
 @charset "utf-8";
+.modlsec_header{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+
+}
 #seckill_box{
     width: 7.5rem;
     height: 100%;
@@ -95,7 +101,9 @@
     width: 7.5rem;
     height: 5.3rem;
     background-color: darkgray;
+    margin-top:1.86rem;
 }
+/*}*/
 #seckill_box .banner{
     width: 7.5rem;
     height: 3.99rem;
@@ -304,7 +312,7 @@
     /*white-space: nowrap;*/
 }
 #seckill_box .seckill_main .seckill_main_div{
-    width:30.2rem;
+    width:37.8rem;
     height: 3.4rem;
     margin-left: 0.24rem;
 }
@@ -328,6 +336,9 @@
     height:0.75rem;
     margin-left: 0.27rem;
     margin-top: 0.16rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
 
 }
 #seckill_box .seckill_main .seckill_main_div_path1>dd:nth-of-type(2){
@@ -388,6 +399,31 @@
     margin-left: 0.24rem;
     margin-top: 0.23rem;
     border-radius: 0.5rem;
+
+}
+.ul{
+    position:relative;
+}
+.li{
+    top: 0px;
+    width:1.6rem;
+    height: 0.68rem;
+    border-radius: 0.5rem;
+     background:rgba(46, 189, 89,0.6);
+     position: absolute;
+    -webkit-transform:  translateX(0px);
+    -moz-transform:  translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px) ;
+    transform: translateX(0px);
+
+
+    -webkit-transition:transform 2s ease-in-out 1s;
+    -moz-transition:transform 2s ease-in-out 1s;
+    -ms-transition: transform 2s ease-in-out 1s;
+    -o-transition: transform 2s ease-in-out 1s;
+    transition: transform 2s ease-in-out 1s;
+
 }
 .seckill_main2_list{
     width:7.49rem;
