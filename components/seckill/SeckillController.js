@@ -20,7 +20,6 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
                 //temp  正值就是向前走， 负数返回
             window.history.go(temp);
         };
-
         $(".banner")
         //给首页NAV添加事件
         $(".nav_ul").delegate("li","click",function(){
@@ -35,7 +34,6 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
             var num= parseFloat(getComputedStyle(element).marginLeft)
 
             var totalWidth=parseFloat($(element).css('width'))
-            console.log(totalWidth)
             var oldTouch=null
             // 物体运动起来
             element.addEventListener("touchstart",function(e){
@@ -52,10 +50,8 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
                         return
                     }
 
-                    if(left<=-(num+totalWidth-winW)&&width<0){
+                    if(left<=-(num+totalWidth-winW-1)&&width<0){
                         $(element).css('marginLeft',-(num+totalWidth-winW)+'px')
-                        console.log(num,totalWidth,winW)
-                        console.log(num+totalWidth-winW)
                         return
                     };
                     var  newleft= left+width
@@ -73,10 +69,9 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
         move(".seckill_main_div");
         //移动事件
          angular.element(".seckill_main2_ul").find("li").on("click",function(){
-               var left= $(this).offset().left;
-              console.log(left)
-              $(".li").css("transform","translateX ("+left+"px)")
-               console.log($(".li").css("transform"))
+               //因为函数有初始值
+              var left= $(this).offset().left-12;
+              $(".li").css("transform","translateX("+left+"px)")
          })
     }]);
 
