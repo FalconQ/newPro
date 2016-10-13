@@ -27,13 +27,13 @@
    <div class="modl_PositionMain">
        <dl ng-repeat=" x in objs_1">
            <dt>
-               <img src={x.picture}} alt="">
+               <img src={{x.picture}} alt="">
                <span>景点</span></dt>
            <dd>
                <h4>{{x.productName}}</h4>
-               <p><span>￥</span><span>12</span>起<del>￥180</del></p>
+               <p><span>￥</span><span>{{x.price |tr}}</span>起<del>￥180</del></p>
                <p><span>红包可减五元</span></p>
-               <p>10520评价  98%满意  <span>AAAAAAAA</span>      </p>
+               <p>{{x.commentCount}}评价 {{x.commentRate}}%满意  <span>AAAAAAAA</span>      </p>
            </dd>
        </dl>
 
