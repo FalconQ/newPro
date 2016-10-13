@@ -8,19 +8,11 @@
                          <input type="text" placeholder="搜索目的地/景点/酒店等" class="search_input">
                     </div>
                     <img src="images/home_image/ho_header_ling.png" alt="" class="home_search_ling">
-                    <img src="images/home_image/ho_header_tel.png" alt=""class="home_search_tel">
+                    <img src="images/home_image/ho_header_tel.png" alt="" class="home_search_tel">
                </div>
           </div>
      </header>
-    <!--banner-->
-      <div class="swiper-container slider">
-           <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
-                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
-                <div class="swiper-slide"><img src="images/home_image/home_banner.png" alt="" ></div>
-           </div>
-           <div class="swiper-pagination"></div>
-      </div>
+      <home-slider></home-slider>
      <div class="home_main">
           <div class="home_main_fir">
                <div class="home_main_fir_1">
@@ -82,28 +74,7 @@
           </div>
      </div>
      <div class="home_limitshop">
-          <div class="home_limitshop_fir">
-               <div class="timediv">
-                    <img src="images/home_image/time.png" alt="" class="time_img">
-                    <div class="time_num">
-                         <p>还剩</p>
-                         <div class="time">17</div>
-                         <div class="time">10</div>
-                         <div class="time">01</div>
-
-                    </div>
-               </div>
-               <a ui-sref="seckill" class="home_limitshop_fir_a">
-                    <dl class="time_dl" >
-                         <dt>
-                              <img src={{data.ImgUrl}} alt="">
-                         </dt>
-                         <dd class="time_dd1">{{data.PITitle}}</dd>
-                         <dd class="time_dd2">￥<span class="time_span">{{data.ActualPrice}}起</span></dd>
-                         <dd>仅限<span class="time_span2">{{data.Stock}}</span>份 <span class="time_span3">更多抢购</span></dd>
-                    </dl>
-               </a>
-          </div>
+          <time-limit></time-limit>
           <div class="home_limitshop_sec">
                <div class="home_limitshop_sec_path1">
                     <div class="home_limitshop_div">

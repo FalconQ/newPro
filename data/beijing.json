@@ -1,474 +1,336 @@
 {
   "response": {
     "total": "79",
-    "searchTime": "44ms",
+    "searchTime": "232ms",
     "resultList": {
       "record": [
         {
-          "productId": "55516",
-          "productName": "游北京欢乐谷，住北京船舶重工酒店，自选北京海洋馆",
+          "productId": "29828",
+          "productName": "北京欢乐谷",
           "city": "北京",
           "cityId": "53",
-          "picture": "http://pic3.40017.cn/zzy/rimage/2015/03/17/12/1RnKAR.jpg",
-          "bizType": "2",
-          "innerType": "2",
-          "price": "1200",
+          "picture": "http://pic4.40017.cn/scenery/destination/2016/10/08/15/XvHdMw.jpg",
+          "bizType": "5",
+          "innerType": "5",
+          "price": "8800",
           "lbList": {
             "label": [
               {
-                "id": "808",
-                "name": "主题乐园"
+                "id": "1004",
+                "name": "乐园"
               },
               {
-                "id": "692",
-                "name": "水上乐园"
+                "id": "100401",
+                "name": "游乐场"
               }
             ]
           },
-          "commentCount": "435",
+          "commentCount": "10392",
           "commentRate": "98.0",
-          "saleCount": "2468",
-          "isCoupon": "0",
+          "saleCount": "25995",
+          "isCoupon": "1",
           "isTcLine": "0",
           "tcIOUs": "0",
-          "days": "2",
-          "hotelName": "北京船舶重工酒店",
-          "sceneryName": "北京欢乐谷 水立方嬉水乐园 北京海洋馆",
-          "cityPinyin": "beijing"
+          "address": "北京市朝阳区东四环四方桥东南角",
+          "gradeId": "0",
+          "openTime": "营业时间：周一至周五9:00-22:00，周六日8:30-22:00。夜场开放时间：17:00-22:00，10.28（周五）-10.30（周日）10.31（周一）17:00-24:00",
+          "summary": "2016北京欢乐谷万圣节狂欢惊魂归来~"
         },
         {
-          "productId": "71021",
-          "productName": "畅游稻香湖，温泉戏水亲子游，稻香湖景酒店住宿1晚，双人温泉城堡门票/免费双人茶/咖啡/双人电影院线电影票/五十元代金券/动物园一应俱全",
+          "productId": "24746",
+          "productName": "北京野生动物园",
           "city": "北京",
           "cityId": "53",
-          "picture": "http://pic4.40017.cn/zzy/rimage/2016/05/19/17/pLzBQz.jpg",
-          "bizType": "2",
-          "innerType": "2",
-          "price": "49800",
-          "commentCount": "572",
-          "commentRate": "97.0",
-          "saleCount": "2091",
-          "isCoupon": "0",
-          "isTcLine": "0",
-          "tcIOUs": "0",
-          "days": "2",
-          "hotelName": "北京稻香湖景酒店",
-          "sceneryName": "稻香湖温泉馆",
-          "cityPinyin": "beijing"
-        },
-        {
-          "productId": "70984",
-          "productName": "【品质游】<慕田峪长城十三陵定陵一日游外宾团>快乐出游",
-          "city": "北京",
-          "cityId": "53",
-          "picture": "http://pic4.40017.cn/shortTour/2016/09/21/15/EYWkKK.jpg",
-          "bizType": "1",
-          "innerType": "1",
-          "price": "8700",
+          "picture": "http://pic4.40017.cn/scenery/destination/2016/07/18/17/kKiLZ7.jpg",
+          "bizType": "5",
+          "innerType": "5",
+          "price": "11500",
           "lbList": {
-            "label": {
-              "id": "155",
-              "name": "人文古迹"
-            }
+            "label": [
+              {
+                "id": "100403",
+                "name": "动物园"
+              },
+              {
+                "id": "1003",
+                "name": "休闲娱乐"
+              }
+            ]
+          },
+          "commentCount": "7231",
+          "commentRate": "99.0",
+          "saleCount": "6854",
+          "isCoupon": "1",
+          "isTcLine": "0",
+          "tcIOUs": "0",
+          "address": "北京市大兴区榆垡镇万亩森林之中",
+          "gradeId": "4",
+          "openTime": "景区营业时间：08：30--18:00；取票时间：08:30--16:00；自驾区营业时间：08:30--15:30；取票时间：08:30--15:30；",
+          "summary": "世界动物大迁徙"
+        },
+        {
+          "productId": "3019",
+          "productName": "八达岭长城",
+          "city": "北京",
+          "cityId": "53",
+          "picture": "http://pic4.40017.cn/scenery/destination/2016/07/23/17/e8glxq.jpg",
+          "bizType": "5",
+          "innerType": "5",
+          "price": "4000",
+          "lbList": {
+            "label": [
+              {
+                "id": "100108",
+                "name": "历史遗迹"
+              },
+              {
+                "id": "1001",
+                "name": "人文"
+              }
+            ]
+          },
+          "commentCount": "1079",
+          "commentRate": "94.0",
+          "saleCount": "2856",
+          "isCoupon": "1",
+          "isTcLine": "0",
+          "tcIOUs": "0",
+          "address": "北京市延庆县军都山关沟古道北口",
+          "gradeId": "5",
+          "openTime": "开放时间06:30-19:00（旺季）；07:00-18:00（淡季）；索道换票时间：08:40--14:30；门票换票时间：09:00--16:00；",
+          "summary": "巍峨壮观八达岭长城"
+        },
+        {
+          "productId": "3007",
+          "productName": "北京故宫",
+          "city": "北京",
+          "cityId": "53",
+          "picture": "http://pic4.40017.cn/scenery/destination/2016/07/21/11/eeTkBj.jpg",
+          "bizType": "5",
+          "innerType": "5",
+          "price": "1000",
+          "lbList": {
+            "label": [
+              {
+                "id": "1001",
+                "name": "人文"
+              },
+              {
+                "id": "100103",
+                "name": "博物馆"
+              },
+              {
+                "id": "100108",
+                "name": "历史遗迹"
+              }
+            ]
+          },
+          "commentCount": "12890",
+          "commentRate": "98.0",
+          "saleCount": "4411",
+          "isCoupon": "0",
+          "isTcLine": "0",
+          "tcIOUs": "0",
+          "address": "北京市景山前街4号",
+          "gradeId": "5",
+          "openTime": "售票时间：08:30--15:30停止入馆时间：15:40清场时间：16:30除法定节假日和暑期（每年7月1日至8月31日）以外，全年实行周一闭馆的措施",
+          "summary": "遇一座皇城，颂一段史诗"
+        },
+        {
+          "productId": "3023",
+          "productName": "颐和园",
+          "city": "北京",
+          "cityId": "53",
+          "picture": "http://pic4.40017.cn/scenery/destination/2016/07/19/13/5uR8Zg.jpg",
+          "bizType": "5",
+          "innerType": "5",
+          "price": "1000",
+          "lbList": {
+            "label": [
+              {
+                "id": "1001",
+                "name": "人文"
+              },
+              {
+                "id": "100108",
+                "name": "历史遗迹"
+              },
+              {
+                "id": "100104",
+                "name": "园林"
+              }
+            ]
+          },
+          "commentCount": "2161",
+          "commentRate": "96.0",
+          "saleCount": "1386",
+          "isCoupon": "0",
+          "isTcLine": "0",
+          "tcIOUs": "0",
+          "address": "北京市海淀区新建宫门路19号",
+          "gradeId": "5",
+          "openTime": "旺季（4月1日至10月31日）6:30-18:00（大门）8:30-17:00（园中园）；淡季（11月1日至次年3月31日）7:00-17:30（大门) 9:00-16:00 （园中园）；电子票验证时间截止至14:00",
+          "summary": "清朝帝王的行宫和花园"
+        },
+        {
+          "productId": "225592",
+          "productName": "浮生画舫（亚运村店）",
+          "city": "北京",
+          "cityId": "53",
+          "picture": "http://pic3.40017.cn/scenery/destination/2015/11/17/15/7LRvcT.jpg",
+          "bizType": "6",
+          "innerType": "6",
+          "price": "5800",
+          "lbList": {
+            "label": [
+              {
+                "id": "1904",
+                "name": "休闲娱乐"
+              },
+              {
+                "id": "190416",
+                "name": "培训课程"
+              }
+            ]
           },
           "commentCount": "0",
           "commentRate": "0.0",
-          "saleCount": "21",
+          "saleCount": "0",
           "isCoupon": "0",
           "isTcLine": "0",
           "tcIOUs": "0",
-          "days": "1",
-          "describe": "此产品只接待外宾 无强迫购物 四环以内免费上门接送 团队包车价格另议",
-          "destCity": "北京",
-          "srList": {
-            "label": [
-              {
-                "id": "3115",
-                "name": "慕田峪长城"
-              },
-              {
-                "id": "3150",
-                "name": "十三陵"
-              },
-              {
-                "id": "18232",
-                "name": "定陵"
-              },
-              {
-                "id": "19702",
-                "name": "神路"
-              }
-            ]
-          },
-          "isHappyBus": "0"
+          "address": "北京市朝阳区安慧北里安园5号海润2层",
+          "gradeId": "0",
+          "openTime": "10:00-18:00",
+          "summary": "提升艺术修养审美情趣增长艺术品鉴赏知识"
         },
         {
-          "productId": "16242",
-          "productName": "【同程快乐大巴】<八达岭长城十三陵定陵含地下宫殿-鸟巢水立方外景一日游>同程自营·赠参观十三陵出土文物展丰富午餐",
+          "productId": "224038",
+          "productName": "佳飞录音棚",
           "city": "北京",
           "cityId": "53",
-          "picture": "http://pic3.40017.cn/shortTour/2016/02/06/10/EKWLoY.jpg",
-          "bizType": "1",
-          "innerType": "1",
-          "price": "16900",
+          "picture": "http://pic3.40017.cn/scenery/destination/2015/10/18/16/ed3kzL.jpg",
+          "bizType": "6",
+          "innerType": "6",
+          "price": "12800",
           "lbList": {
             "label": [
               {
-                "id": "155",
-                "name": "人文古迹"
+                "id": "1906",
+                "name": "演出赛事展览"
               },
               {
-                "id": "162",
-                "name": "快乐大巴"
-              },
-              {
-                "id": "262",
-                "name": "纯玩无购物"
-              },
-              {
-                "id": "304",
-                "name": "口碑经典"
-              },
-              {
-                "id": "340",
-                "name": "金秋大促"
-              },
-              {
-                "id": "342",
-                "name": "快巴-口碑经典"
-              },
-              {
-                "id": "345",
-                "name": "快巴-玩转帝都"
+                "id": "190609",
+                "name": "音乐会"
               }
             ]
           },
-          "commentCount": "816",
-          "commentRate": "99.0",
-          "saleCount": "11",
-          "isCoupon": "0",
-          "isTcLine": "1",
-          "tcIOUs": "0",
-          "days": "1",
-          "describe": "北京一日游，经典线路纯玩不进购物店！天天出发，铁定成团！出行前一天16：00之前，无条件退改！",
-          "destCity": "北京",
-          "srList": {
-            "label": [
-              {
-                "id": "3019",
-                "name": "八达岭长城"
-              },
-              {
-                "id": "18678",
-                "name": "鸟巢"
-              },
-              {
-                "id": "18681",
-                "name": "水立方"
-              },
-              {
-                "id": "18232",
-                "name": "定陵"
-              },
-              {
-                "id": "3150",
-                "name": "十三陵"
-              },
-              {
-                "id": "32263",
-                "name": "鸟巢观光（国家体育场"
-              },
-              {
-                "id": "21228",
-                "name": "奥林匹克公园"
-              },
-              {
-                "id": "9914",
-                "name": "奥林匹克广场"
-              }
-            ]
-          },
-          "isHappyBus": "1"
-        },
-        {
-          "productId": "1133",
-          "productName": "【千人出游好评如潮】<八达岭长城-颐和园-北大清华-鸟巢水立方纯玩1日游>同程专线",
-          "city": "北京",
-          "cityId": "53",
-          "picture": "http://pic3.40017.cn/shortTour/2015/04/16/17/ALHgrO.jpg",
-          "bizType": "1",
-          "innerType": "1",
-          "price": "14600",
-          "lbList": {
-            "label": [
-              {
-                "id": "155",
-                "name": "人文古迹"
-              },
-              {
-                "id": "169",
-                "name": "铁定发班"
-              },
-              {
-                "id": "337",
-                "name": "景点特色线路"
-              }
-            ]
-          },
-          "commentCount": "834",
-          "commentRate": "99.0",
-          "saleCount": "8",
-          "isCoupon": "0",
-          "isTcLine": "1",
-          "tcIOUs": "0",
-          "days": "1",
-          "describe": "★登八达岭长城、逛颐和园，一天玩转两大世界文化遗产★漫步慈禧颐养之地颐和园，沉醉迷人风景",
-          "destCity": "北京",
-          "srList": {
-            "label": [
-              {
-                "id": "3019",
-                "name": "八达岭长城"
-              },
-              {
-                "id": "3023",
-                "name": "颐和园"
-              },
-              {
-                "id": "32263",
-                "name": "鸟巢观光（国家体育场"
-              },
-              {
-                "id": "17533",
-                "name": "北京大学"
-              },
-              {
-                "id": "17535",
-                "name": "清华大学"
-              }
-            ]
-          },
-          "isHappyBus": "0"
-        },
-        {
-          "productId": "16242",
-          "productName": "【同程快乐大巴】<八达岭长城十三陵定陵含地下宫殿-鸟巢水立方外景一日游>同程自营·赠参观十三陵出土文物展丰富午餐",
-          "city": "北京",
-          "cityId": "53",
-          "picture": "http://pic3.40017.cn/shortTour/2016/02/06/10/EKWLoY.jpg",
-          "bizType": "10",
-          "innerType": "30",
-          "price": "16900",
-          "lbList": {
-            "label": [
-              {
-                "id": "155",
-                "name": "人文古迹"
-              },
-              {
-                "id": "162",
-                "name": "快乐大巴"
-              },
-              {
-                "id": "262",
-                "name": "纯玩无购物"
-              },
-              {
-                "id": "304",
-                "name": "口碑经典"
-              },
-              {
-                "id": "340",
-                "name": "金秋大促"
-              },
-              {
-                "id": "342",
-                "name": "快巴-口碑经典"
-              },
-              {
-                "id": "345",
-                "name": "快巴-玩转帝都"
-              }
-            ]
-          },
-          "commentCount": "816",
-          "commentRate": "99.0",
-          "saleCount": "11",
-          "isCoupon": "0",
-          "isTcLine": "1",
-          "tcIOUs": "0",
-          "days": "1",
-          "describe": "北京一日游，经典线路纯玩不进购物店！天天出发，铁定成团！出行前一天16：00之前，无条件退改！",
-          "destCity": "北京",
-          "srList": {
-            "label": [
-              {
-                "id": "3019",
-                "name": "八达岭长城"
-              },
-              {
-                "id": "18678",
-                "name": "鸟巢"
-              },
-              {
-                "id": "18681",
-                "name": "水立方"
-              },
-              {
-                "id": "18232",
-                "name": "定陵"
-              },
-              {
-                "id": "3150",
-                "name": "十三陵"
-              },
-              {
-                "id": "32263",
-                "name": "鸟巢观光（国家体育场"
-              },
-              {
-                "id": "21228",
-                "name": "奥林匹克公园"
-              },
-              {
-                "id": "9914",
-                "name": "奥林匹克广场"
-              }
-            ]
-          },
-          "isHappyBus": "1"
-        },
-        {
-          "productId": "21267",
-          "productName": "【同程专线】<八达岭长城-十三陵长陵-定陵-鸟巢纯玩1日游>双陵品质，二四六特惠， 每个订单送书签",
-          "city": "北京",
-          "cityId": "53",
-          "picture": "http://pic3.40017.cn/shortTour/2015/10/26/12/byFsH0.jpg",
-          "bizType": "10",
-          "innerType": "30",
-          "price": "19800",
-          "lbList": {
-            "label": [
-              {
-                "id": "155",
-                "name": "人文古迹"
-              },
-              {
-                "id": "262",
-                "name": "纯玩无购物"
-              },
-              {
-                "id": "340",
-                "name": "金秋大促"
-              }
-            ]
-          },
-          "commentCount": "478",
-          "commentRate": "98.0",
-          "saleCount": "5",
-          "isCoupon": "0",
-          "isTcLine": "1",
-          "tcIOUs": "0",
-          "days": "1",
-          "describe": "1、明十三陵目前开放有三座陵寝：长陵、定陵、昭陵，我们带您探访其中极具代表性的两座—“地上看长陵、地下看定陵”2、深度全面的游览世界文化遗产，不留遗憾！",
-          "destCity": "北京",
-          "srList": {
-            "label": [
-              {
-                "id": "3019",
-                "name": "八达岭长城"
-              },
-              {
-                "id": "3150",
-                "name": "十三陵"
-              },
-              {
-                "id": "11005",
-                "name": "长陵"
-              },
-              {
-                "id": "18232",
-                "name": "定陵"
-              },
-              {
-                "id": "221481",
-                "name": "北京水立方游泳馆"
-              }
-            ]
-          },
-          "isHappyBus": "0"
-        },
-        {
-          "productId": "77405",
-          "productName": "晋祠+五台山+平遥古城+乔家大院+常家庄园火车6日跟团游",
-          "city": "北京",
-          "cityId": "53",
-          "picture": "http://pic4.40017.cn/gny/line/2016/06/02/09/wlHFhd.jpg",
-          "bizType": "1",
-          "innerType": "3",
-          "price": "153700",
           "commentCount": "1",
           "commentRate": "100.0",
           "saleCount": "0",
-          "isCoupon": "1",
+          "isCoupon": "0",
           "isTcLine": "0",
           "tcIOUs": "0",
-          "subName": "体验别味的山西 浏览精华景点",
-          "prop": "1",
-          "proType": "4",
-          "days": "6",
-          "gdDate": "20161014;20161015;20161016;20161017;20161018;20161019;20161020;20161021;20161022;20161023;20161024;20161025;20161026;20161027;20161028;20161029;20161030;20161031;20161101;20161102;20161103;20161104;20161105;20161106;20161107;20161108;20161109;20161110;20161111;20161112;20161113;20161114;20161115;20161116;20161117;20161118;20161119;20161120;20161121;20161122;20161123;20161124;20161125;20161126;20161127;20161128;20161129;20161130",
-          "portCityId": "53"
+          "address": "北京海淀区吴家场路1号院盛今佳园4号楼2单元610室",
+          "gradeId": "0",
+          "openTime": "10:00-22:00",
+          "summary": "音乐发烧友必去录两首歌"
         },
         {
-          "productId": "103334",
-          "productName": "北京当地参自由行5日",
+          "productId": "224352",
+          "productName": "北京龙腾趣味武术俱乐部（龙潭公园店）",
           "city": "北京",
           "cityId": "53",
-          "picture": "http://pic3.40017.cn/gny/line/2016/03/04/21/62BSYf.jpg",
-          "bizType": "2",
-          "innerType": "4",
-          "price": "110800",
+          "picture": "http://pic3.40017.cn/scenery/destination/2015/10/21/14/PKtOJm.jpg",
+          "bizType": "6",
+          "innerType": "6",
+          "price": "39900",
+          "lbList": {
+            "label": [
+              {
+                "id": "1913",
+                "name": "运动健身"
+              },
+              {
+                "id": "191303",
+                "name": "武术场馆"
+              }
+            ]
+          },
+          "commentCount": "1",
+          "commentRate": "100.0",
+          "saleCount": "0",
+          "isCoupon": "0",
+          "isTcLine": "0",
+          "tcIOUs": "0",
+          "address": "北京市区龙潭路8号龙潭公园内东南侧青龙桥圆台处",
+          "gradeId": "0",
+          "openTime": "09:00-18:00",
+          "summary": "强健我们的身体，磨砺我们的精神"
+        },
+        {
+          "productId": "224613",
+          "productName": "北京丹斯击剑俱乐部（东直门店）",
+          "city": "北京",
+          "cityId": "53",
+          "picture": "http://pic3.40017.cn/scenery/destination/2015/10/23/16/gij001.jpg",
+          "bizType": "6",
+          "innerType": "6",
+          "price": "5800",
+          "lbList": {
+            "label": [
+              {
+                "id": "1913",
+                "name": "运动健身"
+              },
+              {
+                "id": "191310",
+                "name": "击剑"
+              }
+            ]
+          },
           "commentCount": "0",
           "commentRate": "0.0",
           "saleCount": "0",
-          "isCoupon": "1",
+          "isCoupon": "0",
           "isTcLine": "0",
           "tcIOUs": "0",
-          "subName": "北京东交民巷饭店搭配故宫门票成人票 东城区近天安门 酒店在胡同 古色古香 步行15分钟到地铁站",
-          "prop": "3",
-          "proType": "1",
-          "days": "5",
-          "gdDate": "20161015;20161016;20161017;20161018;20161019;20161020;20161021;20161022;20161023;20161024;20161025;20161026;20161027;20161028;20161029;20161030;20161031",
-          "portCityId": "53"
+          "address": "北京市东城区东中街29号东环广场A-B座B1层EA1东环俱乐部内",
+          "gradeId": "0",
+          "openTime": "16:00-21:00",
+          "summary": "提高击剑技能、交流击剑心得"
         },
         {
-          "productId": "17344",
-          "productName": "北京4日跟团游",
+          "productId": "44578",
+          "productName": "住龙脉温泉度假村1晚，享竹林温泉不限次戏水，含早餐。双人足疗按摩，观熔岩奇石/骑马（自费），多套餐自选",
           "city": "北京",
           "cityId": "53",
-          "picture": "http://pic3.40017.cn/gny/line/2016/03/04/21/hGcKo9.jpg",
-          "bizType": "10",
-          "innerType": "12",
-          "price": "88000",
-          "commentCount": "1525",
-          "commentRate": "99.47",
-          "saleCount": "0",
+          "picture": "http://pic3.40017.cn/zzy/rimage/2015/03/17/11/Z8qm5S.jpg",
+          "bizType": "2",
+          "innerType": "2",
+          "price": "22900",
+          "lbList": {
+            "label": {
+              "id": "815",
+              "name": "休闲娱乐"
+            }
+          },
+          "commentCount": "426",
+          "commentRate": "92.0",
+          "saleCount": "2080",
           "isCoupon": "1",
           "isTcLine": "0",
           "tcIOUs": "0",
-          "subName": "当地参团 同程自营 销量过千 0购物0自费 含升旗 首博 相声 三环内精选酒店 餐标全线升级",
-          "prop": "5",
-          "proType": "1",
-          "days": "4",
-          "gdDate": "20161015;20161018;20161022;20161025;20161029;20161101;20161105;20161108;20161112;20161115;20161119;20161122;20161126;20161129;20161203;20161206;20161210;20161213;20161217;20161220;20161224;20161227;20161231",
-          "portCityId": "0"
+          "days": "2",
+          "hotelName": "北京龙脉温泉度假村",
+          "sceneryName": "龙脉温泉",
+          "cityPinyin": "beijing"
         }
       ]
     },
     "isCity": "1",
     "ipLoc": {
-      "IP": "115.171.18.103",
+      "IP": "115.171.121.75",
       "QueryResult": "true",
       "ProvinceName": "北京",
       "ProvinceID": "3",
