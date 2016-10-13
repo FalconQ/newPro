@@ -32,6 +32,7 @@ require.config({
         router: './router',
         swiper:'./libs/swiper-3.3.1.jquery.min'
     },
+    //强依赖
     shim:{
         angular: {
             deps: ['jquery'],
@@ -73,7 +74,8 @@ require(['jquery',
         'submitController',
         'orderInfoController',
         'C_orderController',
-        'ProDetailController'
+        'ProDetailController',
+        'swiper'
     ],
     function (jquery,angular,index) {
         index.index();

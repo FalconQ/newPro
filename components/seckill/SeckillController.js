@@ -34,3 +34,4 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
 
 })
 
+

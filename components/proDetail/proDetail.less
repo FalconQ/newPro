@@ -17,6 +17,8 @@
     position: fixed;
     top:0;
     z-index: 999;
+    display: none;
+    opacity: 0;
     .return{
       width: 89/100rem;
       height: 89/100rem;
@@ -121,14 +123,9 @@
           font-size: 34/100rem;
           height: 150/100rem;
           overflow: hidden;
-          span{
-            margin-left: 10/100rem;
-            &::after{
-              content: '. . . ';
-              display: inline-block;
-              height: 50/100rem;
-            }
-          }
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
         }
         &:last-of-type{
           text-align: right;
@@ -231,7 +228,7 @@
         margin-right: 21/100rem;
         font-size: 24/100rem;
         text-decoration: none;
-
+        margin-bottom: 10/100rem;
       }
     }
   }

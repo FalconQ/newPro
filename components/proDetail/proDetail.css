@@ -18,6 +18,8 @@
   position: fixed;
   top: 0;
   z-index: 999;
+  display: none;
+  opacity: 0;
 }
 .container_proDetail header .return {
   width: 0.89rem;
@@ -121,14 +123,9 @@
   font-size: 0.34rem;
   height: 1.5rem;
   overflow: hidden;
-}
-.container_proDetail .pro_title_wrap .pro_title div:first-of-type span {
-  margin-left: 0.1rem;
-}
-.container_proDetail .pro_title_wrap .pro_title div:first-of-type span::after {
-  content: '. . . ';
-  display: inline-block;
-  height: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .container_proDetail .pro_title_wrap .pro_title div:last-of-type {
   text-align: right;
@@ -220,6 +217,7 @@
   margin-right: 0.21rem;
   font-size: 0.24rem;
   text-decoration: none;
+  margin-bottom: 0.1rem;
 }
 .container_proDetail .rules {
   padding: 0.2rem;
