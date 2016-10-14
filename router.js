@@ -113,6 +113,13 @@ define(['angular'],function (angular) {
                         controller: 'SubmitSuccessController'
                     })
                 }])
-
+            //注册全局的事件监听器,每次路由发生变化时,将滚动条高度置为0
+        .run(['$rootScope','$state','$stateParams',function ($rootScope,$state,$stateParams) {
+            $rootScope.$state = $state;
+            $rootScope.$stateParams = $stateParams;
+            $rootScope.$on('$stateChangeStart',function () {
+                $(window).scrollTop(0);
+            })
+        }])
 
 });

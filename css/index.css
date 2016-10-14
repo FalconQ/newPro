@@ -46,6 +46,7 @@ body {
   font-weight: 400;
 }
 #tabBar ul li:first-of-type .icon {
+<<<<<<< HEAD
   background: url("./../images/index/icon_home_shouye_new_03.png") no-repeat center;
   background-size: 0.6rem;
 }
@@ -79,10 +80,45 @@ body {
 }
 #tabBar ul li:nth-of-type(4) .icon1 {
   background: url("./../images/index/icon_home_service_selected_03.png") no-repeat center;
+=======
+  background: url("../images/index/icon_home_shouye_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(2) .icon {
+  background: url("../images/index/icon_home_place_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(3) .icon {
+  background: url("../images/index/icon_home_xingc_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(4) .icon {
+  background: url("../images/index/icon_home_service_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:last-of-type .icon {
+  background: url("../images/index/icon_home_my_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:first-of-type .icon1 {
+  background: url("../images/index/icon_home_shouye_selected_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(2) .icon1 {
+  background: url("../images/index/icon_home_place_selected_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(3) .icon1 {
+  background: url("../images/index/icon_home_xingc_selected_new_03.png") no-repeat center;
+  background-size: 0.6rem;
+}
+#tabBar ul li:nth-of-type(4) .icon1 {
+  background: url("../images/index/icon_home_service_selected_03.png") no-repeat center;
+>>>>>>> e04edccf5df7bd06d9b31fdaca50a334b17f7717
   background-size: 0.6rem;
 }
 #tabBar ul li:last-of-type .icon1 {
-  background: url("../../images/index/icon_home_my_selected_new_03.png") no-repeat center;
+  background: url("../images/index/icon_home_my_selected_new_03.png") no-repeat center;
   background-size: 0.6rem;
 }
 #boot {

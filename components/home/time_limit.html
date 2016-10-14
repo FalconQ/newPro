@@ -1,4 +1,4 @@
-<div class="home_limitshop_fir">
+<div class="home_limitshop_fir" ng-click="jumpToSeckill()">
     <div class="timediv">
         <img src="images/home_image/time.png" alt="" class="time_img">
         <div class="time_num">
@@ -8,14 +8,14 @@
             <div class="time">{{time | date : 'ss'}}</div>
         </div>
     </div>
-    <a ui-sref="seckill" class="home_limitshop_fir_a">
+    <a class="home_limitshop_fir_a">
         <dl class="time_dl" >
             <dt>
-                <img src={{data.ImgUrl}} alt=""/>
+                <img src={{seckillData.ImgUrl}} alt=""/>
             </dt>
-            <dd class="time_dd1">{{data.PITitle}}</dd>
-            <dd class="time_dd2">￥<b class="time_span">{{data.ActualPrice}}</b>起</dd>
-            <dd>仅限<span class="time_span2">{{data.Stock}}</span>份 <span class="time_span3">更多抢购</span></dd>
+            <dd class="time_dd1">{{seckillData.PITitle}}</dd>
+            <dd class="time_dd2">￥<b class="time_span">{{seckillData.ActualPrice}}</b>起</dd>
+            <dd>仅限<span class="time_span2">{{seckillData.Stock}}</span>份 <span class="time_span3">更多抢购</span></dd>
         </dl>
     </a>
 </div>

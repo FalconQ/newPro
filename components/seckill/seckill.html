@@ -19,9 +19,9 @@
             <div class="banner_time">
                 <div class="ban_div_box">
                     <p class="banner_time_p">距结束</p>
-                    <div class="banner_time_box"><div class="banner_time_div">01</div><span>:</span></div>
-                    <div class="banner_time_box"><div class="banner_time_div">08</div><span>:</span></div>
-                    <div class="banner_time_box"><div class="banner_time_div">24</div><span></span></div>
+                    <div class="banner_time_box"><div class="banner_time_div">{{time | date : 'hh'}}</div><span>:</span></div>
+                    <div class="banner_time_box"><div class="banner_time_div">{{time | date : 'mm'}}</div><span>:</span></div>
+                    <div class="banner_time_box"><div class="banner_time_div">{{time | date : 'ss'}}</div><span></span></div>
                 </div>
                 <div class="banner_time_fixed">
                     <img src="./images/seckill/sechuo.png" alt="" class="banner_time_fixed_img">
@@ -42,69 +42,64 @@
                 </div>
                 <div class="banner_money_num2">
                     <!--<div >进度条</div>-->
-                    <div class="process"><div ng-style= {'width':'{{objs[2].PIProductNum}}'+'%'}></div></div>
-                    <span class="orage">已抢购<span>{{objs[2].PIProductNum}}</span>%</span>
+                    <div class="process"><div ng-style= {'width':'76%'}></div></div>
+
+                    <span class="orage">已抢购</span><span class="orage">{{progress}}</span>
                 </div>
             </div>
             <div class="banner_buy">
-
-                <div>
-                    <a ui-sref="proDetail">
+                <div ng-click="jumpToDetail()">
                     立即抢购
-                    </a>
                 </div>
-
-            </div>
-
-    </div>
-    <div class="seckill_kong"></div>
-    <div class="seckill_main">
-        <span class="seckill_main_span"></span>
-        <p class="seckill_main_p">甩尾特价</p>
-
-        <div class="overflow">
-            <div class="seckill_main_div">
-                <dl class="seckill_main_div_path1" ng-repeat=" x in objs2">
-                    <dt><img src={{x.ImgUrl}}></dt>
-                    <dd>{{x.PITitle}}</dd>
-                    <dd><span>{{x.OrgPrice}}</span>起</dd>
-                </dl>
             </div>
         </div>
-    </div>
-    <div class="seckill_kong"></div>
-    <!--天天疯抢-->
-    <div class="seckill_main2">
-        <span class="seckill_main_span1"></span>
-        <p class="seckill_main_p1">天天疯抢<span>默认排序</span><img src="./images/seckill/seckill_08.png" alt="" class="sec_img3"></p>
-        <div class="ul">
-            <ul class="seckill_main2_ul">
-                <li>周边游</li>
-                <li>国际游</li>
-                <li>出境游</li>
-                <li>游轮</li>
-            </ul>
-            <div  class="li"></div>
-        </div>
+        <div class="seckill_kong"></div>
+        <div class="seckill_main">
+            <span class="seckill_main_span"></span>
+            <p class="seckill_main_p">甩尾特价</p>
 
-
-        <div class="seckill_main2_list" >
-            <div class="list1"  ng-repeat="x in objs">
-                <div class="list1_div" >
-                    <dl>
-                        <dt><img src={{x.ImgUrl}} alt=""></dt>
-                        <dd>{{x.PITitle}}</dd>
-                        <dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>
-                        <dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>
-                        <dd>
-                            <div class="process"><div ng-style= {'width':'{{x.PIProductNum}}'+'%'}></div></div>
-                            <span class="span_color">已抢购<span>{{x.PIProductNum}}</span>%</span>
-                            <span>仅限<span class="span_color">{{x.Stock}}</span>份</span>
-                        </dd>
+            <div class="overflow">
+                <div class="seckill_main_div">
+                    <dl class="seckill_main_div_path1" ng-repeat=" x in objs2">
+                        <!--<dt><img src={{x.ImgUrl}}/></dt>-->
+                        <!--<dd>{{x.PITitle}}</dd>-->
+                        <!--<dd><span>{{x.OrgPrice}}</span>起</dd>-->
+                        <dt><img src={{x.ImgUrl}}/></dt>
                     </dl>
                 </div>
             </div>
         </div>
+        <div class="seckill_kong"></div>
+        <!--天天疯抢-->
+        <div class="seckill_main2">
+            <span class="seckill_main_span1"></span>
+            <p class="seckill_main_p1">天天疯抢<span>默认排序</span><img src="./images/seckill/seckill_08.png" alt="" class="sec_img3"></p>
+            <div class="ul">
+                <ul class="seckill_main2_ul">
+                    <li>周边游</li>
+                    <li>国际游</li>
+                    <li>出境游</li>
+                    <li>游轮</li>
+                </ul>
+                <div  class="li"></div>
+            </div>
+            <div class="seckill_main2_list" >
+                <!--<div class="list1"  ng-repeat="x in objs">-->
+                    <!--<div class="list1_div" >-->
+                        <!--<dl>-->
+                            <!--<dt><img src={{x.ImgUrl}} alt=""></dt>-->
+                            <!--<dd>{{x.PITitle}}</dd>-->
+                            <!--<dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>-->
+                            <!--<dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>-->
+                            <!--<dd>-->
+                                <!--<div class="process"><div ng-style= {'width':'{{x.PIProductNum}}'+'%'}></div></div>-->
+                                <!--<span class="span_color">已抢购<span>{{x.PIProductNum}}</span>%</span>-->
+                                <!--<span>仅限<span class="span_color">{{x.Stock}}</span>份</span>-->
+                            <!--</dd>-->
+                        <!--</dl>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
     </div>
-
 </div>
