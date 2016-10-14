@@ -6,34 +6,11 @@
 <div class="modlTargat_mian">
     <div class="modlTargat_left" >
         <ul>
-            <li ng-repeat="x in obj2">{{x.categoryName}}</li>
+            <li ng-repeat="x in obj2" ng-click="set()">{{x.categoryName}}</li>
         </ul>
     </div>
     <div class="modlTargat_rigth" >
-        <div class="page_1">
-            <div id="targetBanner">
-                <div><img src="./components/target/img/banner_1.png" alt=""></div>
-            </div>
-            <h4><img src="./components/target/img/hotbang.png" alt="">热门出行榜单</h4>
-            <ul class="mian">
-                <li ng-repeat="x in obj1">
-                    <a ui-sref="targat_position">
-                    <div ng-style="{'backgroundImage':'url('+x.cellImage+')'}">
-                        <img src={{x.cellCenterImgUrl}} alt=""  ng-if="x.cellCenterImgUrl" >{{x.cellTitle}}
-                    </div>
-                    <p>{{x.cellProgressPreText}}
-                        <span>
-                            <img src={{x.cellProgressImgUrl}} >
-                        </span>
-                        <span>{{x.cellProgressValue}}</span>
-                    </p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+       <my-page></my-page>
     </div>
-
 </div>
-
 </div>
-
