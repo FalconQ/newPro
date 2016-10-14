@@ -2,25 +2,35 @@
  * Created by My on 2016/10/10.
  */
 define(["router","$css!./components/seckill/seckill.css"],function(app){
-    return app.controller('SeckillController',['$scope','$http',function ($scope,$http) {
+    return app.controller('SeckillController',['$scope','$http','$state','$interval',function ($scope,$http,$state,$interval) {
+        //按钮跳转事件
+        $scope.jumpToDetail = function () {
+            $state.go('proDetail');
+        };
         //获取主题页面 数据
         $http.get("./data/qianggou.json")
             .success(function(data){
-                $scope.objs=data.Product
-                $scope.name=data.Product[2].PITitle
-                $scope.a={'backgroundImage':'url('+data.Product[2].ImgUrl+')'}
+                $scope.objs=data.Product;
+                $scope.name=data.Product[2].PITitle;
+                $scope.a={'backgroundImage':'url('+data.Product[2].ImgUrl+')'};
+                $scope.progress = data.Product[2].PIProductNum + '%';
+                $scope.ShelfTime = $scope.get_unix_time(data.Product[2].PIShelfTime.replace(/T/g," "));
+                $scope.ShelfTime = $scope.get_unix_time(data.Product[2].TimeNow);
+                //计算两个时间差
+                $scope.time= ($scope.ShelfTime-$scope.ShelfTime);
+                $interval(function(){
+                    $scope.time -=1000;
+                },1000)
             });
         //获取轮播图数据
         $http.get("data/qianggou.json")
             .success(function(data){
-                $scope.objs2=data.Product
-
+                $scope.objs2=data.Product;
             });
         $scope.goBack=function goHistory(temp){
                 //temp  正值就是向前走， 负数返回
             window.history.go(temp);
         };
-        $(".banner")
         //给首页NAV添加事件
         $(".nav_ul").delegate("li","click",function(){
             $(this).css({"borderBottom":"0.05rem solid #2ebd59"}).siblings().css({"border":"none"}).find("a").css("color", "black");
@@ -59,13 +69,7 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
 
             })
 
-
-
-
-
-
-
-        };
+        }
         move(".seckill_main_div");
         //移动事件
          angular.element(".seckill_main2_ul").find("li").on("click",function(){
@@ -73,6 +77,13 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
               var left= $(this).offset().left-12;
               $(".li").css("transform","translateX("+left+"px)")
          })
+        //日期字符串转时间戳
+        $scope.get_unix_time = function (dateStr) {
+            var newstr = dateStr.replace(/-/g,'/');
+            var date =  new Date(newstr);
+            var time_str = date.getTime().toString();
+            return time_str.substr(0, 10);
+        };
     }]);
 
 })
