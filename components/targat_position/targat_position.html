@@ -21,21 +21,37 @@
                     <li>邮轮</li>
                 </ul>
             </div>
-            <span><img src="./components/targat_position/img/position_nav.png" alt=""></span>
+            <span>
+                <img src="./components/targat_position/img/position_nav.png" alt="">
+            </span>
         </div>
     </div>
-   <div class="modl_PositionMain">
+    <div class="hideDiv">
+        <span>热门推荐</span>
+        <span>景点</span>
+        <span>酒店+景套餐</span>
+        <span>周边跟团</span>
+        <span>国内跟团</span>
+        <span>自由行</span>
+        <span>目的地参团</span>
+        <span>邮轮</span>
+    </div>
+    <div class="modl_PositionMain">
        <dl ng-repeat=" x in objs_1">
            <dt>
                <img src={{x.picture}} alt="">
                <span>景点</span></dt>
            <dd>
                <h4>{{x.productName}}</h4>
-               <p><span>￥</span><span>{{x.price |tr}}</span>起<del>￥180</del></p>
+               <p><span>￥</span><span>{{x.price |tr}}</span>起<del>￥{{x.price |trL}}</del></p>
                <p><span>红包可减五元</span></p>
-               <p>{{x.commentCount}}评价 {{x.commentRate}}%满意  <span>AAAAAAAA</span>      </p>
+               <p>
+                   {{x.commentCount}}评价 {{x.commentRate}}%满意
+                   <span>
+                       <a ng-if=" x.gradeId | grade">{{ x.gradeId | grade}}级</a>
+                   </span>
+               </p>
            </dd>
        </dl>
-
    </div>
 </div>
