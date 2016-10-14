@@ -77,7 +77,7 @@ require(['jquery',
         'ProDetailController',
         'swiper'
     ],
-    function (jquery,angular,index,calendar) {
+    function (jquery,angular,index) {
         index.index();
         //手动加载模块
         angular.bootstrap(document, ['webapp']);

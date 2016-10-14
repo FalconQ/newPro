@@ -3,13 +3,12 @@
  */
 define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
-    return app.controller('DataSelectController',['$scope','$state','dataFactory',
-        function ($scope,$state,dataFactory) {
+    return app.controller('DataSelectController',['$scope','$state','dataFactory','$window',
+        function ($scope,$state,dataFactory,$window) {
         //切换日历
             $scope.flag1 = true;
             $scope.flag2 = false;
             $scope.cancler = function(){
-                console.log("123")
                 $scope.flag1 = !$scope.flag1;
                 $scope.flag2 = !$scope.flag2;
             }
@@ -54,7 +53,6 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                     //记录选择的日期
                     dataFactory.set({"oriDate": "2016-" + month + "-" + dd});
                     $scope.startDate = dataFactory.get().oriDate.substr(5);
-                    console.log($scope.startDate);
                     just()
                 });
             }
@@ -109,8 +107,9 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
             //减号绑定事件
             $scope.minuNum = function(){
                 var cutrItem = $(event.target).next();
-                var cutrNum = parseInt(cutrItem.text())-1;
-                if(cutrNum>0){
+                var cutrNum = parseInt(cutrItem.text());
+                if(cutrNum>=2){
+                    cutrNum = cutrNum-1
                     if(cutrItem.parent().attr("class")=="growup"){
                         dataFactory.set({"growupNum":cutrNum});
                     }else{
@@ -123,12 +122,16 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                     dataFactory.set({"amount":amount});
                     cutrItem.text(cutrNum);
                 }else{
+                    cutrItem.text(0);
                     $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
                     cutrItem.css({"borderColor":"#e5e5e5"});
-                    angular.element(".next_shadow").css("display","none");
+                    angular.element(".next_shadow").css("display","block");
                     return;
                 }
 
+            }
+            $scope.back = function(){
+                $window.history.back();
             }
 
 
