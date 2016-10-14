@@ -53,10 +53,13 @@
   visibility: hidden;
 }
 .container_serOrder .order_list li .order_content .order_title {
-  height: 0.75rem;
   width: 4.56rem;
   font-size: 0.28rem;
   font-weight: 700;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .container_serOrder .order_list li .order_content .content_right {
   height: 0.75rem;
@@ -113,11 +116,11 @@
   line-height: 0.6rem;
   box-sizing: border-box;
 }
-.container_serOrder .order_list li .btnGroup a:first-of-type {
+.container_serOrder .order_list li .btnGroup .back {
   border: 1px solid #e0e0e0;
   color: #666666;
 }
-.container_serOrder .order_list li .btnGroup a:last-of-type {
+.container_serOrder .order_list li .btnGroup .pay {
   border: 1px solid #ff594c;
   background-color: #ff594c;
   color: #fff;

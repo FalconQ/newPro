@@ -148,10 +148,11 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         }
         //提交订单事件
         $scope.submit = function (){
-            console.log("kddfks")
             dataFactory.set({"linkMan":$scope.linkMan});
             dataFactory.set({"phoneNum":$scope.phoneNum});
             dataFactory.set({"email":$scope.email});
+            dataFactory.set({'isPay':0});
+            dataFactory.set({'orderId':new Date()});
             if(!dataFactory.get().linkMan){
                 alert("请填写姓名");
                 $(".sub").css("background","#ffbab5");

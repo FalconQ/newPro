@@ -109,7 +109,7 @@ define(['angular'],function (angular) {
                     })
                     .state('submitSuccess', {
                         url: '/submitSuccess',
-                        templateUrl: 'components/submitSuccess/submitSuccess.html',
+                        templateUrl: './components/submitSuccess/submitSuccess.html',
                         controller: 'SubmitSuccessController'
                     })
                 }])

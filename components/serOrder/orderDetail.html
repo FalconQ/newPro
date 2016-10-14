@@ -1,4 +1,4 @@
-<div class="order_list">
+<div class="order_list" ng-if="order_info.orderId">
     <ul>
         <li>
             <div class="order_content">
@@ -17,8 +17,8 @@
                 <a href="" >更多问题</a>
             </div>
             <div class="btnGroup">
-                <a ng-click="back()">申请退改</a>
-                <a ng-click="pay()">立即支付</a>
+                <a ng-click="back()" class="back">申请退改</a>
+                <a ng-click="pay()" class='pay' ng-if="1">立即支付</a>
             </div>
         </li>
     </ul>
