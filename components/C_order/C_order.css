@@ -87,6 +87,9 @@
     border-bottom: 0.01rem solid #e6e6e6;
 
 }
+.modl_C_order  .main_price  ul li:last-of-type{
+    display: none;
+}
 .modl_C_order  .main_price  ul li:last-child {
      border: none;
 }

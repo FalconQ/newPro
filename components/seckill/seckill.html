@@ -35,7 +35,7 @@
                 <div class="banner_money_num1">
                     <p class="orage_money">
                         <span class="orage">￥</span>
-                        <span class="orage_price">{{objs[2].OrgPrice}}</span>起
+                        <b class="orage_price">{{objs[2].OrgPrice}}</b>起
                     </p>
                     <p class="orage_num">仅限<span class="orage">{{objs[2].Stock}}</span>份</p>
 
@@ -61,10 +61,9 @@
             <div class="overflow">
                 <div class="seckill_main_div">
                     <dl class="seckill_main_div_path1" ng-repeat=" x in objs2">
-                        <!--<dt><img src={{x.ImgUrl}}/></dt>-->
-                        <!--<dd>{{x.PITitle}}</dd>-->
-                        <!--<dd><span>{{x.OrgPrice}}</span>起</dd>-->
                         <dt><img src={{x.ImgUrl}}/></dt>
+                        <dd>{{x.PITitle}}</dd>
+                        <dd><span>￥<b>{{x.OrgPrice}}</b></span>起</dd>
                     </dl>
                 </div>
             </div>
@@ -84,21 +83,21 @@
                 <div  class="li"></div>
             </div>
             <div class="seckill_main2_list" >
-                <!--<div class="list1"  ng-repeat="x in objs">-->
-                    <!--<div class="list1_div" >-->
-                        <!--<dl>-->
-                            <!--<dt><img src={{x.ImgUrl}} alt=""></dt>-->
-                            <!--<dd>{{x.PITitle}}</dd>-->
-                            <!--<dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>-->
-                            <!--<dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>-->
-                            <!--<dd>-->
-                                <!--<div class="process"><div ng-style= {'width':'{{x.PIProductNum}}'+'%'}></div></div>-->
-                                <!--<span class="span_color">已抢购<span>{{x.PIProductNum}}</span>%</span>-->
-                                <!--<span>仅限<span class="span_color">{{x.Stock}}</span>份</span>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</div>-->
-                <!--</div>-->
+                <div class="list1"  ng-repeat="x in objs">
+                    <div class="list1_div" >
+                        <dl>
+                            <dt><img src={{x.ImgUrl}} alt=""></dt>
+                            <dd>{{x.PITitle}}</dd>
+                            <dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>
+                            <dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>
+                            <dd>
+                                <div class="process"><div ng-style= {'width':'{{x.PIProductNum}}'+'%'}></div></div>
+                                <span class="span_color">已抢购<span>{{x.PIProductNum}}</span>%</span>
+                                <span>仅限<span class="span_color">{{x.Stock}}</span>份</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
