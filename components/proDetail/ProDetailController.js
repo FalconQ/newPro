@@ -28,9 +28,6 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
             }
             dataFactory.set(orderInfo);
             $state.go('dataSelect');
-            console.log(dataFactory.get())
-            var date = new Date().toString()
-            console.log(date)
         };
         //头部隐藏显示规则
         angular.element('.container_proDetail').scroll(function () {
