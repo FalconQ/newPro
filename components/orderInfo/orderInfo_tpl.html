@@ -16,7 +16,7 @@
     </div>
     <div>
     <span>出发城市:</span>
-    <p>{{orderData.oriCity}}</p>
+    <p>{{orderData.orgCity}}</p>
     </div>
     <div>
     <span>出团日期:</span>
@@ -28,7 +28,7 @@
     </div>
     <div>
     <span>出行人数:</span>
-    <p>{{orderData.growupNum}}<span>（{{orderData.growupNum}}位成人）</span></p>
+    <p>{{orderData.growupNum + orderData.childNum}}<span>（{{orderData.growupNum}}位成人<span ng-if="orderData.childNum">{{orderData.childNum}}位儿童</span>）</span></p>
     </div>
     <div>
     <span>相关附件:</span>

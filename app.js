@@ -49,7 +49,6 @@ require.config({
         }
     }
 });
-
 require(['jquery',
         'angular',
         'index',

@@ -16,18 +16,26 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     oriDate:date,
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
+<<<<<<< HEAD
                     orgCity:$scope.data.orgCity,
                     growupNum:0,
                     childNum:0
+=======
+                    orgCity:$scope.data.OrgCity
+>>>>>>> c25174a446e9d5294950f3f19ca4592bf066e293
                 }
             }else {
                 var orderInfo = {
                     oriDate:'',
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
+<<<<<<< HEAD
                     orgCity:$scope.data.orgCity,
                     growupNum:0,
                     childNum:0
+=======
+                    orgCity:$scope.data.OrgCity
+>>>>>>> c25174a446e9d5294950f3f19ca4592bf066e293
                 }
             }
             dataFactory.set(orderInfo);

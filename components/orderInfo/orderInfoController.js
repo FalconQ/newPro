@@ -23,5 +23,8 @@ define(['router','$css!./components/orderInfo/orderInfo.css'],function (app) {
         $scope.toPay = function () {
             $state.go('pay');
         }
+        $scope.jumpToSer = function () {
+            $state.go('serviceOrder')
+        }
     }])
 })

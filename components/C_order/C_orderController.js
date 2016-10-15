@@ -3,12 +3,17 @@
  */
 define(['router',"$css!./components/C_order/C_order.css"],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
+<<<<<<< HEAD
     return app.controller('C_orderController',['$scope','dataFactory','$state','$window',
         function ($scope,dataFactory,$state,$window) {
+=======
+    return app.controller('C_orderController',['$scope','dataFactory','$state','dateService',function ($scope,dataFactory,$state,dateService) {
+>>>>>>> c25174a446e9d5294950f3f19ca4592bf066e293
         //添加意外险和取订单的默认选择，将金额放入service
         $scope.selected = true;
         $scope.selectedAci = true;
         $scope.selectedCan = true;
+        $scope.title = dataFactory.get().title;
         $scope.growupPrice = dataFactory.get().price;
         $scope.childPrice = parseInt(dataFactory.get().price)/2;
        // dataFactory.set({"accdidentMoney":"48"});
@@ -176,7 +181,10 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
             dataFactory.set({"phoneNum":$scope.phoneNum});
             dataFactory.set({"email":$scope.email});
             dataFactory.set({'isPay':0});
-            dataFactory.set({'orderId':new Date()});
+            dataFactory.set({'orderId':new Date().Format("yyyyMMddhhmmss")});
+            dataFactory.set({'childNum': $scope.childNum});
+            dataFactory.set({'status': '待支付'});
+            dataFactory.set({'orderTime':new Date().Format("yyyy-MM-dd hh:mm:ss")});
             if(!dataFactory.get().linkMan){
                 alert("请填写姓名");
                 $(".sub").css("background","#ffbab5");

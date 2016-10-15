@@ -122,7 +122,11 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                         $scope.growupNum = dataFactory.get().growupNum;
                         if(!$scope.childNum){
                             $scope.childNum=0;
+<<<<<<< HEAD
                             dataFactory.set({"childNum":0});
+=======
+                            dataFactory.set({"childNum":0})
+>>>>>>> c25174a446e9d5294950f3f19ca4592bf066e293
                         }
                         var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
                             parseInt($scope.childNum)*parseFloat($scope.price)/2;

@@ -1,6 +1,6 @@
 <div ng-controller="orderInfoController" class="orderInfor_box">
     <div class="order_info_header">
-        <span class="back_step"></span>
+        <span class="back_step" ng-click="jumpToSer()"></span>
         订单信息
         <span class="header_phone"></span>
         <span class="header_message"></span>
@@ -10,7 +10,7 @@
             <span>订单跟踪:</span>
             <div>
                 <p>尊贵的会员，您的订单已经创纪录</p>
-                <p>2016-10-09 15:52:33</p>
+                <p>{{orderData.orderTime}}</p>
             </div>
             <span class="info_left"></span>
         </div>
