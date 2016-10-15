@@ -1,6 +1,7 @@
 /**
  * Created by qiusheng on 2016/10/8.
  */
+
 require.config({
     paths: {
         jquery: './libs/jquery',
