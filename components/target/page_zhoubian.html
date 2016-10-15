@@ -9,28 +9,24 @@
                 </div>
                 <div class="bottmWeather">
                     <img src="./components/target/img/weather.png" alt="">
-                    <a>18c/8c</a>
-                    <span>文物</span>
-                    <span>京腔飞</span>
+                    <a ng-if="x.tagItem[1].tagText">{{x.tagItem[1].tagText}}</a>
+                    <span ng-if="x.tagItem[1].labelItem[1].labelText">{{x.tagItem[1].labelItem[1].labelText}}</span>
+                    <span ng-if="x.tagItem[1].labelItem[0].labelText">{{x.tagItem[1].labelItem[0].labelText}}</span>
                 </div>
             </div>
         </div>
         <h2>周边地区撒欢</h2>
         <div class="main_nearby">
-            <div>保定 <span></span></div>
-            <div>张家口<span></span></div>
-            <div>石家庄</div>
-            <div>石家庄</div>
-            <div>大同</div>
-            <div>临汾</div>
+            <div ng-repeat="x in nearby ">{{x.cellTitle}}<span></span></div>
+
         </div>
         <h2>热门目的地</h2>
         <div class="main_hotbuy">
             <ul>
-                <li>
-                    <span>常州</span>
-                    <p>的风口是否 房东说 开发大师傅你看是对方是否 </p>
-                    <span>￥299</span>
+                <li ng-repeat=" x in main_hotbuy " ng-style='{"backgroundImage":"url("+x.cellImage+")" }'>
+                    <span>北京</span>
+                    <p>{{x.cellTitle}} </p>
+                    <span>￥{{x.cellPrice}}</span>
                 </li>
             </ul>
         </div>

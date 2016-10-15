@@ -6,11 +6,11 @@
 <div class="modlTargat_mian">
     <div class="modlTargat_left" >
         <ul>
-            <li ng-repeat="x in obj3" ng-click="set()">{{x.categoryName}}</li>
+            <li ng-repeat=" x in obj3" ng-click="set()">{{x.categoryName}}</li>
         </ul>
     </div>
-    <div class="modlTargat_rigth" >
-       <my-page></my-page>
+    <div class="modlTargat_rigth"  ng-include="page">
+        <!--改变局内容-->
     </div>
 </div>
 </div>

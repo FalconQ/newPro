@@ -12,30 +12,33 @@ define(['router',"$css!./components/target/target.css"],function (app) {
                //page2 获取右边数据内容生成
                $http.get("./data/zhoubian.json")
                    .success(function(data){
+                       console.log(data.response.body.groupList[0].cellItem)
                        $scope.obj2=data.response.body.groupList[0].cellItem
+                       $scope.nearby=data.response.body.groupList[1].cellItem
+                       $scope.main_hotbuy=data.response.body.groupList[2].cellItem
                    })
               //获取左边tabar数据生成tabar
               $http.get('./data/tabdata.json')
                     .success(function(data){
                         $scope.obj3=data.categoryList;
                     });
+
+              //开始页面配置
+              $scope.page='./components/target/page_remen.html'
               //点击事件的设置
+              var num=false
               $scope.set=function(e){
-                      //console.log(app)
+                         //数据假象 实现页面跳转
+                        if(num){
+                            $scope.page='./components/target/page_remen.html'
+                        }else{
+                            $scope.page='./components/target/page_zhoubian.html';
+                        }
+
+                       num=!num
                       $(event.target).css({"background":"white","color":"#6ad3c8"}).siblings().css({"background":"none","color":"black"})
               }
-             }])   // 自定义组件
-             .directive("myPage",function(){
-                    return {
-                        restrict:"E",
-                        templateUrl:function($attr){//开始没有执行后地址
-                            console.log($attr)
-                            return $attr.templateUrl||"./components/target/page_remen.html"
-                        },
-                        replace:true,
-                        link:function(){
-                            //console.log('myPage')
-                        }
-                    }
-             })
+             }])
+
+
 })
