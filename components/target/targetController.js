@@ -38,7 +38,7 @@ define(['router',"$css!./components/target/target.css"],function (app) {
              .directive("myPage",function(){
                     return {
                         restrict:"E",
-                        templateUrl:"./components/target/page_zhoubian.html",
+                        templateUrl:"./components/target/page_remen.html",
                         replace:true
                     }
              })
