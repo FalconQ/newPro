@@ -3,12 +3,8 @@
  */
 define(['router',"$css!./components/C_order/C_order.css"],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
-<<<<<<< HEAD
-    return app.controller('C_orderController',['$scope','dataFactory','$state','$window',
-        function ($scope,dataFactory,$state,$window) {
-=======
-    return app.controller('C_orderController',['$scope','dataFactory','$state','dateService',function ($scope,dataFactory,$state,dateService) {
->>>>>>> c25174a446e9d5294950f3f19ca4592bf066e293
+
+    return app.controller('C_orderController',['$scope','dataFactory','$state','dateService','$window',function ($scope,dataFactory,$state,dateService,$window) {
         //添加意外险和取订单的默认选择，将金额放入service
         $scope.selected = true;
         $scope.selectedAci = true;
