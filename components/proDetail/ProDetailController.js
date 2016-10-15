@@ -16,14 +16,18 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     oriDate:date,
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
-                    orgCity:$scope.data.orgCity
+                    orgCity:$scope.data.orgCity,
+                    growupNum:0,
+                    childNum:0
                 }
             }else {
                 var orderInfo = {
                     oriDate:'',
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
-                    orgCity:$scope.data.orgCity
+                    orgCity:$scope.data.orgCity,
+                    growupNum:0,
+                    childNum:0
                 }
             }
             dataFactory.set(orderInfo);

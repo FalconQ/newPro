@@ -264,11 +264,11 @@
 
 .next_shadow{
     width: 2.40rem;
-    height: 1rem;
+    height: 1.01rem;
     background:rgba(229,229,229,0.7);
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -0.01rem;
     z-index: 100;
     display: block;
 }
