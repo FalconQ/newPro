@@ -499,6 +499,13 @@ a:active{
 .mine-footer .mine-footer-bottom .swiper{
     width:30rem;
     height:4.3rem;
+    -webkit-animation:play 10s linear  alternate;
+}
+@keyframes play {
+    0%{transform: translate(0,0);}
+    25%{transform: translate(-7.5rem,0);}
+    50%{transform: translate(-15rem,0);}
+    75%{transform: translate(-22.5rem,0);}
 }
 .mine-footer .mine-footer-bottom .mine-footer-swiper{
     width:7.5rem;
@@ -508,7 +515,7 @@ a:active{
 }
 .mine-footer .mine-footer-swiper .contain{
     margin-left: 0.4rem;
-    width:6.6rem;
+    width:6.8rem;
     height:3.6rem;
     display: flex;
 }
@@ -527,9 +534,45 @@ a:active{
     background-size: 100%;
 }
 .mine-footer-swiper .infos .img2{
+     width:3.2rem;
+     height:2.3rem;
+     background: url("../../images/mine/swiper_05.png") no-repeat;
+     background-size: 100%;
+ }
+.mine-footer-swiper .infos .img3{
     width:3.2rem;
     height:2.3rem;
-    background: url("../../images/mine/swiper_05.png") no-repeat;
+    background: url("../../images/mine/swiper_11.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img4{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper_12.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img5{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper_22.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img6{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper_33.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img7{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper1_03.png") no-repeat;
+    background-size: 100%;
+}
+.mine-footer-swiper .infos .img8{
+    width:3.2rem;
+    height:2.3rem;
+    background: url("../../images/mine/swiper1_05.png") no-repeat;
     background-size: 100%;
 }
 .mine-footer-swiper .infos .introduct{

@@ -7,7 +7,7 @@
             <div class="center">
                 <h2>编辑常用旅客</h2>
             </div>
-            <div class="right">
+            <div class="right" ng-click="delete ()">
                 <span>删除</span>
             </div>
     </div>
@@ -16,8 +16,8 @@
     <!--信息开始-->
     <div class="changePeople-info" ng-repeat="x in list">
         <div class="ipt">
-            <p>中文姓名<input ng-model="x.name" type="text" value="{{x.name}}"></p>
-            <p>手机号码<input ng-model="x.phone" type="text" value="{{x.phone}}"></p>
+            <p>中文姓名<input class="name" ng-model="x.name" type="text" value="{{x.name}}"></p>
+            <p>手机号码<input class="number" ng-model="x.phone" type="text" value="{{x.phone}}"></p>
         </div>
         <div class="addressList">
             <span></span>
@@ -27,7 +27,7 @@
 
     <!--身份证-->
     <div class="ID" ng-repeat="x in list">
-        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input ng-model="x.idCard" type="text" value="{{x.idCard}}"></p>
+        <p>身份证&nbsp; &gt; &nbsp;&nbsp;<input class="card" ng-model="x.idCard" type="text" value="{{x.idCard}}"></p>
         <p class="add">
             <a>
                 <span></span>
@@ -39,6 +39,6 @@
 
     <!--保存按钮-->
     <div class="save">
-        <input type="button" value="保存">
+        <input  ng-click="revamp()" type="button" value="保存">
     </div>
 </div>

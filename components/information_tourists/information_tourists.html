@@ -1,5 +1,5 @@
 <!--常用旅客信息列表-->
-<div class="information_tourists" ng-controller="TouristsController">
+<div class="information_tourists">
     <div class="information_tourists-header">
         <div class="information_tourists-header-left">
             <a ng-click="clk()"><span></span></a>
@@ -27,8 +27,8 @@
         </ul>
     </div>
 
-    <div  class="information_tourists-info">
-        <table ng-repeat="x in list">
+    <div  class="information_tourists-info" ng-repeat="x in list">
+        <table>
             <thead>
             <tr>
                 <th>

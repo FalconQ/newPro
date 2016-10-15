@@ -128,7 +128,7 @@ a:active{
 }
 .information_tourists-info table thead h2{
     font-size: 0.3rem;
-    text-indent: -1rem;
+    text-indent: 0.5rem;
 }
 .information_tourists-info thead a{
     display: block;
