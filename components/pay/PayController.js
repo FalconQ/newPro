@@ -8,6 +8,7 @@ define(['router','$css!./components/pay/pay.css'],function (app) {
             $scope.return = function () {
                 $state.go('serviceOrder')
             };
+
         }])
         .directive('orderInfo',function () {
             return{
