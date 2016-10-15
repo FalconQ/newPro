@@ -2,6 +2,8 @@
     width: 7.5rem;
     background: #e9ecf1;
     padding-bottom:1.06rem;
+    position: absolute;
+    z-index: 10000;
 }
 .modl_C_order .modl_C_orderHead{
     height: 1.4rem;
@@ -86,6 +88,9 @@
     height: 1.35rem;
     border-bottom: 0.01rem solid #e6e6e6;
 
+}
+.modl_C_order  .main_price  ul li:last-of-type{
+    display: none;
 }
 .modl_C_order  .main_price  ul li:last-child {
      border: none;
@@ -303,6 +308,9 @@
     color: black;
     font-family: "微软雅黑";
     line-height: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
 }
 .modl_C_order .modl_C_orderFooter span:nth-of-type(1) {

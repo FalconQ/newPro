@@ -1,0 +1,30 @@
+<div class="order_list">
+    <ul>
+        <li class="empty_order" ng-if="!order_info.orderId">
+            <img src="./images/serOrder/empty.png"/>
+            <p>你近期没有订单</p>
+            <p>订单服务，贴心每一程，为您提供订单查询、常见问题咨询等在线服务</p>
+        </li>
+        <li class="info" ng-if="order_info.orderId">
+            <div class="order_content">
+                <div class="order_title">{{order_info.title}}</div>
+                <div class="content_right">
+                    <span class="order_price">{{order_info.amount}}</span>
+                    <span class="order_status">{{order_info.status}}</span>
+                </div>
+                <div class="goTime">出发时间：<span>{{order_info.oriDate}}</span></div>
+            </div>
+            <div class="order_qa">
+                <span>常见问题：</span>
+                <a href="" >费用包含与不包含</a>
+                <a href="" >出游日期是否可以修改</a>
+                <a href="" >最晚什么时候支付</a>
+                <a href="" >更多问题</a>
+            </div>
+            <div class="btnGroup">
+                <a ng-click="back()" class="back">申请退改</a>
+                <a ng-click="pay()" class='pay' ng-if="1">立即支付</a>
+            </div>
+        </li>
+    </ul>
+</div>

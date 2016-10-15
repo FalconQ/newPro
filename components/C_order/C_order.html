@@ -16,33 +16,33 @@
          </div>
          <div class="main_price">
               <ul>
-                  <li>
+                  <li >
                       <div class="prc">
                           <h4>成人价</h4>
-                          <p>￥1299/人</p>
+                          <p>￥{{growupPrice}}/人</p>
                       </div>
                       <div class="put">
-                          <p><span></span><span>1</span><span></span></p>
+                          <p class="growup">
+                              <span class="minu" ng-click="minuCount()"></span>
+                              <span class="cont"></span>
+                              <span class="add" ng-click="addCount()"></span>
+                          </p>
                       </div>
                   </li>
-                  <li>
+                  <li >
                       <div class="prc">
-                          <h4>成人价</h4>
-                          <p>￥1299/人</p>
+                          <h4>儿童价</h4>
+                          <p>￥{{childPrice}}/人</p>
                       </div>
                       <div class="put">
-                          <p><span></span><span>1</span><span></span></p>
+                          <p class="child">
+                              <span class="minu" ng-click="minuCount()"></span>
+                              <span class="cont"></span>
+                              <span class="add" ng-click="addCount()"></span>
+                          </p>
                       </div>
                   </li>
-                  <li>
-                      <div class="prc">
-                          <h4>成人价</h4>
-                          <p>￥1299/人</p>
-                      </div>
-                      <div class="put">
-                          <p><span></span><span>1</span><span></span></p>
-                      </div>
-                  </li>
+
 
               </ul>
         </div>
@@ -57,25 +57,24 @@
             <h3>联系人信息</h3>
             <dl>
                 <dt>联系人：</dt>
-                <dd><input type="text"  placeholder="必填，姓名"  ></dd>
+                <dd><input ng-change="changeText()" type="text"  placeholder="必填，姓名"  ng-model="linkMan"></dd>
                 <dt>手机号：</dt>
-                <dd><input type="text"    ></dd>
+                <dd><input ng-change="changeText()" type="text"  ng-model="phoneNum"></dd>
                 <dt>邮箱：</dt>
-                <dd><input type="text"  placeholder="必填，接受合同及行程单"  ></dd>
-
+                <dd><input ng-change="changeText()" type="text"  placeholder="必填，接受合同及行程单"  ng-model="email"></dd>
             </dl>
         </div>
          <div class="main_safest">
                  <ul>
                         <li>旅游意外险
                             <img src="./components/C_order/img/wen.png" alt="">
-                            <span></span>
-                            <span>￥48/人</span>
+                            <span ng-click="show()" class="selected"></span>
+                            <span class="accident">￥48/人</span>
                         </li>
                         <li>旅程预订取消险
                             <img src="./components/C_order/img/wen.png" alt="">
-                            <span></span>
-                            <span>￥20/人</span>
+                            <span ng-click="show()" class="selected"></span>
+                            <span class="cancle">￥20/人</span>
                         </li>
                  </ul>
          </div>
@@ -83,18 +82,17 @@
              <span>惠</span> 满人立减    <span>800<img src="./components/C_order/img/benefit1.png" alt=""></span>
          </div>
          <div class="main_benefit2 ">
-            <span>我需要旅游顾问  隆 静 为我一对一服务</span> <span></span>
+            <span>我需要旅游顾问  隆 静 为我一对一服务</span> <span ng-click="show()" class="selected"></span>
         </div>
          <div class="main_benefit3 ">
             点击提交订单表示已阅读并接受 <span>出游人限制和预订须知</span>
         </div>
-
     </div>
     <div class="modl_C_orderFooter">
         预订总价:
-        <span> ￥1934</span>
+        <span> ￥{{amount}}</span>
         <img src="./components/C_order/img/sanjiao.png" alt="">
-        <span>提交订单</span>
+        <span class="sub" ng-click="submit()">提交订单</span>
     </div>
 
 </div>

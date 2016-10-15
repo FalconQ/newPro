@@ -16,6 +16,7 @@ define(['router','$css!./components/pay/pay.css'],function (app) {
                 replace:true,
                 controller: function ($scope,dataFactory) {
                     $scope.data = dataFactory.get();
+                    console.log($scope.data)
                 }
             }
         })
@@ -40,9 +41,7 @@ define(['router','$css!./components/pay/pay.css'],function (app) {
                 controller: function ($scope,dataFactory) {
                     $scope.data = dataFactory.get();
                     $scope.click = function () {
-                        dataFactory.set({'oriDate':'123'});
                         alert('支付成功');
-                        console.log(dataFactory.get())
                     }
                 }
             }
