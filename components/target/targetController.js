@@ -8,25 +8,26 @@ define(['router',"$css!./components/target/target.css"],function (app) {
               $http.get('./data/hot.json')
                      .success(function(data){
                          $scope.obj1=data.response.groupList[1].cellItem;
-                    });
-
+                         
+                         console.log("1")                    });
                //page2 获取右边数据内容生成
                $http.get("./data/zhoubian.json")
                    .success(function(data){
-                       console.log(data.response.body.groupList[0].cellItem);
+                       //console.log(data.response.body.groupList[0].cellItem);
                        $scope.obj2=data.response.body.groupList[0].cellItem
-
+                       console.log("2")
                    })
               //获取左边tabar数据生成tabar
               $http.get('./data/tabdata.json')
                     .success(function(data){
-                        $scope.obj2=data.categoryList;
+                        $scope.obj3=data.categoryList;
+                        console.log(3)
+                        console.log($scope.obj3[0].categoryName)
                     });
               //点击事件的设置
               $scope.set=function(){
                       $(event.target).css({"background":"white","color":"#6ad3c8"}).siblings().css({"background":"none","color":"black"})
                        app.directive("myPage",function(){
-                          console.log("ddd")
                           return {
                               restrict:"E",
                               templateUrl:"./components/target/page_zhoubian.html",
@@ -42,6 +43,4 @@ define(['router',"$css!./components/target/target.css"],function (app) {
                         replace:true
                     }
              })
-
-
 })
