@@ -7,7 +7,7 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
         $scope.jumpToDetail = function () {
             $state.go('proDetail');
         };
-        //获取主题页面 数据
+        //获取主题页面 数据，合并了轮播图数据请求，
         $http.get("./data/qianggou.json")
             .success(function(data){
                 $scope.objs=data.Product;
@@ -21,11 +21,6 @@ define(["router","$css!./components/seckill/seckill.css"],function(app){
                 $interval(function(){
                     $scope.time -=1000;
                 },1000)
-            });
-        //获取轮播图数据
-        $http.get("data/qianggou.json")
-            .success(function(data){
-                $scope.objs2=data.Product;
             });
         $scope.goBack=function goHistory(temp){
                 //temp  正值就是向前走， 负数返回

@@ -79,6 +79,6 @@ require(['jquery',
     ],
     function (jquery,angular,index) {
         index.index();
-        //手动加载模块
+        //手动启动angular模块
         angular.bootstrap(document, ['webapp']);
 });
