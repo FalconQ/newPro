@@ -18,7 +18,6 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
             function clickChange(){
                 var getDate = dataFactory.get().oriDate;
                 if(getDate){
-                    console.log(true)
                     var mm = getDate.substr(5,2);
                     var day = getDate.substr(8);
                     var selectSpan = angular.element("td").find("span");
@@ -108,27 +107,62 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
             $scope.minuNum = function(){
                 var cutrItem = $(event.target).next();
                 var cutrNum = parseInt(cutrItem.text());
-                if(cutrNum>=2){
-                    cutrNum = cutrNum-1
-                    if(cutrItem.parent().attr("class")=="growup"){
+                if(cutrItem.parent().attr("class")=="growup"){
+                    if(cutrNum>=2){
+                        cutrNum = cutrNum-1;
                         dataFactory.set({"growupNum":cutrNum});
+                        $scope.growupNum = dataFactory.get().growupNum;
+                        if(!$scope.childNum){
+                            $scope.childNum=0;
+                        }
+                        var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
+                            parseInt($scope.childNum)*parseFloat($scope.price)/2;
+                        dataFactory.set({"amount":amount});
+                        cutrItem.text(cutrNum);
                     }else{
-                        dataFactory.set({"childNum":cutrNum});
-                    }
-                    $scope.growupNum = dataFactory.get().growupNum;
-                    $scope.childNum = dataFactory.get().childNum;
-                    var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
-                        parseInt($scope.childNum)*parseFloat($scope.price)/2;
-                    dataFactory.set({"amount":amount});
-                    cutrItem.text(cutrNum);
-                }else{
-                    cutrItem.text(0);
-                    $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
-                    cutrItem.css({"borderColor":"#e5e5e5"});
-                    angular.element(".next_shadow").css("display","block");
-                    return;
-                }
+                        if(cutrNum==0){
+                            return;
+                        }
+                        dataFactory.set({"growupNum":0});
+                        $scope.growupNum = dataFactory.get().growupNum;
+                        cutrItem.text(0)
+                        $(".growupNum").css("display","none");
+                        var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
+                            parseInt($scope.childNum)*parseFloat($scope.price)/2;
+                        dataFactory.set({"amount":amount});
+                        $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
+                        cutrItem.css({"borderColor":"#e5e5e5"});
+                        angular.element(".next_shadow").css("display","block");
 
+                    }
+                }else{
+                    if(cutrNum>=2){
+                        cutrNum = cutrNum-1;
+                        dataFactory.set({"childNum":cutrNum});
+                        $scope.childNum = dataFactory.get().childNum;
+                        if(!$scope.growupNum){
+                            $scope.growupNum=0;
+                        }
+                        var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
+                            parseInt($scope.childNum)*parseFloat($scope.price)/2;
+                        dataFactory.set({"amount":amount});
+                        cutrItem.text(cutrNum);
+                    }else{
+                        if(cutrNum==0){
+                            return
+                        }
+                        dataFactory.set({"childNum":0});
+                        $scope.childNum = dataFactory.get().childNum;
+                        cutrItem.text(0)
+                        $(".childNum").css("display","none");
+                        var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
+                            parseInt($scope.childNum)*parseFloat($scope.price)/2;
+                        dataFactory.set({"amount":amount});
+                        $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
+                        cutrItem.css({"borderColor":"#e5e5e5"});
+                        angular.element(".next_shadow").css("display","block");
+                    }
+                }
             }
             $scope.back = function(){
                 $window.history.back();
