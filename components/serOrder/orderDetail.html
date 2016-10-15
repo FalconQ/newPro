@@ -1,6 +1,11 @@
-<div class="order_list" ng-if="order_info.orderId">
+<div class="order_list">
     <ul>
-        <li>
+        <li class="empty_order" ng-if="!order_info.orderId">
+            <img src="./images/serOrder/empty.png"/>
+            <p>你近期没有订单</p>
+            <p>订单服务，贴心每一程，为您提供订单查询、常见问题咨询等在线服务</p>
+        </li>
+        <li class="info" ng-if="order_info.orderId">
             <div class="order_content">
                 <div class="order_title">{{order_info.title}}</div>
                 <div class="content_right">

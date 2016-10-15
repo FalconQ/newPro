@@ -189,6 +189,5 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
                 $state.go("submitSuccess");
             }
         }
-
     }]);
 })
