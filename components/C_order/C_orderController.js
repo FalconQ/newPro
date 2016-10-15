@@ -43,9 +43,9 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
                     dataFactory.set({"growupNum":1});
                     cutrItem.text(1);
                     cutrNum = cutrNum-1;
-                    //var amount = parseFloat(dataFactory.get().amount)-parseFloat($scope.growupPrice);
-                    //dataFactory.set({"amount":amount});
-                    //$scope.amount = dataFactory.get().amount;
+                    var amount = parseFloat(dataFactory.get().amount)-parseFloat($scope.growupPrice);
+                    dataFactory.set({"amount":amount});
+                    $scope.amount = dataFactory.get().amount;
                     $(event.target).css({"backgroundImage":"url('./components/C_order/img/numberbtn_minus_disable.png')"
                         ,"backgroundSize":"0.68rem 0.65rem"});
                     cutrItem.css({"borderColor":"#e5e5e5"});
@@ -172,6 +172,8 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
             dataFactory.set({"email":$scope.email});
             dataFactory.set({'isPay':0});
             dataFactory.set({'orderId':new Date()});
+            dataFactory.set({'childNum': $scope.childNum});
+            dataFactory.set({'status': '待支付'})
             if(!dataFactory.get().linkMan){
                 alert("请填写姓名");
                 $(".sub").css("background","#ffbab5");

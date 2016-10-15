@@ -16,18 +16,21 @@ define(['router','$css!./components/ProDetail/ProDetail.css'],function (app) {
                     oriDate:date,
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
-                    orgCity:$scope.data.orgCity
+                    orgCity:$scope.data.OrgCity
                 }
             }else {
                 var orderInfo = {
                     oriDate:'',
                     price:$scope.data.ActualPrice,
                     title:$scope.data.PITitle,
-                    orgCity:$scope.data.orgCity
+                    orgCity:$scope.data.OrgCity
                 }
             }
             dataFactory.set(orderInfo);
             $state.go('dataSelect');
+            console.log(dataFactory.get())
+            var date = new Date().toString()
+            console.log(date)
         };
         //头部隐藏显示规则
         angular.element('.container_proDetail').scroll(function () {
