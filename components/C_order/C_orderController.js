@@ -160,11 +160,19 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
 
         //查看联系人、电话、电子邮有没有填写
         $scope.changeText = function(){
+            /*var reg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$/;
+
+            console.log($scope.phoneNum);
+            if(!reg.test($scope.phoneNum)){
+                alert("请输入正确的手机号");
+                return;
+            }*/
             if($scope.linkMan&&$scope.phoneNum&&$scope.email){
                 if((parseInt(dataFactory.get().growupNum)+parseInt(dataFactory.get().childNum))>0){
                     $(".sub").css("backgroundColor","red");
                     return true;
                 }
+
                 return false;
             }else {
                 $(".sub").css("backgroundColor", "#ffbab5");

@@ -77,7 +77,7 @@
 .distination_box .select_innerOrout ul>li:last-of-type{
     margin-right: 0;
 }
-.distination_box .select_innerOrout ul>li:hover{
+.distination_box .select_innerOrout ul>li:first-of-type{
     border-bottom: 0.01rem solid #68d2c7;
     color:#68d2c7 ;
 }
@@ -101,6 +101,9 @@
     font-size: 0.25rem;
     color: #3f3f3f;
     background: #edf0f5;
+}
+.distination_box .select_cont_left ul>li:first-of-type{
+    background:#ffffff;
 }
 .distination_box .select_cont_right{
     margin-top:2.47rem;
