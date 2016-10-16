@@ -8,7 +8,7 @@ define(['router','$css!./components/trip_destination/trip_destination.css'],func
             $window.history.back();
         }
         $scope.touch = function (){
-            
+
         }
     }])
 })
