@@ -61,7 +61,7 @@
             <div class="overflow">
                 <div class="seckill_main_div">
                     <dl class="seckill_main_div_path1" ng-repeat=" x in objs">
-                        <dt><img src={{x.ImgUrl}}></dt>
+                        <dt><img ng-src={{x.ImgUrl}}></dt>
                         <dd>{{x.PITitle}}</dd>
                         <dd><span>￥<b>{{x.OrgPrice}}</b></span>起</dd>
                     </dl>
@@ -86,7 +86,7 @@
                 <div class="list1"  ng-repeat="x in objs">
                     <div class="list1_div" >
                         <dl>
-                            <dt><img src={{x.ImgUrl}} alt=""></dt>
+                            <dt><img ng-src={{x.ImgUrl}} alt=""></dt>
                             <dd>{{x.PITitle}}</dd>
                             <dd>抢购价<span class="span_color">￥</span><span>{{x.OrgPrice}}</span>起</dd>
                             <dd><span ng-if="x.SellPoint">{{x.SellPoint}}</span></dd>
