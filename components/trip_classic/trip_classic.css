@@ -37,9 +37,9 @@
 }
 .classic_cont{
     width: 100%;
-    height: 100%;
     background: #f2f4f7;
     margin-top: 0.89rem;
+    margin-bottom: 1.3rem;
 }
 .classic_cont div{
     width: 7.1rem;
@@ -53,6 +53,18 @@
     border-radius: 0.1rem;
     margin-top: 0.1rem;
     display: inline-block;
+}
+.classic_cont div:nth-of-type(2){
+        background: url("img/02.JPG")no-repeat;
+    background-size: 100% 3.55rem;
+}
+.classic_cont div:nth-of-type(3){
+    background: url("img/03.jpg")no-repeat;
+    background-size: 100% 3.55rem;
+}
+.classic_cont div:nth-of-type(4){
+    background: url("img/04.jpg")no-repeat;
+    background-size: 100% 3.55rem;
 }
 .classic_cont div .trip_day{
     width: 0.5rem;
@@ -98,17 +110,20 @@
     overflow: hidden;
     text-indent: 0.45rem;
     display: inline-block;
-    background: url("img/diary_edit_pic_location.png")no-repeat 0.2rem;
+    background: url("img/discovery_list_location.png")no-repeat 0.2rem;
     background-size: 0.2rem 100%;
+    margin-right: 0.6rem;
 }
 .show_num{
     width: 0.95rem;
     height: 0.2rem;
     font-size: 0.2rem;
     line-height: 0.2rem;
-    text-indent: 0.2rem;
+    text-indent: 0.4rem;
     display: inline-block;
     color: #fff;
+    background: url("img/icon_cell_cruise_introduction_youji_reading_rest.png") no-repeat;
+    background-size: 0.4rem 100%;
     margin-bottom: 0.2rem;
 
 }

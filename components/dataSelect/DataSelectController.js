@@ -5,7 +5,10 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
     return app.controller('DataSelectController',['$scope','$state','dataFactory','$window',
         function ($scope,$state,dataFactory,$window) {
-        //切换日历
+            $scope.growupNum=dataFactory.get().growupNum;
+            $scope.childNum=dataFactory.get().childNum;
+            console.log($scope.growupNum);
+            //切换日历
             $scope.flag1 = true;
             $scope.flag2 = false;
             $scope.cancler = function(){
@@ -55,11 +58,11 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                     just()
                 });
             }
-            //判断有没有得到日期生成函数
+            //判断有没有得到日期
             function just(){
                 if($scope.startDate){
-                    dataFactory.set({"growupNum":$(".growup").find(".cont").text()});
-                    dataFactory.set({"childNum":$(".child").find(".cont").text()});
+                    dataFactory.set({"growupNum":$scope.growupNum});
+                    dataFactory.set({"childNum":$scope.childNum});
                     $(".riqi").css("display","block");
                     angular.element(".please").css("display","none");
                     $scope.growupNum = dataFactory.get().growupNum;
@@ -82,13 +85,18 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
             $scope.addNum = function(e){
                 var cutrItem = $(event.target).prev()
                 var cutrNum = parseInt(cutrItem.text())+1;
-                cutrItem.text(cutrNum);
+                //cutrItem.text(cutrNum);
                 if(cutrItem.parent().attr("class")=="growup"){
                     dataFactory.set({"growupNum":cutrNum});
-                    $(".growupNum").css("display","block");
+                    $scope.growupNum = dataFactory.get().growupNum;
+                    if($scope.startDate){
+                        $(".growupNum").css("display","block");
+                    }
                 }else{
                     dataFactory.set({"childNum":cutrNum});
-                    $(".childNum").css("display","block");
+                    if($scope.startDate){
+                        $(".childNum").css("display","block");
+                    }
                 }
                 $scope.growupNum = dataFactory.get().growupNum;
                 $scope.childNum = dataFactory.get().childNum;
@@ -114,19 +122,18 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                         $scope.growupNum = dataFactory.get().growupNum;
                         if(!$scope.childNum){
                             $scope.childNum=0;
-                            dataFactory.set({"childNum":0})
+                            dataFactory.set({"childNum":0});
                         }
                         var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
                             parseInt($scope.childNum)*parseFloat($scope.price)/2;
                         dataFactory.set({"amount":amount});
-                        cutrItem.text(cutrNum);
+
                     }else{
                         if(cutrNum==0){
                             return;
                         }
                         dataFactory.set({"growupNum":0});
                         $scope.growupNum = dataFactory.get().growupNum;
-                        cutrItem.text(0)
                         $(".growupNum").css("display","none");
                         var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
                             parseInt($scope.childNum)*parseFloat($scope.price)/2;
@@ -147,14 +154,12 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                         var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
                             parseInt($scope.childNum)*parseFloat($scope.price)/2;
                         dataFactory.set({"amount":amount});
-                        cutrItem.text(cutrNum);
                     }else{
                         if(cutrNum==0){
                             return
                         }
                         dataFactory.set({"childNum":0});
                         $scope.childNum = dataFactory.get().childNum;
-                        cutrItem.text(0)
                         $(".childNum").css("display","none");
                         var amount = parseInt($scope.growupNum)*parseFloat($scope.price)+
                             parseInt($scope.childNum)*parseFloat($scope.price)/2;

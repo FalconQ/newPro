@@ -12,10 +12,6 @@ define(['router','$css!./components/addPeople/addPeople.css'],function(app){
         $scope.messageData = {
 
         }
-        //数组存储方法
-        //$scope.messageData = [
-        //
-        //]
 
         //获取用户信息
         $scope.getData = function(){

@@ -1,6 +1,6 @@
 <div ng-controller="DestController" class="distination_box">
     <div class="header">
-        <span class="back_step"></span>
+        <span class="back_step" ng-click="back()"></span>
         选择行程目的地
         <span class="header_jump">路过</span>
     </div>
@@ -8,13 +8,13 @@
         <input type="text" placeholder="请输入国家/省份/城市名">
     </div>
     <div class="select_innerOrout">
-        <ul>
-            <li>境内</li>
+        <ul ng-click="touch()" class="ul">
+            <li >境内</li>
             <li>境外</li>
         </ul>
     </div>
         <div class="select_cont_left">
-            <ul>
+            <ul ng-click="listClick()" class="list">
                 <li>广东</li>
                 <li>江苏</li>
                 <li>浙江</li>

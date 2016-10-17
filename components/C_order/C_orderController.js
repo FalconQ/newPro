@@ -3,7 +3,8 @@
  */
 define(['router',"$css!./components/C_order/C_order.css"],function (app) {
     // angular会自动根据controller函数的参数名，导入相应的服务
-    return app.controller('C_orderController',['$scope','dataFactory','$state','dateService',function ($scope,dataFactory,$state,dateService) {
+
+    return app.controller('C_orderController',['$scope','dataFactory','$state','dateService','$window',function ($scope,dataFactory,$state,dateService,$window) {
         //添加意外险和取订单的默认选择，将金额放入service
         $scope.selected = true;
         $scope.selectedAci = true;
@@ -24,6 +25,11 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         }else{
             $scope.childNum=0;
         }
+        //如果没有设置成人的人数，将它的减设为不可用
+        if(!parseInt($scope.growupNum)){
+            $(".growup").find(".minu").css({"backgroundImage":"url('./components/C_order/img/numberbtn_minus_disable.png')"
+                ,"backgroundSize":"0.68rem 0.65rem"});
+        }
         //减号事件，减少成人数和儿童数
         $scope.minuCount=function (){
             var cutrItem = $(event.target).next();
@@ -40,9 +46,8 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
                     if(cutrNum==0){
                         return;
                     }
-                    alert("至少要有一个成人！")
-                    dataFactory.set({"growupNum":1});
-                    cutrItem.text(1);
+                    dataFactory.set({"growupNum":0});
+                    cutrItem.text(0);
                     cutrNum = cutrNum-1;
                     var amount = parseFloat(dataFactory.get().amount)-parseFloat($scope.growupPrice);
                     dataFactory.set({"amount":amount});
@@ -155,11 +160,19 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
 
         //查看联系人、电话、电子邮有没有填写
         $scope.changeText = function(){
+            /*var reg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$/;
+
+            console.log($scope.phoneNum);
+            if(!reg.test($scope.phoneNum)){
+                alert("请输入正确的手机号");
+                return;
+            }*/
             if($scope.linkMan&&$scope.phoneNum&&$scope.email){
                 if((parseInt(dataFactory.get().growupNum)+parseInt(dataFactory.get().childNum))>0){
                     $(".sub").css("backgroundColor","red");
                     return true;
                 }
+
                 return false;
             }else {
                 $(".sub").css("backgroundColor", "#ffbab5");
@@ -192,6 +205,11 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
                 $(".sub").css("background","red");
                 $state.go("submitSuccess");
             }
+        }
+        //点击回退箭头回到上一页
+        $scope.back = function(){
+            console.log("3333")
+            $window.history.back();
         }
     }]);
 })
