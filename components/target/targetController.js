@@ -12,7 +12,6 @@ define(['router',"$css!./components/target/target.css"],function (app) {
                //page2 获取右边数据内容生成
                $http.get("./data/zhoubian.json")
                    .success(function(data){
-                       console.log(data.response.body.groupList[0].cellItem)
                        $scope.obj2=data.response.body.groupList[0].cellItem
                        $scope.nearby=data.response.body.groupList[1].cellItem
                        $scope.main_hotbuy=data.response.body.groupList[2].cellItem

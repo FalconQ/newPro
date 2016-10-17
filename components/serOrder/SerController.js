@@ -9,7 +9,6 @@ define(['router','$css!./components/serOrder/service.css'],function (app) {
             replace: true,
             controller: function ($scope,dataFactory) {
                 $scope.order_info = dataFactory.get();
-                console.log($scope.order_info);
             }
         }
     })
