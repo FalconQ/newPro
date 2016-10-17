@@ -7,11 +7,11 @@
         <li ng-repeat="x in obj1">
             <a ui-sref="targat_position">
                 <div ng-style="{'backgroundImage':'url('+x.cellImage+')'}">
-                    <img src={{x.cellCenterImgUrl}} alt=""  ng-if="x.cellCenterImgUrl" >{{x.cellTitle}}
+                    <img ng-src={{x.cellCenterImgUrl}} alt=""  ng-if="x.cellCenterImgUrl" >{{x.cellTitle}}
                 </div>
                 <p>{{x.cellProgressPreText}}
                         <span>
-                            <img src={{x.cellProgressImgUrl}} >
+                            <img ng-src={{x.cellProgressImgUrl}} >
                         </span>
                     <span>{{x.cellProgressValue}}</span>
                 </p>
