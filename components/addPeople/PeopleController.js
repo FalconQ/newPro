@@ -69,7 +69,6 @@ define(['router','$css!./components/addPeople/addPeople.css'],function(app){
                 }*/
                 history.back();
             }else{
-                console.log("111111");
                 alert("不能为空");
             }
 
