@@ -57,11 +57,11 @@
             <h3>联系人信息</h3>
             <dl>
                 <dt>联系人：</dt>
-                <dd><input ng-change="changeText()" type="text"  placeholder="必填，姓名"  ng-model="linkMan"></dd>
+                <dd><input  ng-blur="right()" type="text"  placeholder="必填，姓名"  ng-model="linkMan"></dd>
                 <dt>手机号：</dt>
-                <dd><input ng-change="changeText()" type="text"  ng-model="phoneNum"></dd>
+                <dd><input  ng-blur="right()" type="text"  ng-model="phoneNum"></dd>
                 <dt>邮&nbsp;&nbsp;&nbsp;箱：</dt>
-                <dd><input ng-change="changeText()" type="text"  placeholder="必填，接受合同及行程单"  ng-model="email"></dd>
+                <dd><input  ng-blur="right()" type="text"  placeholder="必填，接受合同及行程单"  ng-model="email"></dd>
             </dl>
         </div>
          <div class="main_safest">

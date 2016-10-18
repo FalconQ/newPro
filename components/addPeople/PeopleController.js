@@ -64,12 +64,11 @@ define(['router','$css!./components/addPeople/addPeople.css'],function(app){
             //判断输入的值不能为空值不能为空
             if(!(name.val() == "" || number.val() == "" || card.val() == "") ){
 
-                if( uesrName() && ID() &&num()){
+                /*if( uesrName() && ID() &&num()){
                     history.back();
-                }
-
+                }*/
+                history.back();
             }else{
-                console.log("111111");
                 alert("不能为空");
             }
 

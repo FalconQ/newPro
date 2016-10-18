@@ -20,7 +20,6 @@ define(['router','$css!./components/submitSuccess/submitSuccess.css'],function (
         $scope.return = function () {
             $state.go('orderInfo');
         }
-
         $scope.jumpToMore = function () {
             $state.go('orderInfo');
         }

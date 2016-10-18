@@ -13,8 +13,6 @@ define(['router','$css!./components/orderInfo/orderInfo.css'],function (app) {
         }
     })
     
-    
-    
     // angular会自动根据controller函数的参数名，导入相应的服务
     return app.controller('orderInfoController',['$scope','$state',function ($scope,$state) {
         $scope.orderBack = function () {

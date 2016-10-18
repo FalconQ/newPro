@@ -7,7 +7,6 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
         function ($scope,$state,dataFactory,$window) {
             $scope.growupNum=dataFactory.get().growupNum;
             $scope.childNum=dataFactory.get().childNum;
-            console.log($scope.growupNum);
             //切换日历
             $scope.flag1 = true;
             $scope.flag2 = false;

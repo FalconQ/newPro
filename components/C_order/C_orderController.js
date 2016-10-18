@@ -12,7 +12,6 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         $scope.title = dataFactory.get().title;
         $scope.growupPrice = dataFactory.get().price;
         $scope.childPrice = parseInt(dataFactory.get().price)/2;
-       // dataFactory.set({"accdidentMoney":"48"});
         dataFactory.set({"amount":parseFloat(dataFactory.get().amount)+68});
         $scope.amount = dataFactory.get().amount;
         //得到上页的成人数和儿童数
@@ -101,7 +100,7 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
             dataFactory.set({"amount":amount});
             $scope.amount = dataFactory.get().amount;
             if(cutrNum>0){
-                if($scope.changeText()){
+                if($scope.right()){
                     $(".sub").css("backgroundColor","red");
                 }
                 $(event.target).prev().prev().css({"backgroundImage":"url('./components/C_order/img/add.png')"
@@ -118,7 +117,6 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         }
         //选项框的选中和取消选中
         $scope.show = function(){
-            console.log("show")
             if($(event.target).next().attr("class")=="accident"){
                 if($scope.selectedAci){
                     $(event.target).css("backgroundColor","#e4e4e4");
@@ -159,20 +157,26 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         }
 
         //查看联系人、电话、电子邮有没有填写
-        $scope.changeText = function(){
-            /*var reg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$/;
-
-            console.log($scope.phoneNum);
-            if(!reg.test($scope.phoneNum)){
-                alert("请输入正确的手机号");
-                return;
-            }*/
-            if($scope.linkMan&&$scope.phoneNum&&$scope.email){
+        $scope.right = function(){
+            $scope.yanzheng = function(){
+                var reg = /^1[34578]\d{9}$/;
+                if(reg.test($scope.phoneNum)){
+                    return true;
+                }
+                return false;
+            }
+            $scope.youxiang = function(){
+                var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+                if(reg.test($scope.email)){
+                    return true;
+                }
+                return false;
+            }
+            if($scope.linkMan&&$scope.yanzheng()&&$scope.youxiang()){
                 if((parseInt(dataFactory.get().growupNum)+parseInt(dataFactory.get().childNum))>0){
                     $(".sub").css("backgroundColor","red");
                     return true;
                 }
-
                 return false;
             }else {
                 $(".sub").css("backgroundColor", "#ffbab5");
@@ -190,13 +194,13 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
             dataFactory.set({'status': '待支付'});
             dataFactory.set({'orderTime':new Date().Format("yyyy-MM-dd hh:mm:ss")});
             if(!dataFactory.get().linkMan){
-                alert("请填写姓名");
+                alert("请填写姓名！");
                 $(".sub").css("background","#ffbab5");
-            }else if(!dataFactory.get().phoneNum){
-                alert("请填写手机号");
+            }else if(!$scope.yanzheng()){
+                alert("请填写正确的手机号！");
                 $(".sub").css("background","#ffbab5");
-            }else if(!dataFactory.get().email){
-                alert("请填写邮箱");
+            }else if(!$scope.youxiang()){
+                alert("请填写正确的邮箱！");
                 $(".sub").css("background","#ffbab5");
             }else if((parseInt(dataFactory.get().growupNum)+parseInt(dataFactory.get().childNum))<1){
                 alert("总人数不能少于1人！submit");
@@ -208,7 +212,6 @@ define(['router',"$css!./components/C_order/C_order.css"],function (app) {
         }
         //点击回退箭头回到上一页
         $scope.back = function(){
-            console.log("3333")
             $window.history.back();
         }
     }]);
