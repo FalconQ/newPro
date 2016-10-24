@@ -7,6 +7,18 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
         function ($scope,$state,dataFactory,$window) {
             $scope.growupNum=dataFactory.get().growupNum;
             $scope.childNum=dataFactory.get().childNum;
+            $scope.startDate=dataFactory.get().oriDate;
+            if(parseInt($scope.growupNum)>0){
+                $(".growup .minu").css({"borderColor":"#23bdad","color":"#23bdad"});
+            }else{
+                $(".growup .minu").css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
+            }
+            if(parseInt($scope.childNum)>0){
+                $(".child .minu").css({"borderColor":"#23bdad","color":"#23bdad"});
+            }else{
+                $(".child .minu").css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
+            }
+
             //切换日历
             $scope.flag1 = true;
             $scope.flag2 = false;
@@ -139,7 +151,10 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                         dataFactory.set({"amount":amount});
                         $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
                         cutrItem.css({"borderColor":"#e5e5e5"});
-                        angular.element(".next_shadow").css("display","block");
+                        if(parseInt(dataFactory.get().growupNum)<=0&&parseInt(dataFactory.get().childNum)<=0){
+                            angular.element(".next_shadow").css("display","block");
+                        }
+
 
                     }
                 }else{
@@ -165,7 +180,9 @@ define(['router','$css!./components/dataSelect/dataSelect.css'],function (app) {
                         dataFactory.set({"amount":amount});
                         $(event.target).css({"borderColor":"#e5e5e5","color":"#e5e5e5"});
                         cutrItem.css({"borderColor":"#e5e5e5"});
-                        angular.element(".next_shadow").css("display","block");
+                        if(parseInt(dataFactory.get().growupNum)<=0&&parseInt(dataFactory.get().childNum)<=0){
+                            angular.element(".next_shadow").css("display","block");
+                        }
                     }
                 }
             }
